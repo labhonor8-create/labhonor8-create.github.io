@@ -3,669 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Riesgo y Lotaje para Forex y Oro (XAU/USD) | RiskCalc</title>
-  <meta name="description" content="Calcula el tamaño de posición en lotes estándar, mini y micro para Forex y oro (XAU/USD) según tu balance, el riesgo que aceptas y los pips de stop loss.">
-  <link rel="canonical" href="https://labhonor8-create.github.io/">
-
-  <meta name="google-site-verification" content="335dBitLPJuFvVahTwsbJKN0ToRAE2q8c41iigKejg4" />
+  <title>Asociación de Productores Agropecuarios de Isla Ytororó | San Antonio</title>
+  <meta name="description" content="Sitio oficial de la Asociación de Productores Agropecuarios de Isla Ytororó (San Antonio, Paraguay). Personería Jurídica N° 12.581/2022. RUC 80130689-2. Proyectos de desarrollo agrícola y monitoreo climático.">
+  <link rel="canonical" href="https://labhonor8-create.github.io/index.html">
+  <link rel="stylesheet" href="styles.css">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791"
           crossorigin="anonymous"></script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Calculadora de riesgo y lotaje para Forex y oro",
-    "url": "https://labhonor8-create.github.io/",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Any",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-  }
-  </script>
-
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    [hidden] { display: none !important; }
-
-    :root {
-      color-scheme: dark;
-      --bg: #0a0e16;
-      --panel: #111827;
-      --panel2: #0c1320;
-      --line: #1f2b3f;
-      --text: #e5ecf6;
-      --muted: #8b98ab;
-      --accent: #2dd4bf;
-      --gold: #f5b942;
-      --red: #f87171;
-      --warn: #fbbf24;
-      --radius: 14px;
-    }
-
+    /* ===== ESTILO GENERAL (Modo Oscuro Profesional) ===== */
     body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      -webkit-text-size-adjust: 100%;
+      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.92)), url('iss073e1044319~large.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #e2e8f0;
     }
 
-    a { color: var(--accent); }
-    a:focus-visible, button:focus-visible, input:focus, select:focus {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
-    }
-    p { margin: 0 0 12px; }
-
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-
-    .topbar { background: var(--panel); border-bottom: 1px solid var(--line); }
-    .bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-    .brand { font-weight: 800; color: var(--text); text-decoration: none; font-size: 1.05rem; }
-    .brand span { color: var(--gold); }
-    .tag { font-size: .78rem; color: var(--muted); }
-
-    .hero { padding: 24px 0 8px; }
-    h1 { font-size: clamp(1.4rem, 3.6vw, 2rem); line-height: 1.25; margin: 0 0 8px; }
-    .hero p { color: var(--muted); margin: 0; }
-
-    .layout {
-      display: grid;
-      gap: 18px;
-      margin-top: 16px;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 900px) {
-      .layout { grid-template-columns: 1fr 1fr; align-items: start; }
+    .card, .site-header {
+      background: rgba(18, 24, 38, 0.88) !important;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
 
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 20px;
+    .ad-label { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #94a3b8; text-align: center; margin-bottom: 6px; }
+    
+    /* Cuadrícula de información institucional */
+    .info-grid { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 18px; }
+    @media (min-width: 640px) { .info-grid { grid-template-columns: repeat(3, 1fr); } }
+    .tile { background: rgba(15, 20, 30, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 16px; text-align: center; }
+    .tile span { display: block; font-size: .85rem; color: #94a3b8; margin-bottom: 4px; }
+    .tile strong { display: block; font-size: 1.2rem; color: #38bdf8; }
+
+    /* Botones de acción principal */
+    .cta-container { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; align-items: center; }
+    @media(min-width: 640px) { .cta-container { flex-direction: row; justify-content: center; } }
+    
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background-color: #0284c7; color: #fff !important; padding: 12px 24px;
+      border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4); transition: background-color 0.2s, transform 0.2s;
+      width: 100%; max-width: 280px;
     }
-    h2 { font-size: 1.1rem; margin: 0 0 14px; }
-    h3 { font-size: 1rem; margin: 18px 0 6px; }
+    .btn-primary:hover { background-color: #0369a1; transform: translateY(-2px); }
 
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-    .chip {
-      background: var(--panel2);
-      border: 1px solid var(--line);
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font: inherit;
-      font-size: .85rem;
-      cursor: pointer;
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      background-color: #25d366; color: #fff !important; padding: 12px 24px;
+      border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4); transition: background-color 0.2s, transform 0.2s;
+      width: 100%; max-width: 280px;
     }
-    .chip[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
-
-    .field { margin-bottom: 14px; }
-    label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    input, select {
-      width: 100%;
-      background: var(--panel2);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      color: var(--text);
-      font: inherit;
-      font-size: 1rem;
-      padding: 11px 12px;
-    }
-    .two { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
-    .hint { font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
-    .center { text-align: center; }
-
-    .res-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-    .ghost {
-      background: transparent;
-      border: 1px solid var(--line);
-      color: var(--text);
-      border-radius: 10px;
-      padding: 8px 14px;
-      font: inherit;
-      font-size: .9rem;
-      cursor: pointer;
-    }
-    .ghost:disabled { opacity: .4; cursor: not-allowed; }
-
-    .msg { border-radius: 10px; padding: 10px 12px; font-size: .92rem; margin: 0 0 14px; }
-    .msg.error { color: var(--red); background: rgba(248, 113, 113, .08); }
-    .msg.warn { color: var(--warn); background: rgba(251, 191, 36, .08); }
-
-    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-    .kpi { background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
-    .kpi span { display: block; font-size: .75rem; color: var(--muted); }
-    .kpi strong { font-size: 1.4rem; color: var(--gold); }
-
-    .risk { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-    .risk div { background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
-    .risk span { display: block; font-size: .75rem; color: var(--muted); }
-    .risk strong { font-size: 1.15rem; color: var(--red); }
-
-    .note { font-size: .88rem; color: var(--muted); margin: 12px 0 0; }
-    .note strong { color: var(--text); }
-
-    .table-wrap { overflow-x: auto; margin-top: 14px; }
-    table { width: 100%; border-collapse: collapse; font-size: .92rem; }
-    th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-    th { color: var(--muted); font-weight: 600; }
-    td:last-child { color: var(--accent); }
-
-    .ad-label {
-      font-size: .68rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-align: center;
-      margin: 18px 0 0;
-    }
-    .ad-slot { min-height: 100px; margin: 6px 0 16px; text-align: center; }
-    .ad-slot-results { margin-top: 16px; }
-
-    .content { display: grid; gap: 18px; margin: 18px 0; }
-    .steps { padding-left: 20px; margin: 0 0 12px; }
-    .steps li { margin-bottom: 8px; }
-    .disclaimer { border-left: 4px solid var(--warn); }
-
-    footer {
-      border-top: 1px solid var(--line);
-      margin-top: 24px;
-      padding: 20px 0 40px;
-      color: var(--muted);
-      font-size: .85rem;
-    }
-    footer a { color: var(--muted); }
-
-    .bar-der { display: flex; align-items: center; gap: 16px; }
-    .menu-link { color: var(--accent); font-size: .9rem; text-decoration: none; }
+    .btn-whatsapp:hover { background-color: #20ba5a; transform: translateY(-2px); }
   </style>
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="wrap bar">
-      <a class="brand" href="index.html">RiskCalc<span> Pro</span></a>
-      <div class="bar-der">
-        <span class="tag">Forex · XAU/USD</span>
-        <a class="menu-link" href="el-nino.html">El Niño</a>
-      </div>
+  <header class="site-header" style="margin-bottom: 24px; border-radius: 0 0 12px 12px; padding: 12px 0;">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none;">Asociación Isla Ytororó</a>
+      <nav aria-label="Secciones" style="display:flex;gap:14px">
+        <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Asociación</a>
+        <a href="el-nino.html" style="color: #38bdf8; text-decoration: none;">Monitor El Niño</a>
+        <a href="galeria.html" style="color: #38bdf8; text-decoration: none;">Galería</a>
+      </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="container">
 
-    <!-- ESPACIO PUBLICITARIO SUPERIOR -->
-    <div class="ad-label">Publicidad</div>
-    <div id="ad-space-1" class="ad-slot">
-      <ins class="adsbygoogle" style="display:block"
-           data-ad-slot="4077993060"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-    </div>
+    <!-- PRESENTACIÓN INSTITUCIONAL -->
+    <section class="card" style="text-align: center;">
+      <h1 style="font-size: 1.8rem; margin-bottom: 10px;">Asociación de Productores Agropecuarios de Isla Ytororó</h1>
+      <p style="color: #38bdf8; font-weight: 600; margin-bottom: 15px;">Ciudad de San Antonio, Paraguay</p>
+      <p class="lead">Portal institucional enfocado en la producción agropecuaria sostenible, el trabajo de la tierra y la gestión estratégica frente a los factores climáticos.</p>
 
-    <header class="hero">
-      <h1>Calculadora de riesgo y lotaje para Forex y oro (XAU/USD)</h1>
-      <p>Calcula el tamaño de tu posición en lotes estándar, mini y micro según tu balance, el riesgo que aceptas y los pips de stop loss.</p>
-    </header>
-
-    <div class="layout">
-
-      <!-- PARÁMETROS -->
-      <section class="panel" aria-labelledby="t-parametros">
-        <h2 id="t-parametros">Parámetros</h2>
-
-        <div class="chips" role="group" aria-label="Activos rápidos">
-          <button type="button" class="chip" data-preset="XAUUSD">Oro XAU/USD</button>
-          <button type="button" class="chip" data-preset="EURUSD">EUR/USD</button>
-          <button type="button" class="chip" data-preset="GBPUSD">GBP/USD</button>
-          <button type="button" class="chip" data-preset="PERSONALIZADO">Otro</button>
+      <div class="info-grid">
+        <div class="tile">
+          <span>Personería Jurídica</span>
+          <strong>N° 12.581/2022</strong>[span_0](start_span)[span_0](end_span)
         </div>
-
-        <form id="calc" autocomplete="off" novalidate>
-          <div class="field">
-            <label for="instrumento">Instrumento</label>
-            <select id="instrumento">
-              <option value="XAUUSD">Oro (XAU/USD)</option>
-              <option value="EURUSD">EUR/USD</option>
-              <option value="GBPUSD">GBP/USD</option>
-              <option value="PERSONALIZADO">Personalizado</option>
-            </select>
-          </div>
-
-          <div class="field" id="bloque-oro">
-            <label for="pip-oro">Valor de 1 pip en oro (USD)</label>
-            <select id="pip-oro">
-              <option value="0.01">0.01</option>
-              <option value="0.1" selected>0.10</option>
-              <option value="1">1.00</option>
-            </select>
-            <p class="hint">Depende de tu bróker. 0.10 es el valor más común. Confírmalo en sus especificaciones.</p>
-          </div>
-
-          <div id="bloque-manual" hidden>
-            <div class="two">
-              <div class="field">
-                <label for="pip-manual">Tamaño del pip</label>
-                <input id="pip-manual" type="number" min="0" step="any" inputmode="decimal" value="0.0001">
-              </div>
-              <div class="field">
-                <label for="contrato-manual">Unidades por lote estándar</label>
-                <input id="contrato-manual" type="number" min="0" step="any" inputmode="decimal" value="100000">
-              </div>
-            </div>
-            <p class="hint">El cálculo supone que la moneda de cotización es USD, como en EUR/USD y XAU/USD.</p>
-          </div>
-
-          <div class="field">
-            <label for="balance">Balance de la cuenta (USD)</label>
-            <input id="balance" type="number" min="0" step="any" inputmode="decimal" value="10000">
-          </div>
-
-          <div class="field">
-            <label for="modo">Riesgo por operación</label>
-            <select id="modo">
-              <option value="pct">Porcentaje del balance</option>
-              <option value="usd">Monto fijo en USD</option>
-            </select>
-          </div>
-
-          <div class="field" id="bloque-pct">
-            <label for="riesgo-pct">Riesgo (%)</label>
-            <input id="riesgo-pct" type="number" min="0" max="100" step="any" inputmode="decimal" value="1">
-          </div>
-
-          <div class="field" id="bloque-usd" hidden>
-            <label for="riesgo-usd">Riesgo (USD)</label>
-            <input id="riesgo-usd" type="number" min="0" step="any" inputmode="decimal" value="100">
-          </div>
-
-          <div class="field">
-            <label for="sl-pips">Stop loss (pips)</label>
-            <input id="sl-pips" type="number" min="0" step="any" inputmode="decimal" value="150">
-            <p class="hint">Ejemplo: en oro con pip de 0.10, 150 pips equivalen a una distancia de US$15.</p>
-          </div>
-
-          <div class="field">
-            <label for="minimo">Lote mínimo de tu bróker</label>
-            <select id="minimo">
-              <option value="0.01" selected>Micro (0.01)</option>
-              <option value="0.1">Mini (0.1)</option>
-              <option value="1">Estándar (1.0)</option>
-            </select>
-          </div>
-        </form>
-
-        <p class="hint center">Los resultados se actualizan mientras escribes.</p>
-      </section>
-
-      <!-- RESULTADO -->
-      <section class="panel" aria-live="polite" aria-labelledby="t-resultado">
-        <div class="res-head">
-          <h2 id="t-resultado">Resultado</h2>
-          <button id="copiar" type="button" class="ghost" disabled>Copiar</button>
+        <div class="tile">
+          <span>RUC Oficial</span>
+          <strong>80130689-2 (Activo)</strong>[span_1](start_span)[span_1](end_span)
         </div>
-        <p id="copia-estado" class="hint"></p>
-
-        <div id="mensaje" class="msg" hidden></div>
-
-        <div id="resultado" hidden>
-          <div class="kpis">
-            <div class="kpi"><span>Estándar (1.0)</span><strong id="r-std">—</strong></div>
-            <div class="kpi"><span>Mini (0.1)</span><strong id="r-mini">—</strong></div>
-            <div class="kpi"><span>Micro (0.01)</span><strong id="r-micro">—</strong></div>
-          </div>
-
-          <div class="risk">
-            <div><span>Riesgo real</span><strong id="r-riesgo">—</strong></div>
-            <div><span>% del balance</span><strong id="r-riesgo-pct">—</strong></div>
-          </div>
-
-          <p class="note"><strong>Valor del pip por lote:</strong> <span id="r-pip">—</span></p>
-          <p class="note" id="r-nota"></p>
-
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>Objetivo</th><th>Pips</th><th>Ganancia</th></tr></thead>
-              <tbody id="r-tabla"></tbody>
-            </table>
-          </div>
+        <div class="tile">
+          <span>Base Social</span>
+          <strong>21 Socios Activos</strong>[span_2](start_span)[span_2](end_span)
         </div>
+      </div>
 
-        <!-- ESPACIO PUBLICITARIO BAJO LOS RESULTADOS -->
-        <div class="ad-label">Publicidad</div>
-        <div id="ad-space-2" class="ad-slot ad-slot-results">
-          <ins class="adsbygoogle" style="display:block"
-               data-ad-slot="8376330722"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-        </div>
-      </section>
-    </div>
+      <div class="cta-container">
+        <a href="el-nino.html" class="btn-primary">Ver Monitor Climático</a>
+        <a href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororó." target="_blank" rel="noopener" class="btn-whatsapp">Contactar vía WhatsApp</a>
+      </div>
+    </section>
 
-    <!-- CONTENIDO EDUCATIVO -->
-    <div class="content">
+    <!-- SOBRE NOSOTROS Y COMPROMISO -->
+    <article class="card">
+      <h2>Nuestra Misión y Enfoque Productivo</h2>
+      <p>Establecidos formalmente en la zona de la Isla Ytororó en San Antonio, los 21 socios activos[span_3](start_span)[span_3](end_span) que conformamos esta asociación trabajamos de manera unida para potenciar los cultivos locales (como la mandioca y rubros de autoconsumo/renta), optimizar la logística de transporte y enfrentar coordinadamente los desafíos climáticos de la Cuenca del Plata.</p>
+      <p>Nuestra labor combina la experiencia tradicional en el trabajo rural con el uso de herramientas tecnológicas de monitoreo atmosférico para proteger las cosechas y asegurar la estabilidad de las familias productoras de la región.</p>
+    </article>
 
-      <article class="panel">
-        <h2>Guía técnica: cómo se calcula el lotaje</h2>
-        <ol class="steps">
-          <li><strong>Riesgo en USD:</strong> balance × riesgo %. Si eliges monto fijo, ese valor se usa directamente.</li>
-          <li><strong>Valor del pip por lote estándar:</strong> tamaño del pip × unidades del contrato. En EUR/USD: 0.0001 × 100 000 = US$10. En XAU/USD con pip de 0.10: 0.10 × 100 oz = US$10.</li>
-          <li><strong>Riesgo por lote estándar:</strong> pips de stop × valor del pip. Con 150 pips y pip de US$10, sería 150 × US$10 = US$1 500.</li>
-          <li><strong>Lotes ideales:</strong> riesgo en USD ÷ riesgo por lote estándar.</li>
-          <li><strong>Ajuste al lote mínimo:</strong> el resultado se redondea hacia abajo al paso de tu bróker (micro, mini o estándar), para no superar el riesgo planeado.</li>
-        </ol>
-        <p><strong>Ejemplo:</strong> balance de US$10 000, riesgo de 1 % (US$100) y stop de 150 pips en oro con pip de 0.10. Lotes ideales: 100 ÷ 1 500 = 0.0667. Con lote mínimo micro, la posición queda en 0.06 lotes estándar (6 micro) y el riesgo real es de US$90, equivalente a 0.9 % del balance.</p>
-        <p>Los cálculos no incluyen spread, comisiones, swap ni deslizamiento. Esos costos aumentan la pérdida real.</p>
-      </article>
+    <!-- SECCIÓN INFORMATIVA: PROYECTOS Y VISIÓN DE FUTURO -->
+    <article class="card">
+      <h2>Proyectos de Desarrollo e Infraestructura para la Isla</h2>
+      <p>Con la firme convicción de que las condiciones climáticas y operativas de la región se optimizarán mediante una planificación adecuada, la asociación impulsa una visión de futuro con iniciativas de gran envergadura:</p>
+      <ul style="margin-top: 10px; padding-left: 20px; color: #cbd5e1; line-height: 1.6;">
+        <li><strong>Optimización de caminos y accesos rurales:</strong> Planificación de mejoras logísticas para garantizar el flujo constante de maquinaria e insumos hacia las zonas de cultivo.</li>
+        <li><strong>Infraestructura de acopio y resguardo:</strong> Proyectos orientados a mitigar el impacto de crecidas fluviales y proteger la producción frente a eventos climáticos extremos.</li>
+        <li><strong>Asistencia técnica y asociatividad:</strong> Capacitación continua para los miembros, fomentando prácticas agrícolas sostenibles y eficientes en la zona insular.</li>
+      </ul>
+    </article>
 
-      <article class="panel">
-        <h2>Preguntas frecuentes</h2>
-
-        <h3>¿Qué porcentaje del balance conviene arriesgar en XAU/USD y Forex?</h3>
-        <p>Muchos traders usan entre 0.5 % y 1 % por operación. Con 1 %, diez pérdidas seguidas reducen la cuenta en unos 9.6 %. Con 2 %, la caída sería de unos 18 %. Un riesgo menor tolera mejor las rachas perdedoras, aunque también reduce la ganancia por operación.</p>
-
-        <h3>¿Por qué el oro requiere un cálculo distinto al de los pares de Forex?</h3>
-        <p>El oro se cotiza en dólares por onza y suele tener una volatilidad alta, por lo que un stop razonable puede medir muchos más pips. Además, el valor del pip depende del tamaño que tu bróker asigne al pip en oro (0.01, 0.10 o 1.00). Por eso conviene revisar esa especificación antes de operar.</p>
-
-        <h3>¿Cuál es la diferencia entre lote estándar, mini y micro?</h3>
-        <p>Un lote estándar equivale a 100 000 unidades en Forex o a 100 onzas en oro. El mini es 0.1 del estándar y el micro es 0.01. Los lotes menores permiten ajustar el tamaño con más precisión, así que es más fácil mantener el riesgo exacto aunque el stop sea amplio.</p>
-      </article>
-
-      <section class="panel disclaimer">
-        <h2>Aviso legal y sobre esta herramienta</h2>
-        <p>Esta calculadora tiene fines exclusivamente educativos y analíticos, y sirve para simular el riesgo de una operación. No es asesoramiento financiero, no genera señales de compra o venta y no garantiza resultados.</p>
-        <p>Publicado por Innovatech. Contacto: technologyinfoa@gmail.com. Consulta nuestra <a href="privacidad.html">política de privacidad</a> y la página <a href="acerca.html">Acerca de</a>.</p>
-        <p>Última actualización: octubre de 2026.</p>
-      </section>
-    </div>
-
-    <!-- ESPACIO PUBLICITARIO DE CIERRE -->
-    <div class="ad-label">Publicidad</div>
-    <div id="ad-space-3" class="ad-slot">
-      <ins class="adsbygoogle" style="display:block"
-           data-ad-slot="6057289145"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-    </div>
+    <!-- ACCESO RÁPIDO A HERRAMIENTAS Y MONITOREO -->
+    <section class="card" style="text-align: center;">
+      <h2>Herramientas y Monitoreo en Tiempo Real</h2>
+      <p>Consulta nuestro monitor especializado sobre el fenómeno de El Niño y el registro fotográfico de impacto regional.</p>
+      <div class="cta-container" style="justify-content: center;">
+        <a href="el-nino.html" class="btn-primary">Ir al Monitor El Niño</a>
+        <a href="galeria.html" class="btn-primary" style="background-color: #0369a1;">Ver Galería Fotográfica</a>
+      </div>
+    </section>
 
   </main>
 
-  <footer class="wrap">
+  <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
+    <p>Asociación de Productores Agropecuarios de Isla Ytororó · San Antonio, Paraguay[span_4](start_span)[span_4](end_span)</p>
+    <p>Celular de contacto: 0982 879-980[span_5](start_span)[span_5](end_span)</p>
     <p>
-      <a href="privacidad.html">Privacidad</a> ·
-      <a href="acerca.html">Acerca de</a> ·
-      <a href="mailto:technologyinfoa@gmail.com">Contacto</a>
+      <a href="index.html" style="color: #38bdf8;">Inicio</a> ·
+      <a href="el-nino.html" style="color: #38bdf8;">El Niño</a> ·
+      <a href="galeria.html" style="color: #38bdf8;">Galería</a> ·
+      <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a>
     </p>
-    <p>© 2026 RiskCalc Pro, por Innovatech. Todos los derechos reservados.</p>
+    <p>© 2026 Asociación Isla Ytororó.</p>
   </footer>
 
-  <script>
-    // ===== CONFIGURACIÓN =====
-    const ADSENSE_CLIENT = "ca-pub-9124670202405791";
-    const LOCALE = "es-419";
-    const STORAGE_KEY = "riskcalc-v2";
-    const CAMPOS = ["instrumento", "pip-oro", "pip-manual", "contrato-manual", "balance",
-                    "modo", "riesgo-pct", "riesgo-usd", "sl-pips", "minimo"];
-    const PRESETS = {
-      XAUUSD:        { instrumento: "XAUUSD", pipOro: "0.1", slPips: 150, riesgoPct: 1 },
-      EURUSD:        { instrumento: "EURUSD", slPips: 20, riesgoPct: 1 },
-      GBPUSD:        { instrumento: "GBPUSD", slPips: 25, riesgoPct: 1 },
-      PERSONALIZADO: { instrumento: "PERSONALIZADO" }
-    };
-
-    // ===== FORMATOS =====
-    const $ = id => document.getElementById(id);
-    const num = id => parseFloat($(id).value);
-    const fUSD = new Intl.NumberFormat(LOCALE, { style: "currency", currency: "USD" });
-    const fDec = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
-    const fStd = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
-    const fMini = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 1 });
-    const fMicro = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 0 });
-    const fPct = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
-
-    let ultimoTexto = "";
-
-    // ===== CONFIGURACIÓN DEL INSTRUMENTO =====
-    function configInstrumento() {
-      switch ($("instrumento").value) {
-        case "XAUUSD":
-          return { etiqueta: "XAU/USD", pip: parseFloat($("pip-oro").value), contrato: 100 };
-        case "GBPUSD":
-          return { etiqueta: "GBP/USD", pip: 0.0001, contrato: 100000 };
-        case "PERSONALIZADO":
-          return { etiqueta: "Personalizado", pip: num("pip-manual"), contrato: num("contrato-manual") };
-        default:
-          return { etiqueta: "EUR/USD", pip: 0.0001, contrato: 100000 };
-      }
-    }
-
-    function leerEntradas() {
-      return {
-        ...configInstrumento(),
-        balance: num("balance"),
-        modo: $("modo").value,
-        riesgoPct: num("riesgo-pct"),
-        riesgoUsd: num("riesgo-usd"),
-        slPips: num("sl-pips"),
-        minimo: parseFloat($("minimo").value)
-      };
-    }
-
-    // ===== CÁLCULO =====
-    function calcular(d) {
-      const numeros = [d.pip, d.contrato, d.balance, d.slPips, d.minimo];
-      if (!numeros.every(Number.isFinite)) {
-        throw new Error("Completa todos los campos con números válidos.");
-      }
-      if (d.balance <= 0) throw new Error("El balance debe ser mayor que cero.");
-      if (d.pip <= 0 || d.contrato <= 0) throw new Error("Revisa el tamaño del pip y las unidades por lote.");
-      if (d.slPips <= 0) throw new Error("El stop loss debe ser mayor que cero pips.");
-
-      let riesgoUsd;
-      if (d.modo === "pct") {
-        if (!(d.riesgoPct > 0 && d.riesgoPct <= 100)) {
-          throw new Error("El riesgo debe estar entre 0.01 % y 100 %.");
-        }
-        riesgoUsd = d.balance * d.riesgoPct / 100;
-      } else {
-        if (!(d.riesgoUsd > 0)) throw new Error("El monto de riesgo debe ser mayor que cero.");
-        if (d.riesgoUsd > d.balance) throw new Error("El riesgo no puede superar el balance de la cuenta.");
-        riesgoUsd = d.riesgoUsd;
-      }
-
-      const valorPipStd = d.pip * d.contrato;              // USD por pip con 1.0 lote estándar
-      const riesgoLoteStd = d.slPips * valorPipStd;         // USD perdidos con 1.0 lote si toca el stop
-      const microIdeal = riesgoUsd / riesgoLoteStd * 100;   // tamaño ideal en micro-lotes
-      const pasoMicro = Math.round(d.minimo * 100);         // 1, 10 o 100 micro-lotes
-      const pasos = Math.floor(microIdeal / pasoMicro + 1e-9);
-
-      if (pasos < 1) {
-        throw new Error(
-          `Con este riesgo el tamaño ideal es ${fDec.format(microIdeal)} micro-lotes, ` +
-          "menos que el mínimo de tu bróker. Aumenta el riesgo o el balance, o reduce el stop."
-        );
-      }
-
-      // Trabajar en micro-lotes (enteros) evita errores de coma flotante.
-      const micro = pasos * pasoMicro;
-      const riesgoRealUsd = micro * riesgoLoteStd / 100;
-
-      return {
-        d,
-        micro,
-        valorPipStd,
-        riesgoUsd,
-        riesgoRealUsd,
-        riesgoPlanPct: riesgoUsd / d.balance * 100,
-        riesgoRealPct: riesgoRealUsd / d.balance * 100,
-        objetivos: [1, 2, 3].map(r => ({
-          r,
-          pips: d.slPips * r,
-          ganancia: riesgoRealUsd * r
-        }))
-      };
-    }
-
-    // ===== RENDERIZADO =====
-    function mostrar(res) {
-      const { d, micro, valorPipStd, riesgoUsd, riesgoRealUsd, riesgoRealPct, objetivos } = res;
-
-      $("r-std").textContent = fStd.format(micro / 100);
-      $("r-mini").textContent = fMini.format(micro / 10);
-      $("r-micro").textContent = fMicro.format(micro);
-      $("r-riesgo").textContent = fUSD.format(riesgoRealUsd);
-      $("r-riesgo-pct").textContent = `${fPct.format(riesgoRealPct)} %`;
-      $("r-pip").textContent =
-        `Estándar ${fUSD.format(valorPipStd)} · Mini ${fUSD.format(valorPipStd / 10)} · Micro ${fUSD.format(valorPipStd / 100)}`;
-      $("r-nota").textContent =
-        `Riesgo planeado: ${fUSD.format(riesgoUsd)}. Riesgo real tras ajustar al lote mínimo: ${fUSD.format(riesgoRealUsd)}.`;
-
-      $("r-tabla").innerHTML = objetivos.map(o => `
-        <tr>
-          <td>${o.r}R</td>
-          <td>${fDec.format(o.pips)}</td>
-          <td>${fUSD.format(o.ganancia)}</td>
-        </tr>`).join("");
-
-      ultimoTexto =
-        `RiskCalc · ${d.etiqueta} · Balance ${fUSD.format(d.balance)} · ` +
-        `Riesgo ${fUSD.format(riesgoRealUsd)} (${fPct.format(riesgoRealPct)} %) · ` +
-        `Stop ${fDec.format(d.slPips)} pips · Tamaño: ${fStd.format(micro / 100)} estándar / ` +
-        `${fMini.format(micro / 10)} mini / ${fMicro.format(micro)} micro`;
-    }
-
-    function mostrarMensaje(texto, tipo) {
-      const el = $("mensaje");
-      if (!texto) {
-        el.hidden = true;
-        return;
-      }
-      el.hidden = false;
-      el.className = `msg ${tipo}`;
-      el.textContent = texto;
-    }
-
-    function actualizar() {
-      $("copia-estado").textContent = "";
-      try {
-        const res = calcular(leerEntradas());
-        mostrar(res);
-        $("resultado").hidden = false;
-        $("copiar").disabled = false;
-
-        if (res.riesgoPlanPct > 2) {
-          mostrarMensaje("El riesgo supera el 2 % del balance. Muchos traders operan entre 0.5 % y 1 %.", "warn");
-        } else {
-          mostrarMensaje("", "");
-        }
-      } catch (err) {
-        $("resultado").hidden = true;
-        $("copiar").disabled = true;
-        ultimoTexto = "";
-        mostrarMensaje(err.message, "error");
-      }
-    }
-
-    // ===== VISIBILIDAD DE CAMPOS =====
-    function actualizarVisibilidad() {
-      const inst = $("instrumento").value;
-      $("bloque-oro").hidden = inst !== "XAUUSD";
-      $("bloque-manual").hidden = inst !== "PERSONALIZADO";
-
-      const usaPorcentaje = $("modo").value === "pct";
-      $("bloque-pct").hidden = !usaPorcentaje;
-      $("bloque-usd").hidden = usaPorcentaje;
-    }
-
-    function marcarChip() {
-      document.querySelectorAll(".chip").forEach(btn => {
-        btn.setAttribute("aria-pressed", btn.dataset.preset === $("instrumento").value ? "true" : "false");
-      });
-    }
-
-    // ===== PERSISTENCIA (en el navegador del usuario) =====
-    function guardar() {
-      try {
-        const datos = {};
-        CAMPOS.forEach(id => { datos[id] = $(id).value; });
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(datos));
-      } catch (e) { /* el navegador puede bloquear el almacenamiento */ }
-    }
-
-    function cargar() {
-      try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (!raw) return;
-        const datos = JSON.parse(raw);
-        CAMPOS.forEach(id => {
-          if (datos[id] !== undefined) $(id).value = datos[id];
-        });
-      } catch (e) { /* datos dañados: se usan los valores por defecto */ }
-    }
-
-    function refrescar() {
-      actualizarVisibilidad();
-      marcarChip();
-      actualizar();
-      guardar();
-    }
-
-    function aplicarPreset(nombre) {
-      const p = PRESETS[nombre];
-      $("instrumento").value = p.instrumento;
-      if (p.pipOro) $("pip-oro").value = p.pipOro;
-      if (p.slPips) $("sl-pips").value = p.slPips;
-      if (p.riesgoPct) $("riesgo-pct").value = p.riesgoPct;
-      $("modo").value = "pct";
-      refrescar();
-    }
-
-    // ===== EVENTOS =====
-    document.querySelectorAll(".chip").forEach(btn => {
-      btn.addEventListener("click", () => aplicarPreset(btn.dataset.preset));
-    });
-
-    const form = $("calc");
-    form.addEventListener("submit", e => e.preventDefault());
-    form.addEventListener("input", refrescar);
-    form.addEventListener("change", refrescar);
-
-    $("copiar").addEventListener("click", async () => {
-      if (!ultimoTexto) return;
-      try {
-        await navigator.clipboard.writeText(ultimoTexto);
-        $("copia-estado").textContent = "Resultado copiado.";
-      } catch (e) {
-        $("copia-estado").textContent = "Tu navegador no permitió copiar. Intenta de nuevo.";
-      }
-    });
-
-    // ===== ANUNCIOS =====
-    // Si el ID no es válido, los espacios publicitarios se ocultan.
-    const anunciosActivos = /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT);
-    document.querySelectorAll(".ad-slot").forEach(slot => {
-      if (!anunciosActivos) {
-        slot.hidden = true;
-        return;
-      }
-      const ins = slot.querySelector("ins.adsbygoogle");
-      ins.setAttribute("data-ad-client", ADSENSE_CLIENT);
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    });
-
-    // ===== INICIO =====
-    cargar();
-    refrescar();
-  </script>
 </body>
 </html>
