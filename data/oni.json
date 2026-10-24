@@ -1,0 +1,4606 @@
+{
+ "actualizado": "2026-10-24T19:46:00.490Z",
+ "fuente": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+ "serie": [
+  {
+   "temporada": "DJF",
+   "anio": 1950,
+   "oni": -1.32
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1950,
+   "oni": -1.2
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1950,
+   "oni": -1.12
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1950,
+   "oni": -1.08
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1950,
+   "oni": -1.1
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1950,
+   "oni": -0.9
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1950,
+   "oni": -0.62
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1950,
+   "oni": -0.57
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1950,
+   "oni": -0.56
+  },
+  {
+   "temporada": "SON",
+   "anio": 1950,
+   "oni": -0.62
+  },
+  {
+   "temporada": "OND",
+   "anio": 1950,
+   "oni": -0.66
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1950,
+   "oni": -0.79
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1951,
+   "oni": -0.66
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1951,
+   "oni": -0.36
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1951,
+   "oni": -0.04
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1951,
+   "oni": 0.16
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1951,
+   "oni": 0.27
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1951,
+   "oni": 0.5
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1951,
+   "oni": 0.71
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1951,
+   "oni": 0.9
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1951,
+   "oni": 1.02
+  },
+  {
+   "temporada": "SON",
+   "anio": 1951,
+   "oni": 1.03
+  },
+  {
+   "temporada": "OND",
+   "anio": 1951,
+   "oni": 0.96
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1951,
+   "oni": 0.71
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1952,
+   "oni": 0.52
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1952,
+   "oni": 0.27
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1952,
+   "oni": 0.33
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1952,
+   "oni": 0.18
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1952,
+   "oni": -0.07
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1952,
+   "oni": -0.44
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1952,
+   "oni": -0.45
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1952,
+   "oni": -0.2
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1952,
+   "oni": 0.03
+  },
+  {
+   "temporada": "SON",
+   "anio": 1952,
+   "oni": 0.04
+  },
+  {
+   "temporada": "OND",
+   "anio": 1952,
+   "oni": -0.11
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1952,
+   "oni": 0.06
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1953,
+   "oni": 0.25
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1953,
+   "oni": 0.5
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1953,
+   "oni": 0.48
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1953,
+   "oni": 0.56
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1953,
+   "oni": 0.77
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1953,
+   "oni": 0.74
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1953,
+   "oni": 0.63
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1953,
+   "oni": 0.68
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1953,
+   "oni": 0.59
+  },
+  {
+   "temporada": "SON",
+   "anio": 1953,
+   "oni": 0.78
+  },
+  {
+   "temporada": "OND",
+   "anio": 1953,
+   "oni": 0.52
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1953,
+   "oni": 0.56
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1954,
+   "oni": 0.41
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1954,
+   "oni": 0.35
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1954,
+   "oni": 0.01
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1954,
+   "oni": -0.27
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1954,
+   "oni": -0.48
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1954,
+   "oni": -0.48
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1954,
+   "oni": -0.67
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1954,
+   "oni": -0.83
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1954,
+   "oni": -0.73
+  },
+  {
+   "temporada": "SON",
+   "anio": 1954,
+   "oni": -0.52
+  },
+  {
+   "temporada": "OND",
+   "anio": 1954,
+   "oni": -0.4
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1954,
+   "oni": -0.44
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1955,
+   "oni": -0.5
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1955,
+   "oni": -0.48
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1955,
+   "oni": -0.58
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1955,
+   "oni": -0.76
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1955,
+   "oni": -0.78
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1955,
+   "oni": -0.88
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1955,
+   "oni": -0.72
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1955,
+   "oni": -0.92
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1955,
+   "oni": -1.11
+  },
+  {
+   "temporada": "SON",
+   "anio": 1955,
+   "oni": -1.44
+  },
+  {
+   "temporada": "OND",
+   "anio": 1955,
+   "oni": -1.59
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1955,
+   "oni": -1.51
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1956,
+   "oni": -1.17
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1956,
+   "oni": -0.81
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1956,
+   "oni": -0.57
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1956,
+   "oni": -0.51
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1956,
+   "oni": -0.49
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1956,
+   "oni": -0.47
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1956,
+   "oni": -0.55
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1956,
+   "oni": -0.52
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1956,
+   "oni": -0.43
+  },
+  {
+   "temporada": "SON",
+   "anio": 1956,
+   "oni": -0.39
+  },
+  {
+   "temporada": "OND",
+   "anio": 1956,
+   "oni": -0.37
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1956,
+   "oni": -0.39
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1957,
+   "oni": -0.27
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1957,
+   "oni": -0.06
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1957,
+   "oni": 0.26
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1957,
+   "oni": 0.63
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1957,
+   "oni": 0.72
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1957,
+   "oni": 0.82
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1957,
+   "oni": 0.96
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1957,
+   "oni": 1.03
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1957,
+   "oni": 1.12
+  },
+  {
+   "temporada": "SON",
+   "anio": 1957,
+   "oni": 1.15
+  },
+  {
+   "temporada": "OND",
+   "anio": 1957,
+   "oni": 1.39
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1957,
+   "oni": 1.62
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1958,
+   "oni": 1.69
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1958,
+   "oni": 1.59
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1958,
+   "oni": 1.17
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1958,
+   "oni": 0.84
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1958,
+   "oni": 0.57
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1958,
+   "oni": 0.49
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1958,
+   "oni": 0.43
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1958,
+   "oni": 0.32
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1958,
+   "oni": 0.28
+  },
+  {
+   "temporada": "SON",
+   "anio": 1958,
+   "oni": 0.3
+  },
+  {
+   "temporada": "OND",
+   "anio": 1958,
+   "oni": 0.36
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1958,
+   "oni": 0.56
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1959,
+   "oni": 0.6
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1959,
+   "oni": 0.64
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1959,
+   "oni": 0.48
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1959,
+   "oni": 0.39
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1959,
+   "oni": 0.24
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1959,
+   "oni": 0.02
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1959,
+   "oni": -0.19
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1959,
+   "oni": -0.23
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1959,
+   "oni": -0.04
+  },
+  {
+   "temporada": "SON",
+   "anio": 1959,
+   "oni": 0.11
+  },
+  {
+   "temporada": "OND",
+   "anio": 1959,
+   "oni": 0.23
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1959,
+   "oni": 0.14
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1960,
+   "oni": 0.02
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1960,
+   "oni": 0.03
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1960,
+   "oni": 0.06
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1960,
+   "oni": 0.17
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1960,
+   "oni": 0.04
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1960,
+   "oni": 0
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1960,
+   "oni": 0.01
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1960,
+   "oni": 0.15
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1960,
+   "oni": 0.19
+  },
+  {
+   "temporada": "SON",
+   "anio": 1960,
+   "oni": 0.08
+  },
+  {
+   "temporada": "OND",
+   "anio": 1960,
+   "oni": -0.07
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1960,
+   "oni": -0.07
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1961,
+   "oni": 0
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1961,
+   "oni": 0.03
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1961,
+   "oni": 0.01
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1961,
+   "oni": 0.05
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1961,
+   "oni": 0.22
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1961,
+   "oni": 0.22
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1961,
+   "oni": 0.08
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1961,
+   "oni": -0.2
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1961,
+   "oni": -0.32
+  },
+  {
+   "temporada": "SON",
+   "anio": 1961,
+   "oni": -0.22
+  },
+  {
+   "temporada": "OND",
+   "anio": 1961,
+   "oni": -0.11
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1961,
+   "oni": -0.05
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1962,
+   "oni": -0.16
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1962,
+   "oni": -0.17
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1962,
+   "oni": -0.15
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1962,
+   "oni": -0.2
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1962,
+   "oni": -0.19
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1962,
+   "oni": -0.13
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1962,
+   "oni": 0
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1962,
+   "oni": -0.1
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1962,
+   "oni": -0.16
+  },
+  {
+   "temporada": "SON",
+   "anio": 1962,
+   "oni": -0.25
+  },
+  {
+   "temporada": "OND",
+   "anio": 1962,
+   "oni": -0.25
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1962,
+   "oni": -0.32
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1963,
+   "oni": -0.33
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1963,
+   "oni": -0.17
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1963,
+   "oni": 0.01
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1963,
+   "oni": 0.13
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1963,
+   "oni": 0.12
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1963,
+   "oni": 0.45
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1963,
+   "oni": 0.76
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1963,
+   "oni": 1.09
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1963,
+   "oni": 1.09
+  },
+  {
+   "temporada": "SON",
+   "anio": 1963,
+   "oni": 1.13
+  },
+  {
+   "temporada": "OND",
+   "anio": 1963,
+   "oni": 1.19
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1963,
+   "oni": 1.13
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1964,
+   "oni": 0.95
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1964,
+   "oni": 0.52
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1964,
+   "oni": 0.06
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1964,
+   "oni": -0.35
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1964,
+   "oni": -0.6
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1964,
+   "oni": -0.66
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1964,
+   "oni": -0.67
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1964,
+   "oni": -0.7
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1964,
+   "oni": -0.72
+  },
+  {
+   "temporada": "SON",
+   "anio": 1964,
+   "oni": -0.8
+  },
+  {
+   "temporada": "OND",
+   "anio": 1964,
+   "oni": -0.79
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1964,
+   "oni": -0.75
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1965,
+   "oni": -0.51
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1965,
+   "oni": -0.25
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1965,
+   "oni": -0.04
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1965,
+   "oni": 0.16
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1965,
+   "oni": 0.47
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1965,
+   "oni": 0.79
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1965,
+   "oni": 1.1
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1965,
+   "oni": 1.27
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1965,
+   "oni": 1.55
+  },
+  {
+   "temporada": "SON",
+   "anio": 1965,
+   "oni": 1.7
+  },
+  {
+   "temporada": "OND",
+   "anio": 1965,
+   "oni": 1.82
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1965,
+   "oni": 1.6
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1966,
+   "oni": 1.24
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1966,
+   "oni": 0.95
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1966,
+   "oni": 0.76
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1966,
+   "oni": 0.43
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1966,
+   "oni": 0.24
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1966,
+   "oni": 0.18
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1966,
+   "oni": 0.25
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1966,
+   "oni": 0.13
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1966,
+   "oni": -0.09
+  },
+  {
+   "temporada": "SON",
+   "anio": 1966,
+   "oni": -0.12
+  },
+  {
+   "temporada": "OND",
+   "anio": 1966,
+   "oni": -0.23
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1966,
+   "oni": -0.35
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1967,
+   "oni": -0.46
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1967,
+   "oni": -0.48
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1967,
+   "oni": -0.5
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1967,
+   "oni": -0.37
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1967,
+   "oni": -0.15
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1967,
+   "oni": 0.05
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1967,
+   "oni": -0.02
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1967,
+   "oni": -0.26
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1967,
+   "oni": -0.4
+  },
+  {
+   "temporada": "SON",
+   "anio": 1967,
+   "oni": -0.4
+  },
+  {
+   "temporada": "OND",
+   "anio": 1967,
+   "oni": -0.36
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1967,
+   "oni": -0.42
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1968,
+   "oni": -0.62
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1968,
+   "oni": -0.73
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1968,
+   "oni": -0.63
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1968,
+   "oni": -0.48
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1968,
+   "oni": -0.1
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1968,
+   "oni": 0.17
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1968,
+   "oni": 0.44
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1968,
+   "oni": 0.38
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1968,
+   "oni": 0.34
+  },
+  {
+   "temporada": "SON",
+   "anio": 1968,
+   "oni": 0.5
+  },
+  {
+   "temporada": "OND",
+   "anio": 1968,
+   "oni": 0.66
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1968,
+   "oni": 0.93
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1969,
+   "oni": 0.98
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1969,
+   "oni": 0.98
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1969,
+   "oni": 0.77
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1969,
+   "oni": 0.69
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1969,
+   "oni": 0.62
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1969,
+   "oni": 0.48
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1969,
+   "oni": 0.37
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1969,
+   "oni": 0.41
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1969,
+   "oni": 0.61
+  },
+  {
+   "temporada": "SON",
+   "anio": 1969,
+   "oni": 0.71
+  },
+  {
+   "temporada": "OND",
+   "anio": 1969,
+   "oni": 0.81
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1969,
+   "oni": 0.71
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1970,
+   "oni": 0.46
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1970,
+   "oni": 0.23
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1970,
+   "oni": 0.23
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1970,
+   "oni": 0.28
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1970,
+   "oni": 0.11
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1970,
+   "oni": -0.26
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1970,
+   "oni": -0.55
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1970,
+   "oni": -0.72
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1970,
+   "oni": -0.69
+  },
+  {
+   "temporada": "SON",
+   "anio": 1970,
+   "oni": -0.72
+  },
+  {
+   "temporada": "OND",
+   "anio": 1970,
+   "oni": -0.78
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1970,
+   "oni": -1.1
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1971,
+   "oni": -1.29
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1971,
+   "oni": -1.36
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1971,
+   "oni": -1.08
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1971,
+   "oni": -0.81
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1971,
+   "oni": -0.72
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1971,
+   "oni": -0.69
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1971,
+   "oni": -0.68
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1971,
+   "oni": -0.6
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1971,
+   "oni": -0.68
+  },
+  {
+   "temporada": "SON",
+   "anio": 1971,
+   "oni": -0.78
+  },
+  {
+   "temporada": "OND",
+   "anio": 1971,
+   "oni": -0.86
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1971,
+   "oni": -0.78
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1972,
+   "oni": -0.57
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1972,
+   "oni": -0.27
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1972,
+   "oni": 0.04
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1972,
+   "oni": 0.25
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1972,
+   "oni": 0.48
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1972,
+   "oni": 0.7
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1972,
+   "oni": 1
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1972,
+   "oni": 1.26
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1972,
+   "oni": 1.49
+  },
+  {
+   "temporada": "SON",
+   "anio": 1972,
+   "oni": 1.69
+  },
+  {
+   "temporada": "OND",
+   "anio": 1972,
+   "oni": 1.84
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1972,
+   "oni": 1.77
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1973,
+   "oni": 1.55
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1973,
+   "oni": 1.13
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1973,
+   "oni": 0.56
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1973,
+   "oni": -0.03
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1973,
+   "oni": -0.51
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1973,
+   "oni": -0.8
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1973,
+   "oni": -0.99
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1973,
+   "oni": -1.11
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1973,
+   "oni": -1.26
+  },
+  {
+   "temporada": "SON",
+   "anio": 1973,
+   "oni": -1.58
+  },
+  {
+   "temporada": "OND",
+   "anio": 1973,
+   "oni": -1.89
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1973,
+   "oni": -2.04
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1974,
+   "oni": -1.87
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1974,
+   "oni": -1.59
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1974,
+   "oni": -1.24
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1974,
+   "oni": -0.99
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1974,
+   "oni": -0.71
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1974,
+   "oni": -0.64
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1974,
+   "oni": -0.46
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1974,
+   "oni": -0.4
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1974,
+   "oni": -0.47
+  },
+  {
+   "temporada": "SON",
+   "anio": 1974,
+   "oni": -0.69
+  },
+  {
+   "temporada": "OND",
+   "anio": 1974,
+   "oni": -0.88
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1974,
+   "oni": -0.71
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1975,
+   "oni": -0.56
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1975,
+   "oni": -0.55
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1975,
+   "oni": -0.61
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1975,
+   "oni": -0.66
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1975,
+   "oni": -0.8
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1975,
+   "oni": -0.92
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1975,
+   "oni": -1.08
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1975,
+   "oni": -1.12
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1975,
+   "oni": -1.29
+  },
+  {
+   "temporada": "SON",
+   "anio": 1975,
+   "oni": -1.32
+  },
+  {
+   "temporada": "OND",
+   "anio": 1975,
+   "oni": -1.47
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1975,
+   "oni": -1.58
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1976,
+   "oni": -1.49
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1976,
+   "oni": -1.11
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1976,
+   "oni": -0.65
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1976,
+   "oni": -0.45
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1976,
+   "oni": -0.23
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1976,
+   "oni": 0
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1976,
+   "oni": 0.23
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1976,
+   "oni": 0.4
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1976,
+   "oni": 0.6
+  },
+  {
+   "temporada": "SON",
+   "anio": 1976,
+   "oni": 0.79
+  },
+  {
+   "temporada": "OND",
+   "anio": 1976,
+   "oni": 0.81
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1976,
+   "oni": 0.84
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1977,
+   "oni": 0.71
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1977,
+   "oni": 0.66
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1977,
+   "oni": 0.33
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1977,
+   "oni": 0.26
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1977,
+   "oni": 0.26
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1977,
+   "oni": 0.46
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1977,
+   "oni": 0.39
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1977,
+   "oni": 0.35
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1977,
+   "oni": 0.45
+  },
+  {
+   "temporada": "SON",
+   "anio": 1977,
+   "oni": 0.68
+  },
+  {
+   "temporada": "OND",
+   "anio": 1977,
+   "oni": 0.84
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1977,
+   "oni": 0.82
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1978,
+   "oni": 0.71
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1978,
+   "oni": 0.52
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1978,
+   "oni": 0.17
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1978,
+   "oni": -0.06
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1978,
+   "oni": -0.28
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1978,
+   "oni": -0.24
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1978,
+   "oni": -0.37
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1978,
+   "oni": -0.37
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1978,
+   "oni": -0.44
+  },
+  {
+   "temporada": "SON",
+   "anio": 1978,
+   "oni": -0.27
+  },
+  {
+   "temporada": "OND",
+   "anio": 1978,
+   "oni": -0.07
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1978,
+   "oni": 0.11
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1979,
+   "oni": 0.19
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1979,
+   "oni": 0.21
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1979,
+   "oni": 0.29
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1979,
+   "oni": 0.32
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1979,
+   "oni": 0.29
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1979,
+   "oni": 0.14
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1979,
+   "oni": 0.09
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1979,
+   "oni": 0.22
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1979,
+   "oni": 0.34
+  },
+  {
+   "temporada": "SON",
+   "anio": 1979,
+   "oni": 0.47
+  },
+  {
+   "temporada": "OND",
+   "anio": 1979,
+   "oni": 0.5
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1979,
+   "oni": 0.64
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1980,
+   "oni": 0.62
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1980,
+   "oni": 0.47
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1980,
+   "oni": 0.35
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1980,
+   "oni": 0.34
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1980,
+   "oni": 0.45
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1980,
+   "oni": 0.4
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1980,
+   "oni": 0.18
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1980,
+   "oni": -0.06
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1980,
+   "oni": -0.17
+  },
+  {
+   "temporada": "SON",
+   "anio": 1980,
+   "oni": -0.07
+  },
+  {
+   "temporada": "OND",
+   "anio": 1980,
+   "oni": 0.08
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1980,
+   "oni": -0.05
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1981,
+   "oni": -0.27
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1981,
+   "oni": -0.42
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1981,
+   "oni": -0.41
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1981,
+   "oni": -0.27
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1981,
+   "oni": -0.28
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1981,
+   "oni": -0.27
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1981,
+   "oni": -0.28
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1981,
+   "oni": -0.23
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1981,
+   "oni": -0.08
+  },
+  {
+   "temporada": "SON",
+   "anio": 1981,
+   "oni": -0.16
+  },
+  {
+   "temporada": "OND",
+   "anio": 1981,
+   "oni": -0.19
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1981,
+   "oni": -0.14
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1982,
+   "oni": -0.05
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1982,
+   "oni": 0.02
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1982,
+   "oni": 0.07
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1982,
+   "oni": 0.34
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1982,
+   "oni": 0.65
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1982,
+   "oni": 0.73
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1982,
+   "oni": 0.78
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1982,
+   "oni": 0.99
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1982,
+   "oni": 1.45
+  },
+  {
+   "temporada": "SON",
+   "anio": 1982,
+   "oni": 1.82
+  },
+  {
+   "temporada": "OND",
+   "anio": 1982,
+   "oni": 2.03
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1982,
+   "oni": 2.12
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1983,
+   "oni": 2.14
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1983,
+   "oni": 1.91
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1983,
+   "oni": 1.52
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1983,
+   "oni": 1.23
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1983,
+   "oni": 0.95
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1983,
+   "oni": 0.62
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1983,
+   "oni": 0.25
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1983,
+   "oni": -0.06
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1983,
+   "oni": -0.43
+  },
+  {
+   "temporada": "SON",
+   "anio": 1983,
+   "oni": -0.76
+  },
+  {
+   "temporada": "OND",
+   "anio": 1983,
+   "oni": -0.96
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1983,
+   "oni": -0.89
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1984,
+   "oni": -0.63
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1984,
+   "oni": -0.51
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1984,
+   "oni": -0.38
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1984,
+   "oni": -0.47
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1984,
+   "oni": -0.55
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1984,
+   "oni": -0.52
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1984,
+   "oni": -0.39
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1984,
+   "oni": -0.22
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1984,
+   "oni": -0.32
+  },
+  {
+   "temporada": "SON",
+   "anio": 1984,
+   "oni": -0.62
+  },
+  {
+   "temporada": "OND",
+   "anio": 1984,
+   "oni": -0.95
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1984,
+   "oni": -1.06
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1985,
+   "oni": -1.01
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1985,
+   "oni": -0.86
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1985,
+   "oni": -0.85
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1985,
+   "oni": -0.8
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1985,
+   "oni": -0.79
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1985,
+   "oni": -0.6
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1985,
+   "oni": -0.44
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1985,
+   "oni": -0.33
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1985,
+   "oni": -0.31
+  },
+  {
+   "temporada": "SON",
+   "anio": 1985,
+   "oni": -0.3
+  },
+  {
+   "temporada": "OND",
+   "anio": 1985,
+   "oni": -0.28
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1985,
+   "oni": -0.36
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1986,
+   "oni": -0.4
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1986,
+   "oni": -0.38
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1986,
+   "oni": -0.25
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1986,
+   "oni": -0.17
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1986,
+   "oni": -0.09
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1986,
+   "oni": 0.02
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1986,
+   "oni": 0.24
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1986,
+   "oni": 0.46
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1986,
+   "oni": 0.64
+  },
+  {
+   "temporada": "SON",
+   "anio": 1986,
+   "oni": 0.86
+  },
+  {
+   "temporada": "OND",
+   "anio": 1986,
+   "oni": 1.06
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1986,
+   "oni": 1.21
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1987,
+   "oni": 1.18
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1987,
+   "oni": 1.13
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1987,
+   "oni": 1.02
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1987,
+   "oni": 0.94
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1987,
+   "oni": 0.95
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1987,
+   "oni": 1.11
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1987,
+   "oni": 1.3
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1987,
+   "oni": 1.46
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1987,
+   "oni": 1.49
+  },
+  {
+   "temporada": "SON",
+   "anio": 1987,
+   "oni": 1.41
+  },
+  {
+   "temporada": "OND",
+   "anio": 1987,
+   "oni": 1.2
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1987,
+   "oni": 1
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1988,
+   "oni": 0.63
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1988,
+   "oni": 0.37
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1988,
+   "oni": -0.03
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1988,
+   "oni": -0.45
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1988,
+   "oni": -0.99
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1988,
+   "oni": -1.3
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1988,
+   "oni": -1.3
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1988,
+   "oni": -1.14
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1988,
+   "oni": -1.27
+  },
+  {
+   "temporada": "SON",
+   "anio": 1988,
+   "oni": -1.54
+  },
+  {
+   "temporada": "OND",
+   "anio": 1988,
+   "oni": -1.81
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1988,
+   "oni": -1.85
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1989,
+   "oni": -1.64
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1989,
+   "oni": -1.38
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1989,
+   "oni": -1.09
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1989,
+   "oni": -0.85
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1989,
+   "oni": -0.61
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1989,
+   "oni": -0.4
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1989,
+   "oni": -0.37
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1989,
+   "oni": -0.36
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1989,
+   "oni": -0.33
+  },
+  {
+   "temporada": "SON",
+   "anio": 1989,
+   "oni": -0.25
+  },
+  {
+   "temporada": "OND",
+   "anio": 1989,
+   "oni": -0.12
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1989,
+   "oni": -0.04
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1990,
+   "oni": 0.18
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1990,
+   "oni": 0.19
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1990,
+   "oni": 0.3
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1990,
+   "oni": 0.27
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1990,
+   "oni": 0.25
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1990,
+   "oni": 0.25
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1990,
+   "oni": 0.26
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1990,
+   "oni": 0.32
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1990,
+   "oni": 0.31
+  },
+  {
+   "temporada": "SON",
+   "anio": 1990,
+   "oni": 0.27
+  },
+  {
+   "temporada": "OND",
+   "anio": 1990,
+   "oni": 0.31
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1990,
+   "oni": 0.34
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1991,
+   "oni": 0.35
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1991,
+   "oni": 0.26
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1991,
+   "oni": 0.23
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1991,
+   "oni": 0.29
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1991,
+   "oni": 0.49
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1991,
+   "oni": 0.63
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1991,
+   "oni": 0.77
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1991,
+   "oni": 0.67
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1991,
+   "oni": 0.72
+  },
+  {
+   "temporada": "SON",
+   "anio": 1991,
+   "oni": 0.83
+  },
+  {
+   "temporada": "OND",
+   "anio": 1991,
+   "oni": 1.18
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1991,
+   "oni": 1.43
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1992,
+   "oni": 1.54
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1992,
+   "oni": 1.5
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1992,
+   "oni": 1.4
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1992,
+   "oni": 1.3
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1992,
+   "oni": 1.08
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1992,
+   "oni": 0.72
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1992,
+   "oni": 0.35
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1992,
+   "oni": 0.08
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1992,
+   "oni": -0.15
+  },
+  {
+   "temporada": "SON",
+   "anio": 1992,
+   "oni": -0.22
+  },
+  {
+   "temporada": "OND",
+   "anio": 1992,
+   "oni": -0.24
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1992,
+   "oni": -0.05
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1993,
+   "oni": 0.13
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1993,
+   "oni": 0.31
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1993,
+   "oni": 0.5
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1993,
+   "oni": 0.73
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1993,
+   "oni": 0.76
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1993,
+   "oni": 0.56
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1993,
+   "oni": 0.28
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1993,
+   "oni": 0.22
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1993,
+   "oni": 0.2
+  },
+  {
+   "temporada": "SON",
+   "anio": 1993,
+   "oni": 0.2
+  },
+  {
+   "temporada": "OND",
+   "anio": 1993,
+   "oni": 0.2
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1993,
+   "oni": 0.19
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1994,
+   "oni": 0.07
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1994,
+   "oni": 0
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1994,
+   "oni": 0.04
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1994,
+   "oni": 0.17
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1994,
+   "oni": 0.25
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1994,
+   "oni": 0.23
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1994,
+   "oni": 0.3
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1994,
+   "oni": 0.3
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1994,
+   "oni": 0.47
+  },
+  {
+   "temporada": "SON",
+   "anio": 1994,
+   "oni": 0.66
+  },
+  {
+   "temporada": "OND",
+   "anio": 1994,
+   "oni": 0.93
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1994,
+   "oni": 0.97
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1995,
+   "oni": 0.88
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1995,
+   "oni": 0.65
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1995,
+   "oni": 0.46
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1995,
+   "oni": 0.19
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1995,
+   "oni": 0.03
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1995,
+   "oni": -0.11
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1995,
+   "oni": -0.3
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1995,
+   "oni": -0.55
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1995,
+   "oni": -0.81
+  },
+  {
+   "temporada": "SON",
+   "anio": 1995,
+   "oni": -0.97
+  },
+  {
+   "temporada": "OND",
+   "anio": 1995,
+   "oni": -1.05
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1995,
+   "oni": -1.01
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1996,
+   "oni": -0.88
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1996,
+   "oni": -0.7
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1996,
+   "oni": -0.52
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1996,
+   "oni": -0.36
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1996,
+   "oni": -0.25
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1996,
+   "oni": -0.24
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1996,
+   "oni": -0.22
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1996,
+   "oni": -0.27
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1996,
+   "oni": -0.3
+  },
+  {
+   "temporada": "SON",
+   "anio": 1996,
+   "oni": -0.33
+  },
+  {
+   "temporada": "OND",
+   "anio": 1996,
+   "oni": -0.39
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1996,
+   "oni": -0.41
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1997,
+   "oni": -0.41
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1997,
+   "oni": -0.26
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1997,
+   "oni": -0.03
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1997,
+   "oni": 0.3
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1997,
+   "oni": 0.71
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1997,
+   "oni": 1.13
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1997,
+   "oni": 1.48
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1997,
+   "oni": 1.79
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1997,
+   "oni": 2.04
+  },
+  {
+   "temporada": "SON",
+   "anio": 1997,
+   "oni": 2.24
+  },
+  {
+   "temporada": "OND",
+   "anio": 1997,
+   "oni": 2.34
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1997,
+   "oni": 2.37
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1998,
+   "oni": 2.22
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1998,
+   "oni": 1.91
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1998,
+   "oni": 1.4
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1998,
+   "oni": 1.03
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1998,
+   "oni": 0.4
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1998,
+   "oni": -0.08
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1998,
+   "oni": -0.63
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1998,
+   "oni": -0.83
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1998,
+   "oni": -1.02
+  },
+  {
+   "temporada": "SON",
+   "anio": 1998,
+   "oni": -1.12
+  },
+  {
+   "temporada": "OND",
+   "anio": 1998,
+   "oni": -1.31
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1998,
+   "oni": -1.47
+  },
+  {
+   "temporada": "DJF",
+   "anio": 1999,
+   "oni": -1.51
+  },
+  {
+   "temporada": "JFM",
+   "anio": 1999,
+   "oni": -1.25
+  },
+  {
+   "temporada": "FMA",
+   "anio": 1999,
+   "oni": -0.93
+  },
+  {
+   "temporada": "MAM",
+   "anio": 1999,
+   "oni": -0.8
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 1999,
+   "oni": -0.79
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 1999,
+   "oni": -0.84
+  },
+  {
+   "temporada": "JJA",
+   "anio": 1999,
+   "oni": -0.9
+  },
+  {
+   "temporada": "JAS",
+   "anio": 1999,
+   "oni": -0.94
+  },
+  {
+   "temporada": "ASO",
+   "anio": 1999,
+   "oni": -1
+  },
+  {
+   "temporada": "SON",
+   "anio": 1999,
+   "oni": -1.13
+  },
+  {
+   "temporada": "OND",
+   "anio": 1999,
+   "oni": -1.35
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 1999,
+   "oni": -1.53
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2000,
+   "oni": -1.47
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2000,
+   "oni": -1.26
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2000,
+   "oni": -0.98
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2000,
+   "oni": -0.81
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2000,
+   "oni": -0.67
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2000,
+   "oni": -0.62
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2000,
+   "oni": -0.48
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2000,
+   "oni": -0.4
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2000,
+   "oni": -0.42
+  },
+  {
+   "temporada": "SON",
+   "anio": 2000,
+   "oni": -0.54
+  },
+  {
+   "temporada": "OND",
+   "anio": 2000,
+   "oni": -0.76
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2000,
+   "oni": -0.78
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2001,
+   "oni": -0.76
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2001,
+   "oni": -0.54
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2001,
+   "oni": -0.43
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2001,
+   "oni": -0.29
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2001,
+   "oni": -0.19
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2001,
+   "oni": -0.08
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2001,
+   "oni": -0.05
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2001,
+   "oni": -0.13
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2001,
+   "oni": -0.15
+  },
+  {
+   "temporada": "SON",
+   "anio": 2001,
+   "oni": -0.26
+  },
+  {
+   "temporada": "OND",
+   "anio": 2001,
+   "oni": -0.33
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2001,
+   "oni": -0.32
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2002,
+   "oni": -0.15
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2002,
+   "oni": 0.07
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2002,
+   "oni": 0.11
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2002,
+   "oni": 0.15
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2002,
+   "oni": 0.3
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2002,
+   "oni": 0.45
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2002,
+   "oni": 0.57
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2002,
+   "oni": 0.63
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2002,
+   "oni": 0.78
+  },
+  {
+   "temporada": "SON",
+   "anio": 2002,
+   "oni": 0.99
+  },
+  {
+   "temporada": "OND",
+   "anio": 2002,
+   "oni": 1.19
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2002,
+   "oni": 1.08
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2003,
+   "oni": 0.9
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2003,
+   "oni": 0.59
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2003,
+   "oni": 0.38
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2003,
+   "oni": -0.01
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2003,
+   "oni": -0.18
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2003,
+   "oni": -0.13
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2003,
+   "oni": 0.09
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2003,
+   "oni": 0.14
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2003,
+   "oni": 0.23
+  },
+  {
+   "temporada": "SON",
+   "anio": 2003,
+   "oni": 0.23
+  },
+  {
+   "temporada": "OND",
+   "anio": 2003,
+   "oni": 0.29
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2003,
+   "oni": 0.29
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2004,
+   "oni": 0.34
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2004,
+   "oni": 0.27
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2004,
+   "oni": 0.19
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2004,
+   "oni": 0.1
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2004,
+   "oni": 0.12
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2004,
+   "oni": 0.22
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2004,
+   "oni": 0.39
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2004,
+   "oni": 0.54
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2004,
+   "oni": 0.58
+  },
+  {
+   "temporada": "SON",
+   "anio": 2004,
+   "oni": 0.61
+  },
+  {
+   "temporada": "OND",
+   "anio": 2004,
+   "oni": 0.64
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2004,
+   "oni": 0.71
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2005,
+   "oni": 0.62
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2005,
+   "oni": 0.55
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2005,
+   "oni": 0.4
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2005,
+   "oni": 0.37
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2005,
+   "oni": 0.27
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2005,
+   "oni": 0.09
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2005,
+   "oni": -0.04
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2005,
+   "oni": -0.14
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2005,
+   "oni": -0.11
+  },
+  {
+   "temporada": "SON",
+   "anio": 2005,
+   "oni": -0.27
+  },
+  {
+   "temporada": "OND",
+   "anio": 2005,
+   "oni": -0.57
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2005,
+   "oni": -0.82
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2006,
+   "oni": -0.86
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2006,
+   "oni": -0.8
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2006,
+   "oni": -0.63
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2006,
+   "oni": -0.45
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2006,
+   "oni": -0.19
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2006,
+   "oni": -0.05
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2006,
+   "oni": 0.12
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2006,
+   "oni": 0.33
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2006,
+   "oni": 0.54
+  },
+  {
+   "temporada": "SON",
+   "anio": 2006,
+   "oni": 0.71
+  },
+  {
+   "temporada": "OND",
+   "anio": 2006,
+   "oni": 0.88
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2006,
+   "oni": 0.88
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2007,
+   "oni": 0.62
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2007,
+   "oni": 0.19
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2007,
+   "oni": -0.12
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2007,
+   "oni": -0.32
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2007,
+   "oni": -0.34
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2007,
+   "oni": -0.41
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2007,
+   "oni": -0.49
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2007,
+   "oni": -0.77
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2007,
+   "oni": -1.05
+  },
+  {
+   "temporada": "SON",
+   "anio": 2007,
+   "oni": -1.38
+  },
+  {
+   "temporada": "OND",
+   "anio": 2007,
+   "oni": -1.57
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2007,
+   "oni": -1.72
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2008,
+   "oni": -1.76
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2008,
+   "oni": -1.61
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2008,
+   "oni": -1.37
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2008,
+   "oni": -1.05
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2008,
+   "oni": -0.85
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2008,
+   "oni": -0.56
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2008,
+   "oni": -0.33
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2008,
+   "oni": -0.2
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2008,
+   "oni": -0.25
+  },
+  {
+   "temporada": "SON",
+   "anio": 2008,
+   "oni": -0.36
+  },
+  {
+   "temporada": "OND",
+   "anio": 2008,
+   "oni": -0.57
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2008,
+   "oni": -0.79
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2009,
+   "oni": -0.89
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2009,
+   "oni": -0.84
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2009,
+   "oni": -0.63
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2009,
+   "oni": -0.35
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2009,
+   "oni": 0.03
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2009,
+   "oni": 0.34
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2009,
+   "oni": 0.5
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2009,
+   "oni": 0.56
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2009,
+   "oni": 0.66
+  },
+  {
+   "temporada": "SON",
+   "anio": 2009,
+   "oni": 0.92
+  },
+  {
+   "temporada": "OND",
+   "anio": 2009,
+   "oni": 1.31
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2009,
+   "oni": 1.5
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2010,
+   "oni": 1.47
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2010,
+   "oni": 1.21
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2010,
+   "oni": 0.88
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2010,
+   "oni": 0.38
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2010,
+   "oni": -0.16
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2010,
+   "oni": -0.66
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2010,
+   "oni": -0.98
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2010,
+   "oni": -1.24
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2010,
+   "oni": -1.43
+  },
+  {
+   "temporada": "SON",
+   "anio": 2010,
+   "oni": -1.54
+  },
+  {
+   "temporada": "OND",
+   "anio": 2010,
+   "oni": -1.57
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2010,
+   "oni": -1.48
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2011,
+   "oni": -1.29
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2011,
+   "oni": -1.06
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2011,
+   "oni": -0.85
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2011,
+   "oni": -0.68
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2011,
+   "oni": -0.5
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2011,
+   "oni": -0.34
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2011,
+   "oni": -0.37
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2011,
+   "oni": -0.5
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2011,
+   "oni": -0.76
+  },
+  {
+   "temporada": "SON",
+   "anio": 2011,
+   "oni": -0.94
+  },
+  {
+   "temporada": "OND",
+   "anio": 2011,
+   "oni": -1.02
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2011,
+   "oni": -0.92
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2012,
+   "oni": -0.71
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2012,
+   "oni": -0.56
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2012,
+   "oni": -0.44
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2012,
+   "oni": -0.35
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2012,
+   "oni": -0.18
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2012,
+   "oni": 0.03
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2012,
+   "oni": 0.28
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2012,
+   "oni": 0.39
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2012,
+   "oni": 0.37
+  },
+  {
+   "temporada": "SON",
+   "anio": 2012,
+   "oni": 0.28
+  },
+  {
+   "temporada": "OND",
+   "anio": 2012,
+   "oni": 0.13
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2012,
+   "oni": -0.03
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2013,
+   "oni": -0.24
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2013,
+   "oni": -0.28
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2013,
+   "oni": -0.23
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2013,
+   "oni": -0.2
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2013,
+   "oni": -0.3
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2013,
+   "oni": -0.38
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2013,
+   "oni": -0.45
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2013,
+   "oni": -0.34
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2013,
+   "oni": -0.32
+  },
+  {
+   "temporada": "SON",
+   "anio": 2013,
+   "oni": -0.14
+  },
+  {
+   "temporada": "OND",
+   "anio": 2013,
+   "oni": -0.12
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2013,
+   "oni": -0.11
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2014,
+   "oni": -0.24
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2014,
+   "oni": -0.21
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2014,
+   "oni": -0.02
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2014,
+   "oni": 0.25
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2014,
+   "oni": 0.35
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2014,
+   "oni": 0.22
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2014,
+   "oni": 0.07
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2014,
+   "oni": 0.07
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2014,
+   "oni": 0.24
+  },
+  {
+   "temporada": "SON",
+   "anio": 2014,
+   "oni": 0.51
+  },
+  {
+   "temporada": "OND",
+   "anio": 2014,
+   "oni": 0.7
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2014,
+   "oni": 0.8
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2015,
+   "oni": 0.73
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2015,
+   "oni": 0.65
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2015,
+   "oni": 0.72
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2015,
+   "oni": 0.86
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2015,
+   "oni": 1.04
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2015,
+   "oni": 1.19
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2015,
+   "oni": 1.44
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2015,
+   "oni": 1.73
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2015,
+   "oni": 2.02
+  },
+  {
+   "temporada": "SON",
+   "anio": 2015,
+   "oni": 2.28
+  },
+  {
+   "temporada": "OND",
+   "anio": 2015,
+   "oni": 2.45
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2015,
+   "oni": 2.59
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2016,
+   "oni": 2.5
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2016,
+   "oni": 2.21
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2016,
+   "oni": 1.69
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2016,
+   "oni": 1.11
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2016,
+   "oni": 0.57
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2016,
+   "oni": 0.09
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2016,
+   "oni": -0.19
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2016,
+   "oni": -0.34
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2016,
+   "oni": -0.42
+  },
+  {
+   "temporada": "SON",
+   "anio": 2016,
+   "oni": -0.51
+  },
+  {
+   "temporada": "OND",
+   "anio": 2016,
+   "oni": -0.49
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2016,
+   "oni": -0.37
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2017,
+   "oni": -0.08
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2017,
+   "oni": 0.08
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2017,
+   "oni": 0.27
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2017,
+   "oni": 0.32
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2017,
+   "oni": 0.35
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2017,
+   "oni": 0.32
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2017,
+   "oni": 0.14
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2017,
+   "oni": -0.07
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2017,
+   "oni": -0.23
+  },
+  {
+   "temporada": "SON",
+   "anio": 2017,
+   "oni": -0.44
+  },
+  {
+   "temporada": "OND",
+   "anio": 2017,
+   "oni": -0.61
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2017,
+   "oni": -0.76
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2018,
+   "oni": -0.71
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2018,
+   "oni": -0.67
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2018,
+   "oni": -0.55
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2018,
+   "oni": -0.35
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2018,
+   "oni": -0.07
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2018,
+   "oni": 0.13
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2018,
+   "oni": 0.2
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2018,
+   "oni": 0.3
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2018,
+   "oni": 0.52
+  },
+  {
+   "temporada": "SON",
+   "anio": 2018,
+   "oni": 0.82
+  },
+  {
+   "temporada": "OND",
+   "anio": 2018,
+   "oni": 1.04
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2018,
+   "oni": 1.05
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2019,
+   "oni": 0.99
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2019,
+   "oni": 0.94
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2019,
+   "oni": 0.87
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2019,
+   "oni": 0.82
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2019,
+   "oni": 0.71
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2019,
+   "oni": 0.59
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2019,
+   "oni": 0.38
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2019,
+   "oni": 0.2
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2019,
+   "oni": 0.31
+  },
+  {
+   "temporada": "SON",
+   "anio": 2019,
+   "oni": 0.51
+  },
+  {
+   "temporada": "OND",
+   "anio": 2019,
+   "oni": 0.72
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2019,
+   "oni": 0.75
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2020,
+   "oni": 0.71
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2020,
+   "oni": 0.66
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2020,
+   "oni": 0.57
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2020,
+   "oni": 0.33
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2020,
+   "oni": 0.04
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2020,
+   "oni": -0.18
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2020,
+   "oni": -0.29
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2020,
+   "oni": -0.43
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2020,
+   "oni": -0.77
+  },
+  {
+   "temporada": "SON",
+   "anio": 2020,
+   "oni": -1
+  },
+  {
+   "temporada": "OND",
+   "anio": 2020,
+   "oni": -1.11
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2020,
+   "oni": -1.06
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2021,
+   "oni": -0.99
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2021,
+   "oni": -0.85
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2021,
+   "oni": -0.74
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2021,
+   "oni": -0.56
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2021,
+   "oni": -0.4
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2021,
+   "oni": -0.31
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2021,
+   "oni": -0.35
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2021,
+   "oni": -0.46
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2021,
+   "oni": -0.64
+  },
+  {
+   "temporada": "SON",
+   "anio": 2021,
+   "oni": -0.77
+  },
+  {
+   "temporada": "OND",
+   "anio": 2021,
+   "oni": -0.91
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2021,
+   "oni": -0.83
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2022,
+   "oni": -0.76
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2022,
+   "oni": -0.68
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2022,
+   "oni": -0.77
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2022,
+   "oni": -0.86
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2022,
+   "oni": -0.83
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2022,
+   "oni": -0.73
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2022,
+   "oni": -0.7
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2022,
+   "oni": -0.78
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2022,
+   "oni": -0.87
+  },
+  {
+   "temporada": "SON",
+   "anio": 2022,
+   "oni": -0.89
+  },
+  {
+   "temporada": "OND",
+   "anio": 2022,
+   "oni": -0.82
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2022,
+   "oni": -0.7
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2023,
+   "oni": -0.55
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2023,
+   "oni": -0.33
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2023,
+   "oni": -0.11
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2023,
+   "oni": 0.19
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2023,
+   "oni": 0.46
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2023,
+   "oni": 0.73
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2023,
+   "oni": 1
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2023,
+   "oni": 1.25
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2023,
+   "oni": 1.5
+  },
+  {
+   "temporada": "SON",
+   "anio": 2023,
+   "oni": 1.74
+  },
+  {
+   "temporada": "OND",
+   "anio": 2023,
+   "oni": 1.9
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2023,
+   "oni": 1.99
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2024,
+   "oni": 1.84
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2024,
+   "oni": 1.53
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2024,
+   "oni": 1.18
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2024,
+   "oni": 0.77
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2024,
+   "oni": 0.43
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2024,
+   "oni": 0.18
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2024,
+   "oni": 0.06
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2024,
+   "oni": -0.04
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2024,
+   "oni": -0.12
+  },
+  {
+   "temporada": "SON",
+   "anio": 2024,
+   "oni": -0.19
+  },
+  {
+   "temporada": "OND",
+   "anio": 2024,
+   "oni": -0.29
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2024,
+   "oni": -0.43
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2025,
+   "oni": -0.46
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2025,
+   "oni": -0.22
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2025,
+   "oni": -0.08
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2025,
+   "oni": 0.02
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2025,
+   "oni": -0.04
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2025,
+   "oni": -0.02
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2025,
+   "oni": -0.11
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2025,
+   "oni": -0.26
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2025,
+   "oni": -0.43
+  },
+  {
+   "temporada": "SON",
+   "anio": 2025,
+   "oni": -0.57
+  },
+  {
+   "temporada": "OND",
+   "anio": 2025,
+   "oni": -0.61
+  },
+  {
+   "temporada": "NDJ",
+   "anio": 2025,
+   "oni": -0.6
+  },
+  {
+   "temporada": "DJF",
+   "anio": 2026,
+   "oni": -0.39
+  },
+  {
+   "temporada": "JFM",
+   "anio": 2026,
+   "oni": -0.21
+  },
+  {
+   "temporada": "FMA",
+   "anio": 2026,
+   "oni": 0.11
+  },
+  {
+   "temporada": "MAM",
+   "anio": 2026,
+   "oni": 0.46
+  },
+  {
+   "temporada": "AMJ",
+   "anio": 2026,
+   "oni": 0.95
+  },
+  {
+   "temporada": "MJJ",
+   "anio": 2026,
+   "oni": 1.39
+  },
+  {
+   "temporada": "JJA",
+   "anio": 2026,
+   "oni": 1.8
+  },
+  {
+   "temporada": "JAS",
+   "anio": 2026,
+   "oni": 2.16
+  }
+ ]
+}
