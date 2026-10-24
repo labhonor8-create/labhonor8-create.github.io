@@ -20,7 +20,7 @@
     .tile strong { display: block; font-size: 1.3rem; color: var(--primary); }
     .pendiente { color: var(--muted) !important; font-size: 1rem !important; font-weight: 500; }
     figure { margin: 16px 0 0; }
-    figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
+    figure img { display: block; width: 100%; height: auto; opacity: .9; -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); }
     figcaption { font-size: .8rem; color: var(--muted); margin-top: 6px; }
     .clima-controles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 14px; }
     .clima-controles select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: inherit; }
@@ -109,6 +109,12 @@
       </figure>
 
       <h3>América del Sur</h3>
+
+      <figure id="fig-inundacion" hidden>
+        <img id="img-inundacion" alt="" loading="lazy">
+        <figcaption id="cred-inundacion"></figcaption>
+      </figure>
+
       <p>En el sur de Sudamérica, El Niño tiende a traer lluvias por encima de lo normal al sur de Brasil, Uruguay, el noreste de Argentina y la Cuenca del Plata, donde se ubica Paraguay. Ese exceso de lluvia puede causar inundaciones en zonas bajas y dificultar la cosecha.</p>
       <p>En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico del servicio meteorológico nacional.</p>
       <p>En el norte de la región el patrón cambia. En la costa norte de Perú y de Ecuador, el mar cálido suele traer lluvias intensas, mientras que en el nordeste de Brasil y en parte de la Amazonía tiende a aparecer sequía.</p>
@@ -195,11 +201,12 @@
   </footer>
 
   <script>
-    // ===== IMÁGENES: pega aquí las direcciones de Unsplash (https://...) =====
+    // ===== IMÁGENES: archivos subidos a la raíz del repositorio =====
     const IMAGENES = {
-      cabecera: { url: "", alt: "Vista satelital del océano Pacífico", credito: "" },
-      lluvia:   { url: "", alt: "Nubes de lluvia vistas desde un satélite", credito: "" },
-      cultivos: { url: "", alt: "Campo agrícola en época de cosecha", credito: "" }
+      cabecera:    { url: "https://labhonor8-create.github.io/1000411606.jpg", alt: "Ciclones tropicales en el océano Pacífico vistos desde el espacio", credito: "Ciclones tropicales en el Pacífico. Imagen: NASA" },
+      lluvia:      { url: "https://labhonor8-create.github.io/1000388242.jpg", alt: "Río de agua turbia bajo un cielo nublado", credito: "Río de la región" },
+      inundacion:  { url: "https://labhonor8-create.github.io/1000411584.jpg", alt: "Vivienda y vegetación rodeadas por agua de inundación", credito: "Inundación en la región" },
+      cultivos:    { url: "https://labhonor8-create.github.io/1000411607.jpg", alt: "Humo de incendios sobre Indonesia visto desde el espacio", credito: "Humo de incendios en Indonesia, que se agravan en años secos de El Niño. Imagen: NASA" }
     };
 
     // ===== DATOS MANUALES: actualizar cada mes con el boletín oficial =====
@@ -253,10 +260,12 @@
     function renderizarImagenes() {
       Object.entries(IMAGENES).forEach(([clave, img]) => {
         if (!img.url || !/^https:\/\//.test(img.url)) return;
-        $(`img-${clave}`).src = img.url;
-        $(`img-${clave}`).alt = img.alt;
+        const imagen = $(`img-${clave}`), figura = $(`fig-${clave}`);
+        imagen.onerror = () => { figura.hidden = true; };
+        imagen.src = img.url;
+        imagen.alt = img.alt;
         $(`cred-${clave}`).textContent = img.credito || "";
-        $(`fig-${clave}`).hidden = false;
+        figura.hidden = false;
       });
     }
 
