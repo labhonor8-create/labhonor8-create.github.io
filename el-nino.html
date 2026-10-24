@@ -70,6 +70,30 @@
       background-color: #20ba5a;
       transform: translateY(-2px);
     }
+
+    /* Botón destacado para la Galería */
+    .galeria-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #0284c7;
+      color: #ffffff !important;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+      transition: background-color 0.2s, transform 0.2s;
+      width: 100%;
+      max-width: 320px;
+      margin: 10px auto 0;
+    }
+    .galeria-cta-btn:hover {
+      background-color: #0369a1;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -80,7 +104,6 @@
       <nav aria-label="Secciones" style="display:flex;gap:14px">
         <a href="index.html" style="color: #38bdf8; text-decoration: none;">Calculadora</a>
         <a href="el-nino.html" style="color: #38bdf8; text-decoration: none;">El Niño</a>
-        <a href="galeria.html" style="color: #38bdf8; text-decoration: none;">Galería</a>
       </nav>
     </div>
   </header>
@@ -162,14 +185,6 @@
            data-full-width-responsive="true"></ins>
     </div>
 
-    <!-- MAPA -->
-    <section class="card">
-      <h2>Mapa interactivo de datos satelitales</h2>
-      <p>Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
-      <iframe class="mapa" title="Mapa interactivo de datos satelitales" src="https://embed.windy.com/embed2.html?lat=-22.0&lon=-58.0&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
-      <p class="note" style="margin-top: 10px;"><a href="https://www.windy.com/" target="_blank" rel="noopener">Abrir un mapa de viento y lluvia en Windy en pantalla completa</a></p>
-    </section>
-
     <!-- PRONÓSTICO -->
     <section class="card">
       <h2>Pronóstico y línea de tiempo</h2>
@@ -196,6 +211,26 @@
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
+
+    <!-- TARJETA ACCESO DIRECTO A GALERÍA (Colocada justo antes del mapa) -->
+    <section class="card" style="text-align: center;">
+      <h2>Galería de imágenes y monitoreo</h2>
+      <p>Explora el registro fotográfico y las capturas satelitales en alta resolución.</p>
+      <div style="margin-top: 15px;">
+        <a href="galeria.html" class="galeria-cta-btn">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          Ver Galería de Imágenes
+        </a>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="card">
+      <h2>Mapa interactivo de datos satelitales</h2>
+      <p>Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
+      <iframe class="mapa" title="Mapa interactivo de datos satelitales" src="https://embed.windy.com/embed2.html?lat=-22.0&lon=-58.0&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
+      <p class="note" style="margin-top: 10px;"><a href="https://www.windy.com/" target="_blank" rel="noopener">Abrir un mapa de viento y lluvia en Windy en pantalla completa</a></p>
+    </section>
 
     <!-- SECCIÓN DE COMPARTIR EN WHATSAPP -->
     <section class="card" style="text-align: center;">
