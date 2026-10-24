@@ -201,12 +201,12 @@
   </footer>
 
   <script>
-    // ===== IMÁGENES: enlazadas con los nombres reales de tu repositorio GitHub =====
+    // ===== IMÁGENES: ajustadas con el nombre exacto de la cabecera y nombres limpios para las demás =====
     const IMAGENES = {
-      cabecera:    { url: "https://labhonor8-create.github.io/isa073w1044319-large.jpg", alt: "Vista satelital del océano Pacífico y sistemas climáticos", credito: "Imagen: NASA / Satélite" },
-      lluvia:      { url: "https://labhonor8-create.github.io/Screenshot_20261024_181616...", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
-      inundacion:  { url: "https://labhonor8-create.github.io/easternpacific-goe-2015245-1.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
-      cultivos:    { url: "https://labhonor8-create.github.io/indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
+      cabecera:    { url: "iss073e1044319~large.jpg", alt: "Vista satelital del océano Pacífico y sistemas climáticos", credito: "Imagen: NASA / Satélite" },
+      lluvia:      { url: "lluvia.jpg", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
+      inundacion:  { url: "inundacion.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
+      cultivos:    { url: "indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
     };
 
     // ===== DATOS MANUALES: actualizar cada mes con el boletín oficial =====
@@ -258,12 +258,13 @@
 
     function renderizarImagenes() {
       Object.entries(IMAGENES).forEach(([clave, img]) => {
-        if (!img.url || !/^https:\/\//.test(img.url)) return;
         const imagen = $(`img-${clave}`), figura = $(`fig-${clave}`);
+        if (!imagen || !figura) return;
         imagen.onerror = () => { figura.hidden = true; };
         imagen.src = img.url;
         imagen.alt = img.alt;
-        $(`cred-${clave}`).textContent = img.credito || "";
+        const cred = $(`cred-${clave}`);
+        if (cred) cred.textContent = img.credito || "";
         figura.hidden = false;
       });
     }
