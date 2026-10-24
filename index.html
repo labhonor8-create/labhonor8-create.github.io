@@ -35,10 +35,10 @@
 
   <main class="container">
 
-    <!-- ESPACIO PUBLICITARIO 1 -->
+    <!-- ESPACIO PUBLICITARIO 1: Superior -->
     <div id="ad-space-1" class="ad-slot">
       <ins class="adsbygoogle" style="display:block"
-           data-ad-slot="1111111111"
+           data-ad-slot="4077993060"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -127,10 +127,10 @@
       </div>
     </section>
 
-    <!-- ESPACIO PUBLICITARIO 2 -->
+    <!-- ESPACIO PUBLICITARIO 2: Resultados -->
     <div id="ad-space-2" class="ad-slot">
       <ins class="adsbygoogle" style="display:block"
-           data-ad-slot="2222222222"
+           data-ad-slot="8376330722"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -167,4 +167,210 @@
     <section class="card">
       <h2>Preguntas frecuentes</h2>
 
-      <h3>¿Qué porcentaje del capital conviene arriesga
+      <h3>¿Qué porcentaje del capital conviene arriesgar por operación?</h3>
+      <p>No hay un porcentaje universal. Muchos traders usan entre 0.5 % y 1 % por operación, porque así una racha perdedora no afecta demasiado a la cuenta. Con 1 % por operación, diez pérdidas seguidas reducen el capital en unos 9.6 %. Con 2 %, la caída sería de unos 18 %.</p>
+
+      <h3>¿Cómo calculo cuántos lotes abrir en XAUUSD?</h3>
+      <p>Divide el riesgo en dólares entre la distancia al stop multiplicada por las onzas por lote. Con un contrato de 100 onzas, cada dólar de distancia cuesta US$100 por lote. Por eso, con un stop de 15 dólares y un riesgo de US$100, solo puedes abrir 0.06 lotes con un paso de 0.01.</p>
+
+      <h3>¿Qué significan 1R, 2R y 3R en un plan de trading?</h3>
+      <p>R es el riesgo de la operación, es decir, la pérdida que aceptas si el stop se activa. Un objetivo de 2R significa que la ganancia potencial es el doble de esa pérdida. Si arriesgas US$90 y tu objetivo es 2R, la ganancia potencial es de US$180 antes de costes.</p>
+    </section>
+
+    <!-- AUTORÍA Y METODOLOGÍA -->
+    <section class="card">
+      <h2>Sobre esta herramienta</h2>
+      <p>Publicado por <strong>Innovatech</strong>. Esta calculadora aplica la fórmula estándar de gestión de riesgo para operar XAUUSD y Forex. Sirve para planificar cuántos lotes abrir según tu capital y tu stop loss. No analiza el mercado, no genera señales y no constituye asesoramiento financiero ni recomendaciones de inversión.</p>
+      <p>Los ejemplos de esta página se calcularon con la misma fórmula que usa la herramienta. Última actualización: octubre de 2026.</p>
+      <p>Contacto: technologyinfoa@gmail.com. Consulta nuestra <a href="privacidad.html">política de privacidad</a> y la página <a href="acerca.html">Acerca de</a>.</p>
+    </section>
+
+    <!-- AVISO DE RIESGO -->
+    <section class="card disclaimer">
+      <h2>Aviso de riesgo</h2>
+      <p>Esta herramienta es educativa y no constituye asesoramiento financiero. Operar con oro o Forex implica un alto riesgo de pérdida. Los resultados dependen de los datos que introduces y de las especificaciones de tu bróker.</p>
+    </section>
+
+    <!-- ESPACIO PUBLICITARIO 3: Cierre -->
+    <div id="ad-space-3" class="ad-slot">
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-slot="6057289145"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+  </main>
+
+  <footer class="container">
+    <p>
+      <a href="privacidad.html">Privacidad</a> ·
+      <a href="acerca.html">Acerca de</a> ·
+      <a href="mailto:technologyinfoa@gmail.com">Contacto</a>
+    </p>
+    <p>© 2026 RiskCalc, por Innovatech. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // ===== CONFIGURACIÓN =====
+    const ADSENSE_CLIENT = "ca-pub-9124670202405791";
+    const LOCALE = "es-419";
+
+    // Unidades por lote estándar. Verifícalas con tu bróker.
+    const PRESETS = {
+      XAUUSD: { contrato: 100, paso: 0.01 },
+      EURUSD: { contrato: 100000, paso: 0.01 },
+      GBPUSD: { contrato: 100000, paso: 0.01 }
+    };
+
+    // ===== UTILIDADES =====
+    const $ = id => document.getElementById(id);
+    const fmtUSD = new Intl.NumberFormat(LOCALE, { style: "currency", currency: "USD" });
+    const fmtNum = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 5 });
+    const fmtLotes = new Intl.NumberFormat(LOCALE, { minimumFractionDigits: 2, maximumFractionDigits: 4 });
+    const fmtPct = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
+
+    // ===== CÁLCULO =====
+    function leerEntradas() {
+      const n = id => parseFloat($(id).value);
+      return {
+        capital: n("capital"),
+        riesgoPct: n("riesgo"),
+        entrada: n("entrada"),
+        stop: n("stop"),
+        contrato: n("contrato"),
+        paso: n("paso")
+      };
+    }
+
+    function calcular({ capital, riesgoPct, entrada, stop, contrato, paso }) {
+      const valores = [capital, riesgoPct, entrada, stop, contrato, paso];
+      if (!valores.every(Number.isFinite)) {
+        throw new Error("Completa todos los campos con números válidos.");
+      }
+      if (capital <= 0) throw new Error("El capital debe ser mayor que cero.");
+      if (riesgoPct <= 0 || riesgoPct > 100) throw new Error("El riesgo debe estar entre 0.01 % y 100 %.");
+      if (entrada <= 0 || stop <= 0) throw new Error("Los precios deben ser mayores que cero.");
+      if (entrada === stop) throw new Error("El stop loss debe ser distinto del precio de entrada.");
+      if (contrato <= 0) throw new Error("Las unidades por lote deben ser mayores que cero.");
+      if (paso <= 0) throw new Error("El paso de lote debe ser mayor que cero.");
+
+      const riesgoUSD = capital * riesgoPct / 100;
+      const distancia = Math.abs(entrada - stop);
+      const perdidaPorLote = distancia * contrato;
+      const lotesIdeales = riesgoUSD / perdidaPorLote;
+
+      // Redondeo hacia abajo al paso del bróker. El 1e-9 evita errores de coma flotante.
+      const pasos = Math.floor(lotesIdeales / paso + 1e-9);
+      if (pasos < 1) {
+        throw new Error(
+          `Con este riesgo solo podrías abrir ${fmtLotes.format(lotesIdeales)} lotes, menos del mínimo de ${paso}. ` +
+          "Aumenta el capital o el riesgo, o acorta el stop."
+        );
+      }
+
+      const lotes = Number((pasos * paso).toFixed(8));
+      const riesgoReal = lotes * perdidaPorLote;
+      const direccion = stop < entrada ? "Compra" : "Venta";
+      const signo = direccion === "Compra" ? 1 : -1;
+
+      const objetivos = [1, 2, 3].map(r => ({
+        r,
+        precio: entrada + signo * r * distancia,
+        ganancia: r * riesgoReal
+      }));
+
+      return {
+        lotes,
+        riesgoReal,
+        riesgoPct: (riesgoReal / capital) * 100,
+        distancia,
+        perdidaPorLote,
+        direccion,
+        objetivos
+      };
+    }
+
+    // ===== RENDERIZADO =====
+    function mostrarResultado(res) {
+      $("r-lotes").textContent = fmtLotes.format(res.lotes);
+      $("r-riesgo").textContent = `${fmtUSD.format(res.riesgoReal)} (${fmtPct.format(res.riesgoPct)} %)`;
+      $("r-direccion").textContent = res.direccion;
+      $("r-distancia").textContent = fmtNum.format(res.distancia);
+
+      $("r-tp").innerHTML = res.objetivos.map(o => `
+        <tr>
+          <td>${o.r}R</td>
+          <td>${fmtNum.format(o.precio)}</td>
+          <td>${fmtUSD.format(o.ganancia)}</td>
+        </tr>`).join("");
+
+      $("r-detalle").textContent =
+        `Pérdida por lote si el precio toca el stop: ${fmtUSD.format(res.perdidaPorLote)}.`;
+    }
+
+    function mostrarMensaje(texto, tipo) {
+      const el = $("mensaje");
+      if (!texto) {
+        el.hidden = true;
+        return;
+      }
+      el.hidden = false;
+      el.className = `msg ${tipo}`;
+      el.textContent = texto;
+    }
+
+    function actualizar() {
+      try {
+        const datos = leerEntradas();
+        const res = calcular(datos);
+        mostrarResultado(res);
+        $("resultado").hidden = false;
+
+        if (datos.riesgoPct > 2) {
+          mostrarMensaje(
+            "Riesgo superior al 2 %. Muchos traders arriesgan entre 0.5 % y 1 % por operación.",
+            "warn"
+          );
+        } else {
+          mostrarMensaje("", "");
+        }
+      } catch (err) {
+        $("resultado").hidden = true;
+        mostrarMensaje(err.message, "error");
+      }
+    }
+
+    // ===== EVENTOS =====
+    $("activo").addEventListener("change", e => {
+      const preset = PRESETS[e.target.value];
+      if (preset) {
+        $("contrato").value = preset.contrato;
+        $("paso").value = preset.paso;
+      }
+      actualizar();
+    });
+
+    const form = $("calc-form");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      actualizar();
+    });
+    form.addEventListener("input", actualizar);
+
+    // ===== ANUNCIOS =====
+    // Si el ID no está configurado, los espacios publicitarios se ocultan.
+    const anunciosActivos = /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT);
+    document.querySelectorAll(".ad-slot").forEach(slot => {
+      if (!anunciosActivos) {
+        slot.hidden = true;
+        return;
+      }
+      const ins = slot.querySelector("ins.adsbygoogle");
+      ins.setAttribute("data-ad-client", ADSENSE_CLIENT);
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    });
+
+    actualizar();
+  </script>
+</body>
+</html>
