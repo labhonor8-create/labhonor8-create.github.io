@@ -162,7 +162,19 @@
     <!-- IMPACTO REGIONAL -->
     <article class="card">
       <h2>Impacto regional</h2>
+
+      <figure id="fig-lluvia" hidden>
+        <img id="img-lluvia" alt="" loading="lazy">
+        <figcaption id="cred-lluvia"></figcaption>
+      </figure>
+
       <h3>América del Sur</h3>
+
+      <figure id="fig-inundacion" hidden>
+        <img id="img-inundacion" alt="" loading="lazy">
+        <figcaption id="cred-inundacion"></figcaption>
+      </figure>
+
       <p>En el sur de Sudamérica, El Niño tiende a traer lluvias por encima de lo normal al sur de Brasil, Uruguay, el noreste de Argentina y la Cuenca del Plata, donde se ubica Paraguay. Ese exceso de lluvia puede causar inundaciones en zonas bajas y dificultar la cosecha.</p>
       <p>En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico del servicio meteorológico nacional.</p>
       <p>En el norte de la región el patrón cambia. En la costa norte de Perú y de Ecuador, el mar cálido suele traer lluvias intensas, mientras que en el nordeste de Brasil y en parte de la Amazonía tiende a aparecer sequía.</p>
@@ -171,6 +183,12 @@
       <p>En Centroamérica, El Niño suele reducir las lluvias durante la primera siembra, lo que agrava el estrés hídrico en el Corredor Seco. En el Atlántico tiende a disminuir la actividad de huracanes, porque aumenta la cizalladura del viento, que dificulta su formación. En Norteamérica, el efecto típico en invierno es más lluvia en el sur de Estados Unidos y el norte de México.</p>
 
       <h3>Agricultura y precios de materias primas</h3>
+
+      <figure id="fig-cultivos" hidden>
+        <img id="img-cultivos" alt="" loading="lazy">
+        <figcaption id="cred-cultivos"></figcaption>
+      </figure>
+
       <p>Los efectos sobre los precios dependen de la región productora. En general, El Niño tiende a reducir la producción de trigo en Australia, de aceite de palma en Indonesia y Malasia, y de maíz en el sur de África, y puede debilitar el monzón de la India. Cuando baja la oferta, las cotizaciones suelen presionar al alza.</p>
       <p>En Argentina y Paraguay, las condiciones suelen ser favorables para cultivos de verano como la soja, aunque el exceso de lluvia puede retrasar siembras y cosechas. El café y el cacao también pueden verse afectados por cambios en las lluvias de sus regiones productoras.</p>
       <p>Los mercados reaccionan a los pronósticos, no solo a los hechos. Por eso los precios pueden moverse semanas antes de que el efecto llegue al campo.</p>
@@ -212,7 +230,7 @@
            data-full-width-responsive="true"></ins>
     </div>
 
-    <!-- TARJETA ACCESO DIRECTO A GALERÍA (Colocada justo antes del mapa) -->
+    <!-- TARJETA ACCESO DIRECTO A GALERÍA -->
     <section class="card" style="text-align: center;">
       <h2>Galería de imágenes y monitoreo</h2>
       <p>Explora el registro fotográfico y las capturas satelitales en alta resolución.</p>
@@ -270,6 +288,13 @@
     const mensajeWp = encodeURIComponent("¡Hola! Te comparto este monitor en tiempo real sobre El Niño, clima por hora y mapas satelitales: " + window.location.href);
     document.getElementById("whatsapp-share-btn").href = "https://api.whatsapp.com/send?text=" + mensajeWp;
 
+    // ===== IMÁGENES SECUNDARIAS =====
+    const IMAGENES = {
+      lluvia:      { url: "Screenshot_20261024_181616.jpg", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
+      inundacion:  { url: "easternpacific-goe-2015245-1440-annotated.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
+      cultivos:    { url: "indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
+    };
+
     // ===== DATOS MANUALES =====
     const DATOS = {
       fecha: "10 de septiembre de 2026",
@@ -314,6 +339,19 @@
     function escribir(el, texto) {
       el.textContent = texto ?? "Pendiente";
       el.classList.toggle("pendiente", !texto);
+    }
+
+    function renderizarImagenes() {
+      Object.entries(IMAGENES).forEach(([clave, img]) => {
+        const imagen = $(`img-${clave}`), figura = $(`fig-${clave}`);
+        if (!imagen || !figura) return;
+        imagen.onerror = () => { figura.hidden = true; };
+        imagen.src = img.url;
+        imagen.alt = img.alt;
+        const cred = $(`cred-${clave}`);
+        if (cred) cred.textContent = img.credito || "";
+        figura.hidden = false;
+      });
     }
 
     function renderizarDatos() {
@@ -391,6 +429,7 @@
     // ===== ARRANQUE =====
     PUNTOS.forEach(p => $("punto").add(new Option(p.nombre, p.id)));
     $("punto").addEventListener("change", actualizarClima);
+    renderizarImagenes();
     renderizarDatos();
     actualizarClima();
     cargarOni();
