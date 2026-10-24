@@ -45,7 +45,6 @@
     .tabla-clima th, .tabla-clima td { text-align: right; white-space: nowrap; }
     .tabla-clima th:first-child, .tabla-clima td:first-child { text-align: left; }
     .mapa { width: 100%; height: 420px; border: 0; border-radius: 12px; }
-    .mapa-placeholder { border: 1px dashed rgba(255,255,255,0.2); border-radius: 12px; padding: 28px 16px; text-align: center; color: #94a3b8; }
     .fuentes a { display: block; margin-bottom: 6px; color: #38bdf8; }
   </style>
 </head>
@@ -160,9 +159,9 @@
     <section class="card">
       <h2>Mapa interactivo de datos satelitales</h2>
       <p>Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
-      <iframe id="interactive-map" class="mapa" title="Mapa interactivo de datos satelitales" hidden></iframe>
-      <div id="mapa-placeholder" class="mapa-placeholder" hidden>Mapa pendiente de activar.</div>
-      <p class="note"><a href="https://www.windy.com/" target="_blank" rel="noopener">Abrir un mapa de viento y lluvia en Windy</a></p>
+      <!-- Mapa incrustado directamente para asegurar su visualización inmediata -->
+      <iframe class="mapa" title="Mapa interactivo de datos satelitales" src="https://embed.windy.com/embed2.html?lat=-22.0&lon=-58.0&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"></iframe>
+      <p class="note" style="margin-top: 10px;"><a href="https://www.windy.com/" target="_blank" rel="noopener">Abrir un mapa de viento y lluvia en Windy en pantalla completa</a></p>
     </section>
 
     <!-- PRONÓSTICO -->
@@ -221,14 +220,13 @@
       cultivos:    { url: "indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
     };
 
-    // ===== DATOS MANUALES Y URL DEL MAPA INTEGRADO DE WINDY =====
+    // ===== DATOS MANUALES =====
     const DATOS = {
       fecha: "10 de septiembre de 2026",
       estado: "Activo",
       nino34: 1.8,
       oni: null,
-      pronostico: { trimestre: null, dos: null, seis: null },
-      mapaUrl: "https://embed.windy.com/embed2.html?lat=-22.0&lon=-58.0&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+      pronostico: { trimestre: null, dos: null, seis: null }
     };
 
     // ===== PUNTOS DEL CLIMA POR HORA =====
@@ -293,13 +291,6 @@
       escribir($("p-trimestre"), probabilidad(DATOS.pronostico.trimestre));
       escribir($("p-dos"), probabilidad(DATOS.pronostico.dos));
       escribir($("p-seis"), probabilidad(DATOS.pronostico.seis));
-
-      if (!vacio(DATOS.mapaUrl) && /^https:\/\//.test(DATOS.mapaUrl)) {
-        const mapa = $("interactive-map");
-        mapa.src = DATOS.mapaUrl;
-        mapa.hidden = false;
-        $("mapa-placeholder").hidden = true;
-      }
     }
 
     // ===== ONI AUTOMÁTICO: lee data/oni.json, generado por update-enso.mjs =====
