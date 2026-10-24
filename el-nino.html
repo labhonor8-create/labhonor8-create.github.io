@@ -12,33 +12,51 @@
           crossorigin="anonymous"></script>
 
   <style>
+    /* ===== FONDO DE PÁGINA CON LA IMAGEN Y CAPA DE LEGISLABILIDAD ===== */
+    body {
+      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.90)), url('iss073e1044319~large.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #e2e8f0;
+    }
+
+    /* Ajuste de tarjetas para que resalten sobre la imagen de fondo */
+    .card, .site-header {
+      background: rgba(18, 24, 38, 0.88) !important;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
     .ad-label { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: center; margin-bottom: 6px; }
     .enso-grid { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 18px; }
     @media (min-width: 640px) { .enso-grid { grid-template-columns: repeat(3, 1fr); } }
-    .tile { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
-    .tile span { display: block; font-size: .8rem; color: var(--muted); }
-    .tile strong { display: block; font-size: 1.3rem; color: var(--primary); }
-    .pendiente { color: var(--muted) !important; font-size: 1rem !important; font-weight: 500; }
+    .tile { background: rgba(15, 20, 30, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 14px; }
+    .tile span { display: block; font-size: .8rem; color: #94a3b8; }
+    .tile strong { display: block; font-size: 1.3rem; color: #38bdf8; }
+    .pendiente { color: #94a3b8 !important; font-size: 1rem !important; font-weight: 500; }
     figure { margin: 16px 0 0; }
-    figure img { display: block; width: 100%; height: auto; opacity: .9; -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); }
-    figcaption { font-size: .8rem; color: var(--muted); margin-top: 6px; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 8px; opacity: .95; }
+    figcaption { font-size: .8rem; color: #94a3b8; margin-top: 6px; }
     .clima-controles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 14px; }
-    .clima-controles select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: inherit; }
+    .clima-controles select { padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(15, 20, 30, 0.9); color: inherit; }
     .tabla-clima th, .tabla-clima td { text-align: right; white-space: nowrap; }
     .tabla-clima th:first-child, .tabla-clima td:first-child { text-align: left; }
     .mapa { width: 100%; height: 420px; border: 0; border-radius: 12px; }
-    .mapa-placeholder { border: 1px dashed var(--border); border-radius: 12px; padding: 28px 16px; text-align: center; color: var(--muted); }
-    .fuentes a { display: block; margin-bottom: 6px; }
+    .mapa-placeholder { border: 1px dashed rgba(255,255,255,0.2); border-radius: 12px; padding: 28px 16px; text-align: center; color: #94a3b8; }
+    .fuentes a { display: block; margin-bottom: 6px; color: #38bdf8; }
   </style>
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header" style="margin-bottom: 24px; border-radius: 0 0 12px 12px; padding: 12px 0;">
     <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <a class="logo" href="index.html">RiskCalc</a>
+      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none;">RiskCalc</a>
       <nav aria-label="Secciones" style="display:flex;gap:14px">
-        <a href="index.html">Calculadora</a>
-        <a href="el-nino.html">El Niño</a>
+        <a href="index.html" style="color: #38bdf8; text-decoration: none;">Calculadora</a>
+        <a href="el-nino.html" style="color: #38bdf8; text-decoration: none;">El Niño</a>
       </nav>
     </div>
   </header>
@@ -59,17 +77,12 @@
       <h1>El Niño hoy: monitor global y análisis climático</h1>
       <p class="lead">Estado del fenómeno en el Pacífico ecuatorial, qué significa para cada región y cómo leer los boletines oficiales.</p>
 
-      <figure id="fig-cabecera" hidden>
-        <img id="img-cabecera" alt="" loading="lazy">
-        <figcaption id="cred-cabecera"></figcaption>
-      </figure>
-
       <div class="enso-grid">
         <div class="tile"><span>Anomalía Niño 3.4</span><strong id="t-nino34" class="pendiente">Pendiente</strong></div>
         <div class="tile"><span>ONI (promedio de 3 meses)</span><strong id="t-oni" class="pendiente">Pendiente</strong></div>
         <div class="tile"><span>Estado del ENSO</span><strong id="t-estado" class="pendiente">Pendiente</strong></div>
       </div>
-      <p class="note" id="t-fecha"></p>
+      <p class="note" id="t-fecha" style="margin-top: 12px; color: #94a3b8;"></p>
     </section>
 
     <!-- CLIMA POR HORA -->
@@ -189,21 +202,20 @@
 
   </main>
 
-  <footer class="container">
+  <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
     <p>La información proviene de boletines científicos públicos de la NOAA, la NWS y la OMM, y se presenta con fines exclusivamente didácticos e informativos. No sustituye los avisos oficiales de tu servicio meteorológico nacional.</p>
     <p>
-      <a href="index.html">Calculadora</a> ·
-      <a href="privacidad.html">Privacidad</a> ·
-      <a href="acerca.html">Acerca de</a> ·
-      <a href="mailto:technologyinfoa@gmail.com">Contacto</a>
+      <a href="index.html" style="color: #38bdf8;">Calculadora</a> ·
+      <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a> ·
+      <a href="acerca.html" style="color: #38bdf8;">Acerca de</a> ·
+      <a href="mailto:technologyinfoa@gmail.com" style="color: #38bdf8;">Contacto</a>
     </p>
     <p>© 2026 RiskCalc, por Innovatech.</p>
   </footer>
 
   <script>
-    // ===== IMÁGENES: con los nombres exactos y completos de tu repositorio GitHub =====
+    // ===== IMÁGENES SECUNDARIAS (la de cabecera ya actúa como fondo general) =====
     const IMAGENES = {
-      cabecera:    { url: "iss073e1044319~large.jpg", alt: "Vista satelital del océano Pacífico y sistemas climáticos", credito: "Imagen: NASA / Satélite" },
       lluvia:      { url: "Screenshot_20261024_181616.jpg", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
       inundacion:  { url: "easternpacific-goe-2015245-1440-annotated.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
       cultivos:    { url: "indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
