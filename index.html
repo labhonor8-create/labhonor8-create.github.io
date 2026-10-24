@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Riesgo y Lotaje para Forex, Oro, Nasdaq y US30 | RiskCalc Pro</title>
-  <meta name="description" content="Calcula lotes estándar, mini y micro según tu balance y tu stop loss para oro, EUR/USD, USD/JPY, Nasdaq 100 y Dow Jones (US30).">
+  <title>Calculadora de Riesgo y Lotaje para Forex y Oro (XAU/USD) | RiskCalc</title>
+  <meta name="description" content="Calcula el tamaño de posición en lotes estándar, mini y micro para Forex y oro (XAU/USD) según tu balance, el riesgo que aceptas y los pips de stop loss.">
   <link rel="canonical" href="https://labhonor8-create.github.io/">
 
   <meta name="google-site-verification" content="335dBitLPJuFvVahTwsbJKN0ToRAE2q8c41iigKejg4" />
@@ -16,7 +16,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Calculadora de riesgo y lotaje para Forex, oro e índices",
+    "name": "Calculadora de riesgo y lotaje para Forex y oro",
     "url": "https://labhonor8-create.github.io/",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Any",
@@ -96,17 +96,8 @@
     h2 { font-size: 1.1rem; margin: 0 0 14px; }
     h3 { font-size: 1rem; margin: 18px 0 6px; }
 
-    .chips {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 16px;
-      overflow-x: auto;
-      padding-bottom: 4px;
-      scrollbar-width: none;
-    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
     .chip {
-      flex: 0 0 auto;
-      white-space: nowrap;
       background: var(--panel2);
       border: 1px solid var(--line);
       color: var(--muted);
@@ -170,17 +161,16 @@
     th { color: var(--muted); font-weight: 600; }
     td:last-child { color: var(--accent); }
 
-    .ad-slot { min-height: 100px; margin: 20px 0; text-align: center; }
-    .ad-slot-results { margin: 16px 0 0; }
-    .ad-slot-content { margin: 0; }
     .ad-label {
       font-size: .68rem;
       letter-spacing: .08em;
       text-transform: uppercase;
       color: var(--muted);
       text-align: center;
-      margin-bottom: 6px;
+      margin: 18px 0 0;
     }
+    .ad-slot { min-height: 100px; margin: 6px 0 16px; text-align: center; }
+    .ad-slot-results { margin-top: 16px; }
 
     .content { display: grid; gap: 18px; margin: 18px 0; }
     .steps { padding-left: 20px; margin: 0 0 12px; }
@@ -195,6 +185,9 @@
       font-size: .85rem;
     }
     footer a { color: var(--muted); }
+
+    .bar-der { display: flex; align-items: center; gap: 16px; }
+    .menu-link { color: var(--accent); font-size: .9rem; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -202,15 +195,18 @@
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="index.html">RiskCalc<span> Pro</span></a>
-      <span class="tag">Forex · Oro · Índices</span>
+      <div class="bar-der">
+        <span class="tag">Forex · XAU/USD</span>
+        <a class="menu-link" href="el-nino.html">El Niño</a>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
 
-    <!-- ESPACIO PUBLICITARIO 1: superior, separado de los campos -->
+    <!-- ESPACIO PUBLICITARIO SUPERIOR -->
+    <div class="ad-label">Publicidad</div>
     <div id="ad-space-1" class="ad-slot">
-      <div class="ad-label">Publicidad</div>
       <ins class="adsbygoogle" style="display:block"
            data-ad-slot="4077993060"
            data-ad-format="auto"
@@ -218,8 +214,8 @@
     </div>
 
     <header class="hero">
-      <h1>Calculadora de riesgo y lotaje para Forex, oro y índices</h1>
-      <p>Calcula tu posición en lotes estándar, mini y micro según tu balance, el riesgo que aceptas y tu stop loss, para oro, EUR/USD, USD/JPY, Nasdaq 100 y Dow Jones (US30).</p>
+      <h1>Calculadora de riesgo y lotaje para Forex y oro (XAU/USD)</h1>
+      <p>Calcula el tamaño de tu posición en lotes estándar, mini y micro según tu balance, el riesgo que aceptas y los pips de stop loss.</p>
     </header>
 
     <div class="layout">
@@ -229,16 +225,9 @@
         <h2 id="t-parametros">Parámetros</h2>
 
         <div class="chips" role="group" aria-label="Activos rápidos">
-          <button type="button" class="chip" data-preset="XAUUSD">Oro</button>
+          <button type="button" class="chip" data-preset="XAUUSD">Oro XAU/USD</button>
           <button type="button" class="chip" data-preset="EURUSD">EUR/USD</button>
           <button type="button" class="chip" data-preset="GBPUSD">GBP/USD</button>
-          <button type="button" class="chip" data-preset="USDJPY">USD/JPY</button>
-          <button type="button" class="chip" data-preset="AUDUSD">AUD/USD</button>
-          <button type="button" class="chip" data-preset="NZDUSD">NZD/USD</button>
-          <button type="button" class="chip" data-preset="USDCAD">USD/CAD</button>
-          <button type="button" class="chip" data-preset="USDCHF">USD/CHF</button>
-          <button type="button" class="chip" data-preset="NAS100">NAS100</button>
-          <button type="button" class="chip" data-preset="US30">US30</button>
           <button type="button" class="chip" data-preset="PERSONALIZADO">Otro</button>
         </div>
 
@@ -249,13 +238,6 @@
               <option value="XAUUSD">Oro (XAU/USD)</option>
               <option value="EURUSD">EUR/USD</option>
               <option value="GBPUSD">GBP/USD</option>
-              <option value="USDJPY">USD/JPY</option>
-              <option value="AUDUSD">AUD/USD</option>
-              <option value="NZDUSD">NZD/USD</option>
-              <option value="USDCAD">USD/CAD</option>
-              <option value="USDCHF">USD/CHF</option>
-              <option value="NAS100">Nasdaq 100 (NAS100)</option>
-              <option value="US30">Dow Jones (US30)</option>
               <option value="PERSONALIZADO">Personalizado</option>
             </select>
           </div>
@@ -270,18 +252,6 @@
             <p class="hint">Depende de tu bróker. 0.10 es el valor más común. Confírmalo en sus especificaciones.</p>
           </div>
 
-          <div class="field" id="bloque-precio" hidden>
-            <label for="precio-par">Precio actual del par</label>
-            <input id="precio-par" type="number" min="0" step="any" inputmode="decimal" value="150.00">
-            <p class="hint">Necesario para convertir el pip a dólares. Actualízalo al precio de tu gráfico.</p>
-          </div>
-
-          <div class="field" id="bloque-indice" hidden>
-            <label for="valor-indice">Valor de 1 punto por lote estándar (USD)</label>
-            <input id="valor-indice" type="number" min="0" step="any" inputmode="decimal" value="1">
-            <p class="hint">Confírmalo en las especificaciones de tu bróker. Algunos cobran más de 1 USD por punto.</p>
-          </div>
-
           <div id="bloque-manual" hidden>
             <div class="two">
               <div class="field">
@@ -293,7 +263,7 @@
                 <input id="contrato-manual" type="number" min="0" step="any" inputmode="decimal" value="100000">
               </div>
             </div>
-            <p class="hint">El cálculo supone que la moneda de cotización es USD.</p>
+            <p class="hint">El cálculo supone que la moneda de cotización es USD, como en EUR/USD y XAU/USD.</p>
           </div>
 
           <div class="field">
@@ -320,9 +290,9 @@
           </div>
 
           <div class="field">
-            <label for="sl-pips">Stop loss (pips o puntos)</label>
+            <label for="sl-pips">Stop loss (pips)</label>
             <input id="sl-pips" type="number" min="0" step="any" inputmode="decimal" value="150">
-            <p class="hint">En Forex y oro, la distancia en pips. En índices, la distancia en puntos.</p>
+            <p class="hint">Ejemplo: en oro con pip de 0.10, 150 pips equivalen a una distancia de US$15.</p>
           </div>
 
           <div class="field">
@@ -360,20 +330,20 @@
             <div><span>% del balance</span><strong id="r-riesgo-pct">—</strong></div>
           </div>
 
-          <p class="note"><strong>Valor por pip o punto, por lote estándar:</strong> <span id="r-pip">—</span></p>
+          <p class="note"><strong>Valor del pip por lote:</strong> <span id="r-pip">—</span></p>
           <p class="note" id="r-nota"></p>
 
           <div class="table-wrap">
             <table>
-              <thead><tr><th>Objetivo</th><th>Pips o puntos</th><th>Ganancia</th></tr></thead>
+              <thead><tr><th>Objetivo</th><th>Pips</th><th>Ganancia</th></tr></thead>
               <tbody id="r-tabla"></tbody>
             </table>
           </div>
         </div>
 
-        <!-- ESPACIO PUBLICITARIO 2: bajo los resultados -->
+        <!-- ESPACIO PUBLICITARIO BAJO LOS RESULTADOS -->
+        <div class="ad-label">Publicidad</div>
         <div id="ad-space-2" class="ad-slot ad-slot-results">
-          <div class="ad-label">Publicidad</div>
           <ins class="adsbygoogle" style="display:block"
                data-ad-slot="8376330722"
                data-ad-format="auto"
@@ -387,37 +357,25 @@
 
       <article class="panel">
         <h2>Guía técnica: cómo se calcula el lotaje</h2>
-        <p>La calculadora incluye oro (XAU/USD), los pares EUR/USD, GBP/USD, USD/JPY, AUD/USD, NZD/USD, USD/CAD y USD/CHF, y los índices Nasdaq 100 (NAS100) y Dow Jones (US30). Cada activo tiene su propia definición de pip o punto, así que revisa las especificaciones de tu bróker antes de operar.</p>
         <ol class="steps">
           <li><strong>Riesgo en USD:</strong> balance × riesgo %. Si eliges monto fijo, ese valor se usa directamente.</li>
-          <li><strong>Valor del pip por lote estándar:</strong> tamaño del pip × unidades del contrato. En EUR/USD: 0.0001 × 100 000 = US$10. En oro con pip de 0.10: 0.10 × 100 oz = US$10.</li>
-          <li><strong>Pares con USD como base:</strong> el pip se cotiza en la otra moneda, así que se divide entre el precio del par. En USD/JPY: 0.01 × 100 000 ÷ 150 = US$6.67 por pip.</li>
-          <li><strong>Índices:</strong> el valor por punto lo define el contrato del bróker. Con 1 USD por punto, un stop de 150 puntos cuesta US$150 por lote estándar.</li>
-          <li><strong>Riesgo por lote estándar:</strong> pips o puntos de stop × valor por pip o punto.</li>
+          <li><strong>Valor del pip por lote estándar:</strong> tamaño del pip × unidades del contrato. En EUR/USD: 0.0001 × 100 000 = US$10. En XAU/USD con pip de 0.10: 0.10 × 100 oz = US$10.</li>
+          <li><strong>Riesgo por lote estándar:</strong> pips de stop × valor del pip. Con 150 pips y pip de US$10, sería 150 × US$10 = US$1 500.</li>
           <li><strong>Lotes ideales:</strong> riesgo en USD ÷ riesgo por lote estándar.</li>
-          <li><strong>Ajuste al lote mínimo:</strong> el resultado se redondea hacia abajo al paso de tu bróker, para no superar el riesgo planeado.</li>
+          <li><strong>Ajuste al lote mínimo:</strong> el resultado se redondea hacia abajo al paso de tu bróker (micro, mini o estándar), para no superar el riesgo planeado.</li>
         </ol>
-        <p><strong>Ejemplo en oro:</strong> balance de US$10 000, riesgo de 1 % (US$100) y stop de 150 pips con pip de 0.10. Lotes ideales: 100 ÷ 1 500 = 0.0667. Con lote mínimo micro, la posición queda en 0.06 lotes estándar (6 micro), y el riesgo real es de US$90, equivalente a 0.9 % del balance.</p>
+        <p><strong>Ejemplo:</strong> balance de US$10 000, riesgo de 1 % (US$100) y stop de 150 pips en oro con pip de 0.10. Lotes ideales: 100 ÷ 1 500 = 0.0667. Con lote mínimo micro, la posición queda en 0.06 lotes estándar (6 micro) y el riesgo real es de US$90, equivalente a 0.9 % del balance.</p>
         <p>Los cálculos no incluyen spread, comisiones, swap ni deslizamiento. Esos costos aumentan la pérdida real.</p>
       </article>
-
-      <!-- ESPACIO PUBLICITARIO 4: entre secciones de contenido (se activa al crear la unidad) -->
-      <div id="ad-space-4" class="ad-slot ad-slot-content">
-        <div class="ad-label">Publicidad</div>
-        <ins class="adsbygoogle" style="display:block"
-             data-ad-slot="PENDIENTE"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-      </div>
 
       <article class="panel">
         <h2>Preguntas frecuentes</h2>
 
-        <h3>¿Qué porcentaje del balance conviene arriesgar en oro y Forex?</h3>
+        <h3>¿Qué porcentaje del balance conviene arriesgar en XAU/USD y Forex?</h3>
         <p>Muchos traders usan entre 0.5 % y 1 % por operación. Con 1 %, diez pérdidas seguidas reducen la cuenta en unos 9.6 %. Con 2 %, la caída sería de unos 18 %. Un riesgo menor tolera mejor las rachas perdedoras, aunque también reduce la ganancia por operación.</p>
 
-        <h3>¿Por qué el cálculo cambia entre oro, índices y pares como USD/JPY?</h3>
-        <p>Cada activo tiene su propio contrato y su propia definición de pip o punto. En el oro, el pip depende del bróker (0.01, 0.10 o 1.00). En USD/JPY, el pip se expresa en yenes y debe convertirse a dólares con el precio del par. En los índices, el valor por punto cambia según el contrato, así que conviene confirmarlo antes de operar.</p>
+        <h3>¿Por qué el oro requiere un cálculo distinto al de los pares de Forex?</h3>
+        <p>El oro se cotiza en dólares por onza y suele tener una volatilidad alta, por lo que un stop razonable puede medir muchos más pips. Además, el valor del pip depende del tamaño que tu bróker asigne al pip en oro (0.01, 0.10 o 1.00). Por eso conviene revisar esa especificación antes de operar.</p>
 
         <h3>¿Cuál es la diferencia entre lote estándar, mini y micro?</h3>
         <p>Un lote estándar equivale a 100 000 unidades en Forex o a 100 onzas en oro. El mini es 0.1 del estándar y el micro es 0.01. Los lotes menores permiten ajustar el tamaño con más precisión, así que es más fácil mantener el riesgo exacto aunque el stop sea amplio.</p>
@@ -431,9 +389,9 @@
       </section>
     </div>
 
-    <!-- ESPACIO PUBLICITARIO 3: cierre de página -->
+    <!-- ESPACIO PUBLICITARIO DE CIERRE -->
+    <div class="ad-label">Publicidad</div>
     <div id="ad-space-3" class="ad-slot">
-      <div class="ad-label">Publicidad</div>
       <ins class="adsbygoogle" style="display:block"
            data-ad-slot="6057289145"
            data-ad-format="auto"
@@ -455,22 +413,13 @@
     // ===== CONFIGURACIÓN =====
     const ADSENSE_CLIENT = "ca-pub-9124670202405791";
     const LOCALE = "es-419";
-    const STORAGE_KEY = "riskcalc-v3";
-    const CAMPOS = ["instrumento", "pip-oro", "precio-par", "valor-indice", "pip-manual", "contrato-manual",
-                    "balance", "modo", "riesgo-pct", "riesgo-usd", "sl-pips", "minimo"];
-
-    // Valores de ejemplo. Los precios de los pares con USD como base deben actualizarse.
+    const STORAGE_KEY = "riskcalc-v2";
+    const CAMPOS = ["instrumento", "pip-oro", "pip-manual", "contrato-manual", "balance",
+                    "modo", "riesgo-pct", "riesgo-usd", "sl-pips", "minimo"];
     const PRESETS = {
-      XAUUSD:        { instrumento: "XAUUSD", pipOro: "0.1", slPips: 150 },
-      EURUSD:        { instrumento: "EURUSD", slPips: 20 },
-      GBPUSD:        { instrumento: "GBPUSD", slPips: 25 },
-      USDJPY:        { instrumento: "USDJPY", slPips: 25, precio: 150.00 },
-      AUDUSD:        { instrumento: "AUDUSD", slPips: 20 },
-      NZDUSD:        { instrumento: "NZDUSD", slPips: 20 },
-      USDCAD:        { instrumento: "USDCAD", slPips: 20, precio: 1.3600 },
-      USDCHF:        { instrumento: "USDCHF", slPips: 20, precio: 0.8800 },
-      NAS100:        { instrumento: "NAS100", slPips: 150, valorIndice: 1 },
-      US30:          { instrumento: "US30", slPips: 150, valorIndice: 1 },
+      XAUUSD:        { instrumento: "XAUUSD", pipOro: "0.1", slPips: 150, riesgoPct: 1 },
+      EURUSD:        { instrumento: "EURUSD", slPips: 20, riesgoPct: 1 },
+      GBPUSD:        { instrumento: "GBPUSD", slPips: 25, riesgoPct: 1 },
       PERSONALIZADO: { instrumento: "PERSONALIZADO" }
     };
 
@@ -479,7 +428,6 @@
     const num = id => parseFloat($(id).value);
     const fUSD = new Intl.NumberFormat(LOCALE, { style: "currency", currency: "USD" });
     const fDec = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
-    const fPrecio = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 5 });
     const fStd = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 2 });
     const fMini = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 1 });
     const fMicro = new Intl.NumberFormat(LOCALE, { maximumFractionDigits: 0 });
@@ -488,31 +436,16 @@
     let ultimoTexto = "";
 
     // ===== CONFIGURACIÓN DEL INSTRUMENTO =====
-    // conversion: true cuando el USD es la moneda base y el pip se cotiza en otra divisa.
     function configInstrumento() {
       switch ($("instrumento").value) {
         case "XAUUSD":
-          return { etiqueta: "Oro XAU/USD", pip: parseFloat($("pip-oro").value), contrato: 100, conversion: false };
-        case "EURUSD":
-          return { etiqueta: "EUR/USD", pip: 0.0001, contrato: 100000, conversion: false };
+          return { etiqueta: "XAU/USD", pip: parseFloat($("pip-oro").value), contrato: 100 };
         case "GBPUSD":
-          return { etiqueta: "GBP/USD", pip: 0.0001, contrato: 100000, conversion: false };
-        case "AUDUSD":
-          return { etiqueta: "AUD/USD", pip: 0.0001, contrato: 100000, conversion: false };
-        case "NZDUSD":
-          return { etiqueta: "NZD/USD", pip: 0.0001, contrato: 100000, conversion: false };
-        case "USDJPY":
-          return { etiqueta: "USD/JPY", pip: 0.01, contrato: 100000, conversion: true, precio: num("precio-par") };
-        case "USDCAD":
-          return { etiqueta: "USD/CAD", pip: 0.0001, contrato: 100000, conversion: true, precio: num("precio-par") };
-        case "USDCHF":
-          return { etiqueta: "USD/CHF", pip: 0.0001, contrato: 100000, conversion: true, precio: num("precio-par") };
-        case "NAS100":
-          return { etiqueta: "Nasdaq 100 (NAS100)", pip: 1, contrato: num("valor-indice"), conversion: false };
-        case "US30":
-          return { etiqueta: "Dow Jones (US30)", pip: 1, contrato: num("valor-indice"), conversion: false };
+          return { etiqueta: "GBP/USD", pip: 0.0001, contrato: 100000 };
+        case "PERSONALIZADO":
+          return { etiqueta: "Personalizado", pip: num("pip-manual"), contrato: num("contrato-manual") };
         default:
-          return { etiqueta: "Personalizado", pip: num("pip-manual"), contrato: num("contrato-manual"), conversion: false };
+          return { etiqueta: "EUR/USD", pip: 0.0001, contrato: 100000 };
       }
     }
 
@@ -531,14 +464,12 @@
     // ===== CÁLCULO =====
     function calcular(d) {
       const numeros = [d.pip, d.contrato, d.balance, d.slPips, d.minimo];
-      if (d.conversion) numeros.push(d.precio);
       if (!numeros.every(Number.isFinite)) {
         throw new Error("Completa todos los campos con números válidos.");
       }
       if (d.balance <= 0) throw new Error("El balance debe ser mayor que cero.");
-      if (d.pip <= 0 || d.contrato <= 0) throw new Error("Revisa el valor del pip o del punto y las unidades por lote.");
-      if (d.conversion && d.precio <= 0) throw new Error("Introduce el precio actual del par.");
-      if (d.slPips <= 0) throw new Error("El stop loss debe ser mayor que cero.");
+      if (d.pip <= 0 || d.contrato <= 0) throw new Error("Revisa el tamaño del pip y las unidades por lote.");
+      if (d.slPips <= 0) throw new Error("El stop loss debe ser mayor que cero pips.");
 
       let riesgoUsd;
       if (d.modo === "pct") {
@@ -552,14 +483,10 @@
         riesgoUsd = d.riesgoUsd;
       }
 
-      // Valor de 1 pip (o punto) por lote estándar, siempre en USD
-      const valorPipStd = d.conversion
-        ? (d.pip * d.contrato) / d.precio
-        : d.pip * d.contrato;
-
-      const riesgoLoteStd = d.slPips * valorPipStd;        // USD perdidos con 1.0 lote si toca el stop
-      const microIdeal = riesgoUsd / riesgoLoteStd * 100;  // tamaño ideal en micro-lotes
-      const pasoMicro = Math.round(d.minimo * 100);        // 1, 10 o 100 micro-lotes
+      const valorPipStd = d.pip * d.contrato;              // USD por pip con 1.0 lote estándar
+      const riesgoLoteStd = d.slPips * valorPipStd;         // USD perdidos con 1.0 lote si toca el stop
+      const microIdeal = riesgoUsd / riesgoLoteStd * 100;   // tamaño ideal en micro-lotes
+      const pasoMicro = Math.round(d.minimo * 100);         // 1, 10 o 100 micro-lotes
       const pasos = Math.floor(microIdeal / pasoMicro + 1e-9);
 
       if (pasos < 1) {
@@ -600,12 +527,8 @@
       $("r-riesgo-pct").textContent = `${fPct.format(riesgoRealPct)} %`;
       $("r-pip").textContent =
         `Estándar ${fUSD.format(valorPipStd)} · Mini ${fUSD.format(valorPipStd / 10)} · Micro ${fUSD.format(valorPipStd / 100)}`;
-
-      let nota = `Riesgo planeado: ${fUSD.format(riesgoUsd)}. Riesgo real tras ajustar al lote mínimo: ${fUSD.format(riesgoRealUsd)}.`;
-      if (d.conversion) {
-        nota += ` El pip se convirtió a USD con el precio ${fPrecio.format(d.precio)}; actualízalo si el mercado cambió.`;
-      }
-      $("r-nota").textContent = nota;
+      $("r-nota").textContent =
+        `Riesgo planeado: ${fUSD.format(riesgoUsd)}. Riesgo real tras ajustar al lote mínimo: ${fUSD.format(riesgoRealUsd)}.`;
 
       $("r-tabla").innerHTML = objetivos.map(o => `
         <tr>
@@ -617,7 +540,7 @@
       ultimoTexto =
         `RiskCalc · ${d.etiqueta} · Balance ${fUSD.format(d.balance)} · ` +
         `Riesgo ${fUSD.format(riesgoRealUsd)} (${fPct.format(riesgoRealPct)} %) · ` +
-        `Stop ${fDec.format(d.slPips)} pips o puntos · Tamaño: ${fStd.format(micro / 100)} estándar / ` +
+        `Stop ${fDec.format(d.slPips)} pips · Tamaño: ${fStd.format(micro / 100)} estándar / ` +
         `${fMini.format(micro / 10)} mini / ${fMicro.format(micro)} micro`;
     }
 
@@ -657,8 +580,6 @@
     function actualizarVisibilidad() {
       const inst = $("instrumento").value;
       $("bloque-oro").hidden = inst !== "XAUUSD";
-      $("bloque-precio").hidden = !["USDJPY", "USDCAD", "USDCHF"].includes(inst);
-      $("bloque-indice").hidden = !["NAS100", "US30"].includes(inst);
       $("bloque-manual").hidden = inst !== "PERSONALIZADO";
 
       const usaPorcentaje = $("modo").value === "pct";
@@ -704,12 +625,8 @@
       $("instrumento").value = p.instrumento;
       if (p.pipOro) $("pip-oro").value = p.pipOro;
       if (p.slPips) $("sl-pips").value = p.slPips;
-      if (p.precio) $("precio-par").value = p.precio;
-      if (p.valorIndice) $("valor-indice").value = p.valorIndice;
-      if (nombre !== "PERSONALIZADO") {
-        $("riesgo-pct").value = 1;
-        $("modo").value = "pct";
-      }
+      if (p.riesgoPct) $("riesgo-pct").value = p.riesgoPct;
+      $("modo").value = "pct";
       refrescar();
     }
 
@@ -734,15 +651,14 @@
     });
 
     // ===== ANUNCIOS =====
-    // Un espacio solo se activa si el ID de cuenta y el de unidad son válidos.
+    // Si el ID no es válido, los espacios publicitarios se ocultan.
     const anunciosActivos = /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT);
     document.querySelectorAll(".ad-slot").forEach(slot => {
-      const ins = slot.querySelector("ins.adsbygoogle");
-      const idUnidad = ins.dataset.adSlot;
-      if (!anunciosActivos || !/^\d{10}$/.test(idUnidad)) {
+      if (!anunciosActivos) {
         slot.hidden = true;
         return;
       }
+      const ins = slot.querySelector("ins.adsbygoogle");
       ins.setAttribute("data-ad-client", ADSENSE_CLIENT);
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     });
