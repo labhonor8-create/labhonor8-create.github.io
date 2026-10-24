@@ -201,16 +201,15 @@
   </footer>
 
   <script>
-    // ===== IMÁGENES: archivos subidos a la raíz del repositorio =====
+    // ===== IMÁGENES: enlazadas con los nombres reales de tu repositorio GitHub =====
     const IMAGENES = {
-      cabecera:    { url: "https://labhonor8-create.github.io/1000411606.jpg", alt: "Ciclones tropicales en el océano Pacífico vistos desde el espacio", credito: "Ciclones tropicales en el Pacífico. Imagen: NASA" },
-      lluvia:      { url: "https://labhonor8-create.github.io/1000388242.jpg", alt: "Río de agua turbia bajo un cielo nublado", credito: "Río de la región" },
-      inundacion:  { url: "https://labhonor8-create.github.io/1000411584.jpg", alt: "Vivienda y vegetación rodeadas por agua de inundación", credito: "Inundación en la región" },
-      cultivos:    { url: "https://labhonor8-create.github.io/1000411607.jpg", alt: "Humo de incendios sobre Indonesia visto desde el espacio", credito: "Humo de incendios en Indonesia, que se agravan en años secos de El Niño. Imagen: NASA" }
+      cabecera:    { url: "https://labhonor8-create.github.io/isa073w1044319-large.jpg", alt: "Vista satelital del océano Pacífico y sistemas climáticos", credito: "Imagen: NASA / Satélite" },
+      lluvia:      { url: "https://labhonor8-create.github.io/Screenshot_20261024_181616...", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
+      inundacion:  { url: "https://labhonor8-create.github.io/easternpacific-goe-2015245-1.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
+      cultivos:    { url: "https://labhonor8-create.github.io/indsmoke_tmo_2023275_es.jpg", alt: "Humo e impacto de sequía en zonas de cultivo de Indonesia", credito: "Imagen: NASA Earth Observatory" }
     };
 
     // ===== DATOS MANUALES: actualizar cada mes con el boletín oficial =====
-    // Deja null lo que no hayas verificado. La página lo muestra como "Pendiente".
     const DATOS = {
       fecha: "10 de septiembre de 2026", // boletín del CPC
       estado: "Activo",             // "Activo", "En formación", "Neutral" o "Debilitándose"
@@ -336,7 +335,7 @@
       }
     }
 
-    // ===== ANUNCIOS: un espacio solo se activa con IDs válidos =====
+    // ===== ANUNCIOS =====
     const anunciosActivos = /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT);
     document.querySelectorAll(".ad-slot").forEach(slot => {
       const ins = slot.querySelector("ins.adsbygoogle");
