@@ -12,9 +12,9 @@
           crossorigin="anonymous"></script>
 
   <style>
-    /* ===== FONDO DE PÁGINA CON LA IMAGEN Y CAPA DE LEGISLABILIDAD ===== */
+    /* ===== FONDO GENERAL DE LA PÁGINA CON LA IMAGEN ===== */
     body {
-      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.90)), url('iss073e1044319~large.jpg');
+      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.92)), url('iss073e1044319~large.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -22,7 +22,7 @@
       color: #e2e8f0;
     }
 
-    /* Ajuste de tarjetas para que resalten sobre la imagen de fondo */
+    /* Estilo de las tarjetas flotantes sobre el fondo */
     .card, .site-header {
       background: rgba(18, 24, 38, 0.88) !important;
       backdrop-filter: blur(8px);
@@ -76,6 +76,8 @@
     <section class="card">
       <h1>El Niño hoy: monitor global y análisis climático</h1>
       <p class="lead">Estado del fenómeno en el Pacífico ecuatorial, qué significa para cada región y cómo leer los boletines oficiales.</p>
+
+      <!-- Nota: Se eliminó la etiqueta figure de cabecera para que la imagen sea exclusivamente el fondo de la página -->
 
       <div class="enso-grid">
         <div class="tile"><span>Anomalía Niño 3.4</span><strong id="t-nino34" class="pendiente">Pendiente</strong></div>
@@ -144,7 +146,7 @@
 
       <p>Los efectos sobre los precios dependen de la región productora. En general, El Niño tiende a reducir la producción de trigo en Australia, de aceite de palma en Indonesia y Malasia, y de maíz en el sur de África, y puede debilitar el monzón de la India. Cuando baja la oferta, las cotizaciones suelen presionar al alza.</p>
       <p>En Argentina y Paraguay, las condiciones suelen ser favorables para cultivos de verano como la soja, aunque el exceso de lluvia puede retrasar siembras y cosechas. El café y el cacao también pueden verse afectados por cambios en las lluvias de sus regiones productoras.</p>
-      <p>Los mercados reaccionan a los pronósticos, no solo a los hechos. Por eso los precios pueden moverse semanas antes de que el efecto llegue al campo.</p>
+      <p>Los mercados reaccionan a los pronósticos, not solo a los hechos. Por eso los precios pueden moverse semanas antes de que el efecto llegue al campo.</p>
     </article>
 
     <!-- ESPACIO PUBLICITARIO 2 -->
@@ -203,7 +205,7 @@
   </main>
 
   <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
-    <p>La información proviene de boletines científicos públicos de la NOAA, la NWS y la OMM, y se presenta con fines exclusivamente didácticos e informativos. No sustituye los avisos oficiales de tu servicio meteorológico nacional.</p>
+    <p>La información proviene de boletines científicos públicos de la NOAA, la NWS y OMM, y se presenta con fines exclusivamente didácticos e informativos. No sustituye los avisos oficiales de tu servicio meteorológico nacional.</p>
     <p>
       <a href="index.html" style="color: #38bdf8;">Calculadora</a> ·
       <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a> ·
@@ -214,7 +216,7 @@
   </footer>
 
   <script>
-    // ===== IMÁGENES SECUNDARIAS (la de cabecera ya actúa como fondo general) =====
+    // ===== IMÁGENES SECUNDARIAS (la de cabecera ya es el fondo general de la web) =====
     const IMAGENES = {
       lluvia:      { url: "Screenshot_20261024_181616.jpg", alt: "Condiciones hídricas y de río en la región", credito: "Fotografía y composición de autoría propia" },
       inundacion:  { url: "easternpacific-goe-2015245-1440-annotated.jpg", alt: "Monitoreo satelital GOES en el Pacífico Este", credito: "Imagen: GOES / NOAA" },
