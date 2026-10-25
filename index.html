@@ -174,6 +174,8 @@
   .sello:hover { transform:scale(1.08); }
   .sello img { width:100%; height:100%; object-fit:cover; }
   
+  .ad { text-align:center; padding:12px 0; }
+  .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
   footer nav { justify-content:center; margin-top:10px; }
 </style>
@@ -202,7 +204,7 @@
     <h1>Asociación de Productores Agropecuarios de la Isla Ytororo</h1>
     <p class="sub">San Antonio, Paraguay</p>
     <p class="muted" style="max-width:720px; margin:0 auto;">Organización de productores que defiende el trabajo rural, mejora el acceso a la producción y se prepara ante los factores climáticos.</p>
-        <div class="btns">
+    <div class="btns">
       <a class="btn" href="el-nino.html" style="background:#22c55e; color:#fff;">Ver monitor climático</a>
     </div>
   </section>
@@ -217,6 +219,11 @@
       <div class="tile"><span>Ubicación</span><strong>Isla Ytororo, San Antonio</strong></div>
     </div>
   </section>
+
+  <div class="ad">
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-slot="4077993060" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
 
   <section id="quienes">
     <div class="card">
@@ -235,17 +242,62 @@
     </div>
   </section>
 
-  <!-- APARTADO DE GALERÍA DESPLEGABLE (VACÍO Y LIMPIO) -->
   <section id="galeria">
     <div class="card">
       <h2>Galería de la Asociación</h2>
       <p class="muted">Registro fotográfico de nuestras parcelas, labores comunitarias y desarrollo productivo en la zona insular de San Antonio.</p>
-      
+
       <details class="gallery-accordion" id="desplegable-galeria">
         <summary>📷 Toca aquí para desplegar las fotos del álbum</summary>
-        
+
         <div class="gallery-grid">
-          <!-- Aquí aparecerán tus nuevas fotos cuando las agregues -->
+          <div class="gallery-item">
+            <img src="altoparana.jpg" alt="Vista del río Alto Paraná" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Río Alto Paraná</h3>
+              <p>Vista del río en la zona del Alto Paraná.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="fotoinundacioncde.jpg" alt="Inundación en la región" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Inundación en la región</h3>
+              <p>Registro de una crecida en la zona.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="fotoreal.jpg" alt="Cosecha en la parcela" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Cosecha en la parcela</h3>
+              <p>Trabajo de campo de los socios.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="real.jpg" alt="Imagen de la zona de la asociación" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Registro de la zona</h3>
+              <p>Imagen de la zona de la asociación.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="satelitenasa.jpg" alt="Ciclones tropicales en el Pacífico vistos desde el espacio" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Ciclones tropicales en el Pacífico</h3>
+              <p>Imagen: NASA Earth Observatory.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="indsmoke_tmo_2023275_es.jpg" alt="Humo de incendios sobre Indonesia visto desde el espacio" loading="lazy">
+            <div class="gallery-caption">
+              <h3>Humo de incendios en Indonesia</h3>
+              <p>Se agravan en años secos de El Niño. Imagen: NASA Earth Observatory.</p>
+            </div>
+          </div>
         </div>
       </details>
     </div>
@@ -263,6 +315,11 @@
       </div>
     </div>
   </section>
+
+  <div class="ad">
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-slot="8376330722" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
 
   <section id="preguntas">
     <div class="card">
@@ -286,16 +343,30 @@
     </div>
   </section>
 
+  <div class="ad">
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-slot="6057289145" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
 </main>
 
 <footer>
   <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
+  <nav aria-label="Pie de página">
+    <a href="index.html">Asociación</a>
+    <a href="el-nino.html">Monitor El Niño</a>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="acerca.html">Acerca de</a>
+  </nav>
   <p>© <span id="anio"></span> APAIYSA</p>
 </footer>
 
 <a class="sello" href="#inicio" title="APAIYSA"><img src="logo.jpg" alt="Logo APAIYSA"></a>
 
 <script>
+  document.querySelectorAll(".ad ins").forEach(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  });
   document.getElementById("anio").textContent = new Date().getFullYear();
 </script>
 </body>
