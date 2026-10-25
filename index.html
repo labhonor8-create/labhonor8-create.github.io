@@ -3,54 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APAIYSA | Asociación de Productores de Isla Ytororo, San Antonio, Paraguay</title>
+<title>APAIYSA | Asociación de Productores de la Isla Ytororo, San Antonio, Paraguay</title>
 <meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Matrícula jurídica N.° 12581, serie Civil. Actividades, actualidad y contacto.">
 <link rel="canonical" href="https://labhonor8-create.github.io/">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791" crossorigin="anonymous"></script>
 <style>
-  :root { --bg:#0b1220; --card:rgba(18,24,38,.88); --line:rgba(255,255,255,.12); --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --wa:#25d366; }
+  :root { 
+    --bg: #07110e; 
+    --card: rgba(13, 26, 20, 0.90); 
+    --line: rgba(74, 222, 128, 0.18); 
+    --text: #e2e8f0; 
+    --muted: #94a3b8; 
+    --accent: #22c55e; /* Verde natural para destacar */
+    --accent-glow: rgba(34, 197, 94, 0.4);
+    --wa: #25d366; 
+  }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-top:90px; }
   body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
-    background:linear-gradient(rgba(10,15,25,.72),rgba(10,15,25,.86)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); }
-  a { color:var(--accent); }
+    background:linear-gradient(rgba(7,17,14,.78),rgba(7,17,14,.90)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); }
+  a { color:var(--accent); text-decoration:none; transition: color 0.2s; }
+  a:hover { color: #4ade80; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
   section { padding:24px 0; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 32px rgba(0,0,0,.4); backdrop-filter:blur(8px); }
-  h1 { font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.2; margin:0 0 10px; }
-  h2 { font-size:1.4rem; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid rgba(56,189,248,.3); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 32px rgba(0,0,0,.45); backdrop-filter:blur(8px); }
+  h1 { font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.2; margin:0 0 10px; color:#ffffff; }
+  h2 { font-size:1.4rem; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid rgba(34,197,94,0.35); color:#ffffff; }
   h3 { font-size:1.05rem; color:var(--accent); margin:0 0 8px; }
   p { margin:0 0 12px; }
   .muted { color:var(--muted); }
-  header { position:sticky; top:0; z-index:50; background:rgba(11,18,32,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+  header { position:sticky; top:0; z-index:50; background:rgba(7,17,14,.95); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
   .bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; padding:12px 0; }
-  .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; }
+  .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; font-size: 1.2rem; }
+  .logo span { color: var(--accent); }
   nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.92rem; }
   nav a { color:var(--text); text-decoration:none; }
   nav a:hover, nav a[aria-current="page"] { color:var(--accent); }
   .hero { text-align:center; padding:44px 0 20px; }
-  .sub { color:var(--accent); font-weight:600; margin-bottom:14px; }
+  .sub { color:var(--accent); font-weight:600; margin-bottom:14px; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
   .btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
-  .btn { display:inline-block; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:#fff; background:#0284c7; box-shadow:0 4px 14px rgba(2,132,199,.4); }
+  .btn { display:inline-block; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:#fff; background:#16a34a; box-shadow:0 4px 14px rgba(22,163,74,0.4); transition: transform 0.15s, background 0.15s; }
+  .btn:hover { background: #15803d; transform: translateY(-1px); }
   .btn.wa { background:var(--wa); box-shadow:0 4px 14px rgba(37,211,102,.4); }
+  .btn.wa:hover { background: #20ba5a; }
   .tiles { display:grid; gap:12px; grid-template-columns:1fr; }
   @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid3 { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
-  .tile { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
+  .tile { background:rgba(12,22,18,.8); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
   .tile span { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
   .tile strong { font-size:1.05rem; color:var(--accent); }
   .grid3, .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
-  .post { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:18px; }
-  .tag { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
+  .post { background:rgba(12,22,18,.8); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .tag { font-size:.75rem; color:var(--accent); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight: 700; }
   .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
   .steps li { counter-increment:paso; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
-  .steps li::before { content:counter(paso); position:absolute; left:0; top:12px; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#06121c; font-weight:800; display:grid; place-items:center; }
+  .steps li::before { content:counter(paso); position:absolute; left:0; top:12px; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#07110e; font-weight:800; display:grid; place-items:center; }
   details { border-bottom:1px solid var(--line); padding:12px 0; }
   summary { cursor:pointer; font-weight:700; color:#fff; }
   details p { margin:10px 0 0; color:var(--muted); }
   .ad { text-align:center; padding:12px; }
   .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
   .ad[hidden] { display:none; }
-  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); transition:transform .2s; }
+  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(34,197,94,0.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(13,26,20,.9); transition:transform .2s; }
   .sello:hover { transform:scale(1.08); }
   .sello img { width:100%; height:100%; object-fit:cover; }
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
@@ -62,7 +75,7 @@
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#inicio">APAIYSA</a>
+    <a class="logo" href="#inicio">APAI<span>YSA</span></a>
     <nav aria-label="Secciones">
       <a href="#quienes">Quiénes somos</a>
       <a href="#legal">Datos legales</a>
@@ -78,7 +91,7 @@
 <main class="wrap">
 
   <section class="hero" id="inicio">
-    <h1>Asociación de Productores Agropecuarios de Isla Ytororo</h1>
+    <h1>Asociación de Productores Agropecuarios de la Isla Ytororo</h1>
     <p class="sub">San Antonio, Paraguay</p>
     <p class="muted" style="max-width:720px; margin:0 auto;">Organización de productores que defiende el trabajo rural, mejora el acceso a la producción y se prepara ante los factores climáticos.</p>
     <div class="btns">
@@ -110,7 +123,6 @@
       <p>Impulsamos proyectos para mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros socios.</p>
     </div>
   </section>
-
 
   <section id="estatuto">
     <div class="card">
@@ -209,7 +221,6 @@
 <a class="sello" href="#inicio" title="APAIYSA"><img src="logo.jpg" alt="Logo APAIYSA"></a>
 
 <script>
-  // IDs de unidades de AdSense (10 dígitos) para cada espacio. Vacío = el espacio no se muestra.
   const ADS = { sup: "4077993060", medio: "8376330722", inf: "6057289145" };
   document.querySelectorAll(".ad").forEach(a => {
     const id = ADS[a.dataset.ad];
