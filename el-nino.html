@@ -12,8 +12,8 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-top:90px; }
   body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
-    background:linear-gradient(rgba(10,15,25,.72),rgba(10,15,25,.86)), url('indsmoke_tmo_2023275_es.jpg') center/cover fixed no-repeat, var(--bg); }
-  a { color:var(--accent); }
+    background:linear-gradient(rgba(10,15,25,.72),rgba(10,15,25,.86)), url('IMG_20261024_192936.jpg') center/cover fixed no-repeat, var(--bg); }
+  a { color:var(--accent); text-decoration:none; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
   section { padding:24px 0; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 32px rgba(0,0,0,.4); backdrop-filter:blur(8px); }
@@ -26,7 +26,7 @@
   .bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; padding:12px 0; }
   .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; }
   nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.92rem; }
-  nav a { color:var(--text); text-decoration:none; }
+  nav a { color:var(--text); }
   nav a:hover, nav a[aria-current="page"] { color:var(--accent); }
   .hero { text-align:center; padding:44px 0 20px; }
   .sub { color:var(--accent); font-weight:600; margin-bottom:14px; }
@@ -42,8 +42,7 @@
   .meteo-card strong { font-size: 1.15rem; color: var(--accent); }
   .meteo-loading { text-align: center; color: var(--muted); font-style: italic; padding: 15px; font-size: 0.95rem; }
 
-  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); transition:transform .2s; }
-  .sello:hover { transform:scale(1.08); }
+  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); }
   .sello img { width:100%; height:100%; object-fit:cover; }
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
   footer nav { justify-content:center; margin-top:10px; }
@@ -58,8 +57,7 @@
       <a href="index.html#quienes">Quiénes somos</a>
       <a href="index.html#legal">Datos legales</a>
       <a href="index.html#actividades">Actividades</a>
-      <a href="index.html#actualidad">Actualidad</a>
-      <a href="index.html#preguntas">Preguntas</a>
+      <a href="index.html#galeria">Galería</a>
       <a href="index.html#contacto">Contacto</a>
       <a href="el-nino.html" aria-current="page">Monitor El Niño</a>
     </nav>
@@ -104,7 +102,6 @@
     <a href="index.html">Asociación</a>
     <a href="el-nino.html">Monitor El Niño</a>
     <a href="privacidad.html">Privacidad</a>
-    <a href="acerca.html">Acerca de</a>
   </nav>
   <p style="margin-top:10px;">© <span id="anio"></span> APAIYSA</p>
 </footer>
@@ -118,7 +115,6 @@
   async function cargarWidgetClima() {
       const contenedor = document.getElementById('meteo-datos');
       try {
-          // Coordenadas geográficas de referencia para la zona de trabajo (Asunción / San Antonio, Paraguay)
           const lat = -25.2865;
           const lon = -57.6470;
           
