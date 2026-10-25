@@ -3,70 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APAIYSA | Asociación de Productores de Isla Ytororo, San Antonio, Paraguay</title>
-<meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Matrícula jurídica N.° 12581, serie Civil. Actividades, actualidad y contacto.">
+<title>APAIYSA | Asociación de Productores de la Isla Ytororo, San Antonio, Paraguay</title>
+<meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Matrícula jurídica N.° 12581, serie Civil. Actividades, galería y contacto.">
 <link rel="canonical" href="https://labhonor8-create.github.io/">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791" crossorigin="anonymous"></script>
 <style>
-  :root { --bg:#0b1220; --card:rgba(18,24,38,.88); --line:rgba(255,255,255,.12); --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --wa:#25d366; }
+  :root { 
+    --bg: #06100a; 
+    --card: rgba(10, 22, 15, 0.90); 
+    --line: rgba(74, 222, 128, 0.22); 
+    --text: #e2e8f0; 
+    --muted: #94a3b8; 
+    --accent: #22c55e;        /* Verde hoja principal */
+    --accent-glow: #4ade80;   /* Verde fosforescente/lima brillante para resaltar */
+    --wa: #25d366; 
+  }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-top:90px; }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
-    background:linear-gradient(rgba(10,15,25,.72),rgba(10,15,25,.86)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); }
-  a { color:var(--accent); }
+  body { 
+    margin:0; 
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; 
+    line-height:1.6; 
+    color:var(--text);
+    background:linear-gradient(rgba(6,16,10,.82),rgba(6,16,10,.94)), url('IMG_20261024_192936.jpg') center/cover fixed no-repeat, var(--bg); 
+  }
+  a { color:var(--accent-glow); text-decoration:none; transition: color 0.2s; }
+  a:hover { color: #86efac; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
   section { padding:24px 0; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 32px rgba(0,0,0,.4); backdrop-filter:blur(8px); }
-  h1 { font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.2; margin:0 0 10px; }
-  h2 { font-size:1.4rem; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid rgba(56,189,248,.3); }
-  h3 { font-size:1.05rem; color:var(--accent); margin:0 0 8px; }
+  .card { 
+    background:var(--card); 
+    border:1px solid var(--line); 
+    border-radius:14px; 
+    padding:22px; 
+    box-shadow:0 8px 32px rgba(0,0,0,.5); 
+    backdrop-filter:blur(8px); 
+  }
+  h1 { font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.2; margin:0 0 10px; color:#ffffff; }
+  h2 { 
+    font-size:1.4rem; 
+    margin:0 0 14px; 
+    padding-bottom:8px; 
+    border-bottom:2px solid var(--accent); 
+    color:#ffffff; 
+  }
+  h3 { font-size:1.05rem; color:var(--accent-glow); margin:0 0 8px; }
   p { margin:0 0 12px; }
   .muted { color:var(--muted); }
-  header { position:sticky; top:0; z-index:50; background:rgba(11,18,32,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+  
+  header { 
+    position:sticky; 
+    top:0; 
+    z-index:50; 
+    background:rgba(6,16,10,.96); 
+    border-bottom:1px solid var(--line); 
+    backdrop-filter:blur(8px); 
+  }
   .bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; padding:12px 0; }
-  .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; }
+  .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; font-size: 1.2rem; }
+  .logo span { color: var(--accent-glow); }
   nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.92rem; }
   nav a { color:var(--text); text-decoration:none; }
-  nav a:hover, nav a[aria-current="page"] { color:var(--accent); }
+  nav a:hover, nav a[aria-current="page"] { color:var(--accent-glow); }
+  
   .hero { text-align:center; padding:44px 0 20px; }
-  .sub { color:var(--accent); font-weight:600; margin-bottom:14px; }
+  .sub { color:var(--accent-glow); font-weight:600; margin-bottom:14px; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
+  
   .btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
-  .btn { display:inline-block; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:#fff; background:#0284c7; box-shadow:0 4px 14px rgba(2,132,199,.4); }
-  .btn.wa { background:var(--wa); box-shadow:0 4px 14px rgba(37,211,102,.4); }
+  .btn { 
+    display:inline-block; 
+    padding:12px 22px; 
+    border-radius:10px; 
+    text-decoration:none; 
+    font-weight:700; 
+    color:#06100a; 
+    background:var(--accent-glow); 
+    box-shadow:0 4px 16px rgba(74,222,128,0.35); 
+    transition: transform 0.15s, background 0.15s; 
+  }
+  .btn:hover { background: #86efac; transform: translateY(-1px); }
+  .btn.wa { 
+    background: var(--wa); 
+    color: #fff; 
+    box-shadow:0 4px 16px rgba(37,211,102,0.35); 
+  }
+  .btn.wa:hover { background: #20ba5a; }
+  
   .tiles { display:grid; gap:12px; grid-template-columns:1fr; }
   @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid3 { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
-  .tile { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
+  .tile { 
+    background:rgba(12,26,17,.85); 
+    border:1px solid var(--line); 
+    border-radius:12px; 
+    padding:16px; 
+    text-align:center; 
+  }
   .tile span { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
-  .tile strong { font-size:1.05rem; color:var(--accent); }
+  .tile strong { font-size:1.05rem; color:var(--accent-glow); }
   .grid3, .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
-  .post { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:18px; }
-  .tag { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
+  
+  .post { background:rgba(12,26,17,.85); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .tag { font-size:.75rem; color:var(--accent-glow); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight: 700; }
+  
+  /* ESTILOS DEL ÁLBUM DESPLEGABLE DE GALERÍA */
+  details.gallery-accordion { border: none; padding: 0; }
+  details.gallery-accordion summary {
+    background: rgba(12,26,17,.9); 
+    border: 1px solid var(--line); 
+    border-radius: 10px;
+    padding: 14px 20px; 
+    color: var(--accent-glow); 
+    font-size: 1.05rem; 
+    font-weight: 700;
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  details.gallery-accordion summary::-webkit-details-marker { display: none; }
+  details.gallery-accordion summary:hover {
+    background: rgba(34,197,94,0.12);
+    border-color: var(--accent-glow);
+  }
+  details.gallery-accordion summary::after { content: "▼"; font-size: 0.8rem; transition: transform 0.2s; }
+  details.gallery-accordion[open] summary::after { transform: rotate(180deg); }
+
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 18px; }
+  .gallery-item { background: rgba(12,26,17,.9); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.3); }
+  .gallery-item img { width: 100%; height: 180px; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
+  .gallery-caption { padding: 12px; }
+  .gallery-caption h3 { margin: 0 0 4px 0; font-size: 0.95rem; color: #fff; }
+  .gallery-caption p { margin: 0; font-size: 0.82rem; color: var(--muted); }
+
   .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
   .steps li { counter-increment:paso; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
-  .steps li::before { content:counter(paso); position:absolute; left:0; top:12px; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#06121c; font-weight:800; display:grid; place-items:center; }
-  details { border-bottom:1px solid var(--line); padding:12px 0; }
-  summary { cursor:pointer; font-weight:700; color:#fff; }
-  details p { margin:10px 0 0; color:var(--muted); }
+  .steps li::before { 
+    content:counter(paso); 
+    position:absolute; 
+    left:0; 
+    top:12px; 
+    width:30px; 
+    height:30px; 
+    border-radius:50%; 
+    background:var(--accent); 
+    color:#fff; 
+    font-weight:800; 
+    display:grid; 
+    place-items:center; 
+  }
+  
+  details.faq-item { border-bottom:1px solid var(--line); padding:12px 0; }
+  details.faq-item summary { cursor:pointer; font-weight:700; color:#fff; }
+  details.faq-item p { margin:10px 0 0; color:var(--muted); }
+  
   .ad { text-align:center; padding:12px; }
   .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
   .ad[hidden] { display:none; }
-  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); transition:transform .2s; }
+  
+  .sello { 
+    position:fixed; 
+    bottom:18px; 
+    right:18px; 
+    z-index:60; 
+    width:56px; 
+    height:56px; 
+    border-radius:50%; 
+    overflow:hidden; 
+    border:2px solid var(--accent-glow); 
+    box-shadow:0 4px 16px rgba(0,0,0,.6); 
+    background:rgba(10,22,15,.9); 
+    transition:transform .2s; 
+  }
   .sello:hover { transform:scale(1.08); }
   .sello img { width:100%; height:100%; object-fit:cover; }
+  
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
   footer nav { justify-content:center; margin-top:10px; }
-  @media (prefers-reduced-motion:reduce) { *, *::before { transition:none !important; scroll-behavior:auto !important; } }
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#inicio">APAIYSA</a>
+    <a class="logo" href="#inicio">APAI<span>YSA</span></a>
     <nav aria-label="Secciones">
       <a href="#quienes">Quiénes somos</a>
       <a href="#legal">Datos legales</a>
       <a href="#actividades">Actividades</a>
+      <a href="#galeria" onclick="document.getElementById('desplegable-galeria').open = true;">Galería</a>
       <a href="#actualidad">Actualidad</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
@@ -78,12 +204,12 @@
 <main class="wrap">
 
   <section class="hero" id="inicio">
-    <h1>Asociación de Productores Agropecuarios de Isla Ytororo</h1>
+    <h1>Asociación de Productores Agropecuarios de la Isla Ytororo</h1>
     <p class="sub">San Antonio, Paraguay</p>
     <p class="muted" style="max-width:720px; margin:0 auto;">Organización de productores que defiende el trabajo rural, mejora el acceso a la producción y se prepara ante los factores climáticos.</p>
     <div class="btns">
-      <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener">Escribir por WhatsApp</a>
-      <a class="btn" href="el-nino.html">Ver monitor climático</a>
+      <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn" href="el-nino.html" style="background:#22c55e; color:#fff;">Ver monitor climático</a>
     </div>
   </section>
 
@@ -98,35 +224,10 @@
     </div>
   </section>
 
-  <section class="card ad" data-ad="sup" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </section>
-
   <section id="quienes">
     <div class="card">
       <h2>Quiénes somos</h2>
       <p>Estamos establecidos formalmente en la zona de la Isla Ytororo, en San Antonio. Defendemos el valor del trabajo rural organizado y combinamos la experiencia del campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
-      <p>Impulsamos proyectos para mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros socios.</p>
-    </div>
-  </section>
-
-
-  <section id="estatuto">
-    <div class="card">
-      <h2>Estatuto y gobierno</h2>
-      <h3>Fines de la asociación</h3>
-      <p class="muted">Buscamos el mejoramiento social y económico de los productores mediante el trabajo colectivo: actividad agropecuaria, transformación y comercialización de productos, servicio marítimo y de cabotaje, defensa de los asociados ante las autoridades, promoción de la educación, la salud y el medio ambiente, y ejecución de proyectos productivos.</p>
-      <h3>Quiénes pueden asociarse</h3>
-      <p class="muted">Productores de la zona mayores de edad que decidan voluntariamente formar parte. La Comisión Directiva aprueba cada solicitud y fija la cuota de ingreso.</p>
-      <h3>Derechos de los socios</h3>
-      <p class="muted">Voz y voto en las asambleas, elegir y ser elegidos para cargos directivos, presentar proyectos de trabajo, participar de los beneficios de la asociación y apelar las sanciones.</p>
-      <h3>Órganos de gobierno</h3>
-      <ul class="muted">
-        <li><strong>Asamblea General:</strong> máxima autoridad. Se reúne una vez al año, dentro de los tres primeros meses posteriores al cierre del ejercicio.</li>
-        <li><strong>Comisión Directiva:</strong> dirige la asociación y se reúne al menos una vez al mes. Sus miembros son electos para un mandato de un año.</li>
-        <li><strong>Sindicatura:</strong> fiscaliza la administración y verifica el cumplimiento del estatuto. Su mandato también dura un año.</li>
-      </ul>
     </div>
   </section>
 
@@ -135,8 +236,31 @@
       <h2>Actividades</h2>
       <div class="grid2">
         <div class="post"><h3>Producción agropecuaria</h3><p class="muted">Mandioca y otros rubros de autoconsumo y renta en la zona insular.</p></div>
-        <div class="post"><h3>Seguimiento climático</h3><p class="muted">Seguimos las variaciones atmosféricas y el caudal del río para proteger las cosechas familiares. <a href="el-nino.html">Ver el monitor</a>.</p></div>
+        <div class="post"><h3>Seguimiento climático</h3><p class="muted">Seguimos las variaciones atmosféricas y el caudal del río. <a href="el-nino.html">Ver el monitor</a>.</p></div>
       </div>
+    </div>
+  </section>
+
+  <!-- APARTADO DE GALERÍA DESPLEGABLE -->
+  <section id="galeria">
+    <div class="card">
+      <h2>Galería de la Asociación</h2>
+      <p class="muted">Registro fotográfico de nuestras parcelas, labores comunitarias y desarrollo productivo en la zona insular de San Antonio.</p>
+      
+      <details class="gallery-accordion" id="desplegable-galeria">
+        <summary>📷 Toca aquí para desplegar las fotos del álbum</summary>
+        
+        <div class="gallery-grid">
+          <!-- FOTO 1 -->
+          <div class="gallery-item">
+            <img src="IMG_20261024_192936.jpg" alt="Trabajos en Parcelas">
+            <div class="gallery-caption">
+              <h3>Trabajos en Parcelas</h3>
+              <p>Cultivos de mandioca y desarrollo agrícola en la zona.</p>
+            </div>
+          </div>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -147,29 +271,17 @@
         <article class="post">
           <div class="tag">Gestión productiva · Isla Ytororo</div>
           <h3>Preparación de suelos y cultivos de mandioca</h3>
-          <p class="muted">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas para asegurar el rendimiento de los rubros de autoconsumo y renta.</p>
-        </article>
-        <article class="post">
-          <div class="tag">Monitoreo ambiental · Cuenca del Plata</div>
-          <h3>Estrategias frente a factores climáticos</h3>
-          <p class="muted">Ante las variaciones atmosféricas y la fluctuación del caudal hídrico, la asociación implementa herramientas de seguimiento para proteger las cosechas familiares.</p>
+          <p class="muted">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="card ad" data-ad="medio" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </section>
-
   <section id="preguntas">
     <div class="card">
       <h2>Preguntas frecuentes</h2>
-      <details><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
-      <details><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980. Te respondemos con la información disponible.</p></details>
-      <details><summary>¿La asociación está legalmente constituida?</summary><p>Sí. Está inscripta en la Dirección General de los Registros Públicos con matrícula jurídica N.° 12581, serie Civil. Su estatuto fue protocolizado por escritura pública N.° 19 del 10/10/2022. Su RUC es 80130689-2 y figura como activo.</p></details>
-      <details><summary>¿Qué hacen ante las crecidas del río?</summary><p>Impulsan proyectos para proteger la infraestructura de acopio y hacen seguimiento del caudal hídrico.</p></details>
+      <details class="faq-item"><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
+      <details class="faq-item"><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980.</p></details>
     </div>
   </section>
 
@@ -179,45 +291,24 @@
       <ol class="steps">
         <li>Escribe por WhatsApp o presenta tu solicitud por escrito.</li>
         <li>La Comisión Directiva aprueba tu solicitud.</li>
-        <li>Pagas la cuota de ingreso que fija la comisión y participas en las asambleas.</li>
+        <li>Pagas la cuota de ingreso que fija la comisión.</li>
       </ol>
       <div class="btns" style="justify-content:flex-start;">
-        <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
+        <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
       </div>
     </div>
-  </section>
-
-  <section class="card ad" data-ad="inf" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
   </section>
 
 </main>
 
 <footer>
   <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
-  <p>Matrícula jurídica N.° 12581, serie Civil · RUC 80130689-2</p>
-  <nav aria-label="Pie de página">
-    <a href="index.html">Asociación</a>
-    <a href="el-nino.html">Monitor El Niño</a>
-    <a href="privacidad.html">Privacidad</a>
-    <a href="acerca.html">Acerca de</a>
-  </nav>
-  <p style="margin-top:10px;">© <span id="anio"></span> APAIYSA</p>
+  <p>© <span id="anio"></span> APAIYSA</p>
 </footer>
 
 <a class="sello" href="#inicio" title="APAIYSA"><img src="logo.jpg" alt="Logo APAIYSA"></a>
 
 <script>
-  // IDs de unidades de AdSense (10 dígitos) para cada espacio. Vacío = el espacio no se muestra.
-  const ADS = { sup: "4077993060", medio: "8376330722", inf: "6057289145" };
-  document.querySelectorAll(".ad").forEach(a => {
-    const id = ADS[a.dataset.ad];
-    if (!/^\d{10}$/.test(id)) return;
-    a.hidden = false;
-    a.querySelector("ins").setAttribute("data-ad-slot", id);
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  });
   document.getElementById("anio").textContent = new Date().getFullYear();
 </script>
 </body>
