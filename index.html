@@ -1,226 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APAIYSA | Actualidad y Producción Agropecuaria en Isla Ytororo</title>
-  <meta name="description" content="Portal informativo y blog oficial de la Asociación de Productores Agropecuarios de Isla Ytororo (San Antonio, Paraguay). Actualidad, cultivos y monitoreo técnico.">
-  <link rel="canonical" href="https://labhonor8-create.github.io/index.html">
-  <link rel="stylesheet" href="styles.css">
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791"
-          crossorigin="anonymous"></script>
-
-  <style>
-    body {
-      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.92)), url('iss073e1044319~large.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #e2e8f0;
-    }
-
-    .card, .site-header {
-      background: rgba(18, 24, 38, 0.88) !important;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.12) !important;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-
-    .info-grid { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 18px; }
-    @media (min-width: 640px) { .info-grid { grid-template-columns: repeat(3, 1fr); } }
-    .tile { background: rgba(15, 20, 30, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 16px; text-align: center; }
-    .tile span { display: block; font-size: .85rem; color: #94a3b8; margin-bottom: 4px; }
-    .tile strong { display: block; font-size: 1.2rem; color: #38bdf8; }
-
-    /* ESTILO DE BLOG / ARTÍCULOS */
-    .blog-grid { display: grid; gap: 20px; grid-template-columns: 1fr; margin-top: 15px; }
-    @media (min-width: 768px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
-    .blog-post { background: rgba(15, 20, 30, 0.75); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
-    .blog-post h3 { font-size: 1.2rem; color: #38bdf8; margin-bottom: 8px; }
-    .blog-date { font-size: 0.78rem; color: #94a3b8; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
-
-    .cta-container { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; align-items: center; }
-    @media(min-width: 640px) { .cta-container { flex-direction: row; justify-content: center; } }
-    
-    .btn-primary {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      background-color: #0284c7; color: #fff !important; padding: 12px 24px;
-      border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4); transition: background-color 0.2s, transform 0.2s;
-      width: 100%; max-width: 280px;
-    }
-    .btn-primary:hover { background-color: #0369a1; transform: translateY(-2px); }
-
-    .btn-whatsapp {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      background-color: #25d366; color: #fff !important; padding: 12px 24px;
-      border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4); transition: background-color 0.2s, transform 0.2s;
-      width: 100%; max-width: 280px;
-    }
-    .btn-whatsapp:hover { background-color: #20ba5a; transform: translateY(-2px); }
-
-    /* SELLO FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
-    .floating-signature {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid rgba(56, 189, 248, 0.6);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-      background: rgba(18, 24, 38, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease;
-    }
-    .floating-signature:hover { transform: scale(1.1); }
-    .floating-signature img { width: 100%; height: 100%; object-fit: cover; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APAIYSA | Asociación de Productores de Isla Ytororo, San Antonio, Paraguay</title>
+<meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Personería jurídica N° 12.581/2022. Actividades, actualidad y contacto.">
+<link rel="canonical" href="https://labhonor8-create.github.io/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791" crossorigin="anonymous"></script>
+<style>
+  :root { --bg:#0b1220; --card:rgba(18,24,38,.88); --line:rgba(255,255,255,.12); --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --wa:#25d366; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
+    background:linear-gradient(rgba(10,15,25,.85),rgba(10,15,25,.93)), url('fondo.jpg') center/cover fixed no-repeat, var(--bg); }
+  a { color:var(--accent); }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
+  section { padding:24px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 32px rgba(0,0,0,.4); backdrop-filter:blur(8px); }
+  h1 { font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.2; margin:0 0 10px; }
+  h2 { font-size:1.4rem; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid rgba(56,189,248,.3); }
+  h3 { font-size:1.05rem; color:var(--accent); margin:0 0 8px; }
+  p { margin:0 0 12px; }
+  .muted { color:var(--muted); }
+  header { position:sticky; top:0; z-index:50; background:rgba(11,18,32,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+  .bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; padding:12px 0; }
+  .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; }
+  nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.92rem; }
+  nav a { color:var(--text); text-decoration:none; }
+  nav a:hover, nav a[aria-current="page"] { color:var(--accent); }
+  .hero { text-align:center; padding:44px 0 20px; }
+  .sub { color:var(--accent); font-weight:600; margin-bottom:14px; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
+  .btn { display:inline-block; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:#fff; background:#0284c7; box-shadow:0 4px 14px rgba(2,132,199,.4); }
+  .btn.wa { background:var(--wa); box-shadow:0 4px 14px rgba(37,211,102,.4); }
+  .tiles { display:grid; gap:12px; grid-template-columns:1fr; }
+  @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid3 { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
+  .tile { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
+  .tile span { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
+  .tile strong { font-size:1.05rem; color:var(--accent); }
+  .grid3, .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
+  .post { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .tag { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
+  .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
+  .steps li { counter-increment:paso; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
+  .steps li::before { content:counter(paso); position:absolute; left:0; top:12px; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#06121c; font-weight:800; display:grid; place-items:center; }
+  details { border-bottom:1px solid var(--line); padding:12px 0; }
+  summary { cursor:pointer; font-weight:700; color:#fff; }
+  details p { margin:10px 0 0; color:var(--muted); }
+  .ad { text-align:center; padding:12px; }
+  .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .ad[hidden] { display:none; }
+  .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); transition:transform .2s; }
+  .sello:hover { transform:scale(1.08); }
+  .sello img { width:100%; height:100%; object-fit:cover; }
+  footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
+  footer nav { justify-content:center; margin-top:10px; }
+  @media (prefers-reduced-motion:reduce) { *, *::before { transition:none !important; scroll-behavior:auto !important; } }
+</style>
 </head>
 <body>
 
-  <!-- NAVEGACIÓN SUPERIOR -->
-  <header class="site-header" style="margin-bottom: 24px; border-radius: 0 0 12px 12px; padding: 12px 0;">
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">APAIYSA</a>
-      <nav aria-label="Secciones" style="display:flex;gap:14px">
-        <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Asociación</a>
-        <a href="el-nino.html" style="color: #e2e8f0; text-decoration: none;">Monitor El Niño</a>
-      </nav>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio">APAIYSA</a>
+    <nav aria-label="Secciones">
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#legal">Datos legales</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#actualidad">Actualidad</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <a href="el-nino.html">Monitor El Niño</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" id="inicio">
+    <h1>Asociación de Productores Agropecuarios de Isla Ytororo</h1>
+    <p class="sub">San Antonio, Paraguay</p>
+    <p class="muted" style="max-width:720px; margin:0 auto;">Organización de productores que defiende el trabajo rural, mejora el acceso a la producción y se prepara ante los factores climáticos.</p>
+    <div class="btns">
+      <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn" href="el-nino.html">Ver monitor climático</a>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
+  <section id="legal">
+    <h2>Datos legales</h2>
+    <div class="tiles">
+      <div class="tile"><span>Personería jurídica</span><strong>N° 12.581/2022</strong></div>
+      <div class="tile"><span>RUC</span><strong>80130689-2 (Activo)</strong></div>
+      <div class="tile"><span>Base social</span><strong>21 socios activos</strong></div>
+      <div class="tile"><span>Ubicación</span><strong>Isla Ytororo, San Antonio</strong></div>
+    </div>
+  </section>
 
-    <!-- PORTADA E IDENTIDAD -->
-    <section class="card" style="text-align: center;">
-      <h1 style="font-size: 1.8rem; margin-bottom: 10px;">Asociación de Productores Agropecuarios de Isla Ytororo</h1>
-      <p style="color: #38bdf8; font-weight: 600; margin-bottom: 15px;">Ciudad de San Antonio, Paraguay</p>
-      <p class="lead">Portal informativo y blog oficial de nuestra comunidad productiva. Un espacio dedicado a visibilizar el trabajo de la tierra, la defensa de la producción y la planificación ante los factores climáticos.</p>
+  <section class="card ad" data-ad="sup" hidden>
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </section>
 
-      <div class="info-grid">
-        <div class="tile">
-          <span>Personería Jurídica</span>
-          <strong>N° 12.581/2022</strong>
-        </div>
-        <div class="tile">
-          <span>RUC Oficial</span>
-          <strong>80130689-2 (Activo)</strong>
-        </div>
-        <div class="tile">
-          <span>Base Social</span>
-          <strong>21 Socios Activos</strong>
-        </div>
+  <section id="quienes">
+    <div class="card">
+      <h2>Quiénes somos</h2>
+      <p>Estamos establecidos formalmente en la zona de la Isla Ytororo, en San Antonio. Defendemos el valor del trabajo rural organizado y combinamos la experiencia del campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
+      <p>Impulsamos proyectos para mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros socios.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid3">
+      <div class="card"><h3>Defensa del trabajo rural</h3><p class="muted">Representamos a los productores de la isla y promovemos la organización del trabajo en el campo.</p></div>
+      <div class="card"><h3>Accesos e infraestructura</h3><p class="muted">Gestionamos proyectos para mejorar los accesos viales y proteger el acopio ante las crecidas.</p></div>
+      <div class="card"><h3>Capacitación técnica</h3><p class="muted">Fomentamos la formación continua de nuestros socios en técnicas de producción.</p></div>
+    </div>
+  </section>
+
+  <section id="actividades">
+    <div class="card">
+      <h2>Actividades</h2>
+      <div class="grid2">
+        <div class="post"><h3>Producción agropecuaria</h3><p class="muted">Mandioca y otros rubros de autoconsumo y renta en la zona insular.</p></div>
+        <div class="post"><h3>Seguimiento climático</h3><p class="muted">Seguimos las variaciones atmosféricas y el caudal del río para proteger las cosechas familiares. <a href="el-nino.html">Ver el monitor</a>.</p></div>
       </div>
+    </div>
+  </section>
 
-      <div class="cta-container">
-        <a href="el-nino.html" class="btn-primary">Ver Monitor Climático</a>
-        <a href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener" class="btn-whatsapp">Contactar vía WhatsApp</a>
-      </div>
-    </section>
-
-    <!-- ESPACIO DE PUBLICIDAD 1 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
-
-    <!-- SECCIÓN DE BLOG / ACTUALIDAD -->
-    <section class="card">
-      <h2 style="font-size: 1.4rem; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 8px; margin-bottom: 15px;">Actualidad y Reportes de la Isla</h2>
-      
-      <div class="blog-grid">
-        <article class="blog-post">
-          <div>
-            <div class="blog-date">Gestión Productiva · Isla Ytororo</div>
-            <h3>Preparación de Suelos y Cultivos de Mandioca</h3>
-            <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas para asegurar el rendimiento de los rubros de autoconsumo y renta en la zona insular.</p>
-          </div>
-          <div style="margin-top: 15px;">
-            <span style="font-size: 0.8rem; color: #38bdf8; font-weight: bold;">Compromiso Rural</span>
-          </div>
+  <section id="actualidad">
+    <div class="card">
+      <h2>Actualidad</h2>
+      <div class="grid2">
+        <article class="post">
+          <div class="tag">Gestión productiva · Isla Ytororo</div>
+          <h3>Preparación de suelos y cultivos de mandioca</h3>
+          <p class="muted">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas para asegurar el rendimiento de los rubros de autoconsumo y renta.</p>
         </article>
-
-        <article class="blog-post">
-          <div>
-            <div class="blog-date">Monitoreo Ambiental · Cuenca del Plata</div>
-            <h3>Estrategias Frente a Factores Climáticos</h3>
-            <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Ante las variaciones atmosféricas y la fluctuación del caudal hídrico, la asociación implementa herramientas tecnológicas de seguimiento para proteger las cosechas familiares.</p>
-          </div>
-          <div style="margin-top: 15px;">
-            <a href="el-nino.html" style="font-size: 0.8rem; color: #38bdf8; font-weight: bold; text-decoration: none;">Ver Monitor en Tiempo Real →</a>
-          </div>
+        <article class="post">
+          <div class="tag">Monitoreo ambiental · Cuenca del Plata</div>
+          <h3>Estrategias frente a factores climáticos</h3>
+          <p class="muted">Ante las variaciones atmosféricas y la fluctuación del caudal hídrico, la asociación implementa herramientas de seguimiento para proteger las cosechas familiares.</p>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ESPACIO DE PUBLICIDAD 2 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
+  <section class="card ad" data-ad="medio" hidden>
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </section>
 
-    <!-- MISIÓN Y ENFOQUE PROFESIONAL -->
-    <article class="card">
-      <h2>Nuestra Misión y Propósito Gremial</h2>
-      <p>Establecidos formalmente en la zona de la Isla Ytororo en San Antonio, defendemos el valor del trabajo rural organizado. Nuestra labor combina la experiencia tradicional en el campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
-      <p>Impulsamos proyectos orientados a mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros miembros.</p>
-    </article>
+  <section id="preguntas">
+    <div class="card">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
+      <details><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980. Te respondemos con la información disponible.</p></details>
+      <details><summary>¿La asociación está legalmente constituida?</summary><p>Sí. Cuenta con personería jurídica N° 12.581/2022 y RUC 80130689-2, activo.</p></details>
+      <details><summary>¿Qué hacen ante las crecidas del río?</summary><p>Impulsan proyectos para proteger la infraestructura de acopio y hacen seguimiento del caudal hídrico.</p></details>
+    </div>
+  </section>
 
-    <!-- ESPACIO DE PUBLICIDAD 3 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
+  <section id="contacto">
+    <div class="card">
+      <h2>Cómo asociarse y contactar</h2>
+      <ol class="steps">
+        <li>Escríbenos por WhatsApp.</li>
+        <li>Cuéntanos tu rubro y tu zona de producción.</li>
+        <li>Te respondemos con la información vigente sobre requisitos y participación.</li>
+      </ol>
+      <div class="btns" style="justify-content:flex-start;">
+        <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <section class="card ad" data-ad="inf" hidden>
+    <small>Publicidad</small>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </section>
 
-  <!-- PIE DE PÁGINA -->
-  <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
-    <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
-    <p>Celular de contacto: 0982 879-980</p>
-    <p style="margin-top: 10px;">
-      <a href="index.html" style="color: #38bdf8;">Asociación</a> ·
-      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a>
-    </p>
-    <p style="margin-top: 6px;">© 2026 APAIYSA.</p>
-  </footer>
+</main>
 
-  <!-- SELLO CIRCULAR FLOTANTE EN LA ESQUINA INFERIOR DERECHA -->
-  <a href="index.html" class="floating-signature" title="APAIYSA">
-    <img src="logo.jpg" alt="Logo APAIYSA">
-  </a>
+<footer>
+  <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
+  <p>Personería jurídica N° 12.581/2022 · RUC 80130689-2</p>
+  <nav aria-label="Pie de página">
+    <a href="index.html">Asociación</a>
+    <a href="el-nino.html">Monitor El Niño</a>
+    <a href="privacidad.html">Privacidad</a>
+    <a href="acerca.html">Acerca de</a>
+  </nav>
+  <p style="margin-top:10px;">© <span id="anio"></span> APAIYSA</p>
+</footer>
 
+<a class="sello" href="#inicio" title="APAIYSA"><img src="logo.jpg" alt="Logo APAIYSA"></a>
+
+<script>
+  // IDs de unidades de AdSense (10 dígitos) para cada espacio. Vacío = el espacio no se muestra.
+  const ADS = { sup: "", medio: "", inf: "" };
+  document.querySelectorAll(".ad").forEach(a => {
+    const id = ADS[a.dataset.ad];
+    if (!/^\d{10}$/.test(id)) return;
+    a.hidden = false;
+    a.querySelector("ins").setAttribute("data-ad-slot", id);
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  });
+  document.getElementById("anio").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
