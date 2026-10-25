@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Niño hoy: monitor global y análisis climático | APAIYSA</title>
-  <meta name="description" content="Monitoreo en tiempo real del fenómeno de El Niño (ENSO), pronóstico del clima por hora, galería visual y mapas satelitales para la producción agropecuaria.">
+  <title>El Niño hoy: monitor y análisis climático | RiskCalc</title>
+  <meta name="description" content="Qué es El Niño, cómo afecta a Sudamérica, Centroamérica y los precios agrícolas, con clima por hora y dónde seguir el monitoreo oficial de la NOAA y la OMM.">
   <link rel="canonical" href="https://labhonor8-create.github.io/el-nino.html">
   <link rel="stylesheet" href="styles.css">
 
@@ -12,279 +12,341 @@
           crossorigin="anonymous"></script>
 
   <style>
-    body {
-      background-image: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.92)), url('iss073e1044319~large.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #e2e8f0;
-    }
-    .card, .site-header {
-      background: rgba(18, 24, 38, 0.88) !important;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.12) !important;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-    .gallery-grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: 1fr;
-      margin-top: 15px;
-    }
-    @media (min-width: 768px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    .gallery-item {
-      background: rgba(15, 20, 30, 0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      overflow: hidden;
-      padding: 10px;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-    }
-    .gallery-item p {
-      font-size: 0.82rem;
-      color: #94a3b8;
-      margin-top: 8px;
-      text-align: center;
-    }
-
-    /* SELLO FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
-    .floating-signature {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid rgba(56, 189, 248, 0.6);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-      background: rgba(18, 24, 38, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease;
-    }
-    .floating-signature:hover { transform: scale(1.1); }
-    .floating-signature img { width: 100%; height: 100%; object-fit: cover; }
+    .ad-label { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: center; margin-bottom: 6px; }
+    .enso-grid { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 18px; }
+    @media (min-width: 640px) { .enso-grid { grid-template-columns: repeat(3, 1fr); } }
+    .tile { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    .tile span { display: block; font-size: .8rem; color: var(--muted); }
+    .tile strong { display: block; font-size: 1.3rem; color: var(--primary); }
+    .pendiente { color: var(--muted) !important; font-size: 1rem !important; font-weight: 500; }
+    figure { margin: 16px 0 0; }
+    figure img { display: block; width: 100%; height: auto; opacity: .9; -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse 75% 90% at 50% 50%, #000 55%, transparent 100%); }
+    figcaption { font-size: .8rem; color: var(--muted); margin-top: 6px; }
+    .clima-controles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 14px; }
+    .clima-controles select { padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: inherit; }
+    .tabla-clima th, .tabla-clima td { text-align: right; white-space: nowrap; }
+    .tabla-clima th:first-child, .tabla-clima td:first-child { text-align: left; }
+    .mapa { width: 100%; height: 420px; border: 0; border-radius: 12px; }
+    .mapa-placeholder { border: 1px dashed var(--border); border-radius: 12px; padding: 28px 16px; text-align: center; color: var(--muted); }
+    .fuentes a { display: block; margin-bottom: 6px; }
   </style>
 </head>
 <body>
 
-  <!-- NAVEGACIÓN SUPERIOR UNIFICADA -->
-  <header class="site-header" style="margin-bottom: 24px; border-radius: 0 0 12px 12px; padding: 12px 0;">
+  <header class="site-header">
     <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none;">APAIYSA</a>
+      <a class="logo" href="index.html">RiskCalc</a>
       <nav aria-label="Secciones" style="display:flex;gap:14px">
-        <a href="index.html" style="color: #e2e8f0; text-decoration: none;">Asociación</a>
-        <a href="el-nino.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Monitor El Niño</a>
+        <a href="index.html">Asociación</a>
+        <a href="el-nino.html">El Niño</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- ESPACIO DE PUBLICIDAD 1 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
+    <!-- ESPACIO PUBLICITARIO 1 -->
+    <div id="ad-space-1" class="ad-slot">
+      <div class="ad-label">Publicidad</div>
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-slot="4077993060"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
+    </div>
 
-    <!-- ESTADO ENSO -->
+    <!-- PORTADA -->
     <section class="card">
-      <h1 style="font-size: 1.6rem; margin-top: 5px; margin-bottom: 8px;">El Niño hoy: monitor global y análisis climático</h1>
-      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px;">Estado del fenómeno en el Pacífico ecuatorial, significado para la región y lectura de boletines oficiales.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 15px;">
-        <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
-          <span style="font-size: 0.75rem; color: #94a3b8; display: block;">Anomalía Niño 3.4</span>
-          <strong style="font-size: 1.1rem; color: #38bdf8;">+1.8 °C</strong>
-        </div>
-        <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
-          <span style="font-size: 0.75rem; color: #94a3b8; display: block;">ONI del 3er trimestre</span>
-          <strong style="font-size: 1.1rem; color: #38bdf8;">+2.2 °C</strong>
-        </div>
-        <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
-          <span style="font-size: 0.75rem; color: #94a3b8; display: block;">Estado del ENSO</span>
-          <strong style="font-size: 1.1rem; color: #34d399;">Activo</strong>
-        </div>
+      <h1>El Niño hoy: monitor global y análisis climático</h1>
+      <p class="lead">Estado del fenómeno en el Pacífico ecuatorial, qué significa para cada región y cómo leer los boletines oficiales.</p>
+
+      <figure id="fig-cabecera" hidden>
+        <img id="img-cabecera" alt="" loading="lazy">
+        <figcaption id="cred-cabecera"></figcaption>
+      </figure>
+
+      <div class="enso-grid">
+        <div class="tile"><span>Anomalía Niño 3.4</span><strong id="t-nino34" class="pendiente">Pendiente</strong></div>
+        <div class="tile"><span>ONI (promedio de 3 meses)</span><strong id="t-oni" class="pendiente">Pendiente</strong></div>
+        <div class="tile"><span>Estado del ENSO</span><strong id="t-estado" class="pendiente">Pendiente</strong></div>
       </div>
-      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 10px;">Fuentes: NOAA Climate Prediction Center y OMM.</p>
+      <p class="note" id="t-fecha"></p>
     </section>
 
-    <!-- PRONÓSTICO CLIMÁTICO HORARIO -->
-    <section class="card">
+    <!-- CLIMA POR HORA -->
+    <section class="card" id="clima">
       <h2>Clima de las próximas 24 horas</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Pronóstico horario para Asunción y zona de influencia. Se actualiza cada hora.</p>
-      
-      <div style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+      <p>Pronóstico horario para el punto que elijas. Se actualiza cada hora.</p>
+      <div class="clima-controles">
+        <select id="punto" aria-label="Punto de referencia"></select>
+        <span class="note" id="clima-estado">Cargando…</span>
+      </div>
+      <div class="table-wrap">
+        <table class="tabla-clima">
           <thead>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: #94a3b8;">
-              <th style="padding: 8px;">Hora</th>
-              <th style="padding: 8px;">Aire (°C)</th>
-              <th style="padding: 8px;">Lluvia (mm)</th>
-              <th style="padding: 8px;">Viento (km/h)</th>
-            </tr>
+            <tr><th>Hora</th><th>Aire (°C)</th><th>Lluvia (mm)</th><th>Viento (km/h)</th><th>Mar (°C)</th></tr>
           </thead>
-          <tbody id="tabla-clima-body">
-            <tr><td colspan="4" style="padding: 12px; text-align: center; color: #94a3b8;">Actualizando...</td></tr>
+          <tbody id="clima-cuerpo"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- QUÉ ESTÁ PASANDO -->
+    <article class="card">
+      <h2>¿Qué está pasando con El Niño?</h2>
+      <p>El Niño es la fase cálida de un ciclo océano-atmósfera conocido como ENSO (El Niño–Oscilación del Sur). Ocurre cuando las aguas superficiales del Pacífico ecuatorial central y oriental se calientan por encima de lo normal de forma sostenida.</p>
+      <p>En condiciones normales, los vientos alisios empujan el agua cálida hacia el oeste, hacia Asia y Australia. Cuando esos vientos se debilitan, el agua cálida regresa hacia el este y la atmósfera responde: la circulación de Walker se altera y cambian los patrones de lluvia en todo el planeta. Esa retroalimentación entre océano y atmósfera es lo que convierte el fenómeno en un evento global.</p>
+      <p>Para medirlo se usa la anomalía de temperatura en la región Niño 3.4, en el Pacífico central. Según la NOAA, un episodio de El Niño se identifica cuando el ONI, el promedio de tres meses de esa anomalía, llega a +0.5 °C o más y se mantiene al menos cinco meses consecutivos. Con +1.5 °C o más se clasifica como fuerte.</p>
+      <p>No todos los episodios son iguales. Un fenómeno puede estar formándose, activo o debilitándose. Por eso cada boletín indica su estado en la fecha de publicación.</p>
+    </article>
+
+    <!-- IMPACTO REGIONAL -->
+    <article class="card">
+      <h2>Impacto regional</h2>
+
+      <figure id="fig-lluvia" hidden>
+        <img id="img-lluvia" alt="" loading="lazy">
+        <figcaption id="cred-lluvia"></figcaption>
+      </figure>
+
+      <h3>América del Sur</h3>
+      <p>En el sur de Sudamérica, El Niño tiende a traer lluvias por encima de lo normal al sur de Brasil, Uruguay, el noreste de Argentina y la Cuenca del Plata, donde se ubica Paraguay. Ese exceso de lluvia puede causar inundaciones en zonas bajas y dificultar la cosecha.</p>
+      <p>En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico del servicio meteorológico nacional.</p>
+      <p>En el norte de la región el patrón cambia. En la costa norte de Perú y de Ecuador, el mar cálido suele traer lluvias intensas, mientras que en el nordeste de Brasil y en parte de la Amazonía tiende a aparecer sequía.</p>
+
+      <h3>Centroamérica y Norteamérica</h3>
+      <p>En Centroamérica, El Niño suele reducir las lluvias durante la primera siembra, lo que agrava el estrés hídrico en el Corredor Seco. En el Atlántico tiende a disminuir la actividad de huracanes, porque aumenta la cizalladura del viento, que dificulta su formación. En Norteamérica, el efecto típico en invierno es más lluvia en el sur de Estados Unidos y el norte de México.</p>
+
+      <h3>Agricultura y precios de materias primas</h3>
+
+      <figure id="fig-cultivos" hidden>
+        <img id="img-cultivos" alt="" loading="lazy">
+        <figcaption id="cred-cultivos"></figcaption>
+      </figure>
+
+      <p>Los efectos sobre los precios dependen de la región productora. En general, El Niño tiende a reducir la producción de trigo en Australia, de aceite de palma en Indonesia y Malasia, y de maíz en el sur de África, y puede debilitar el monzón de la India. Cuando baja la oferta, las cotizaciones suelen presionar al alza.</p>
+      <p>En Argentina y Paraguay, las condiciones suelen ser favorables para cultivos de verano como la soja, aunque el exceso de lluvia puede retrasar siembras y cosechas. El café y el cacao también pueden verse afectados por cambios en las lluvias de sus regiones productoras.</p>
+      <p>Los mercados reaccionan a los pronósticos, no solo a los hechos. Por eso los precios pueden moverse semanas antes de que el efecto llegue al campo.</p>
+    </article>
+
+    <!-- ESPACIO PUBLICITARIO 2 -->
+    <div id="ad-space-2" class="ad-slot">
+      <div class="ad-label">Publicidad</div>
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-slot="8376330722"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- MAPA -->
+    <section class="card">
+      <h2>Mapa interactivo de datos satelitales</h2>
+      <p>Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
+      <iframe id="interactive-map" class="mapa" title="Mapa interactivo de datos satelitales" hidden></iframe>
+      <div id="mapa-placeholder" class="mapa-placeholder">Mapa pendiente de activar.</div>
+      <p class="note"><a href="https://www.windy.com/" target="_blank" rel="noopener">Abrir un mapa de viento y lluvia en Windy</a></p>
+    </section>
+
+    <!-- PRONÓSTICO -->
+    <section class="card">
+      <h2>Pronóstico y línea de tiempo</h2>
+      <p>Probabilidad de condiciones de El Niño según el pronóstico del Climate Prediction Center de la NOAA.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Horizonte</th><th>Probabilidad de El Niño</th><th>Qué vigilar</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Próximo trimestre</td><td id="p-trimestre" class="pendiente">Pendiente</td><td>Anomalía Niño 3.4 y lluvias en el sur de Sudamérica</td></tr>
+            <tr><td>Dentro de dos trimestres</td><td id="p-dos" class="pendiente">Pendiente</td><td>Cosecha de verano en Argentina y Paraguay</td></tr>
+            <tr><td>Próximos seis meses</td><td id="p-seis" class="pendiente">Pendiente</td><td>Precios de trigo, aceite de palma y café</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ESPACIO DE PUBLICIDAD 2 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
+    <!-- ESPACIO PUBLICITARIO 3 -->
+    <div id="ad-space-3" class="ad-slot">
+      <div class="ad-label">Publicidad</div>
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-slot="6057289145"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
+    </div>
 
-    <!-- ANÁLISIS E IMPACTO REGIONAL -->
-    <article class="card">
-      <h2>¿Qué está pasando con El Niño?</h2>
-      <p>El Niño es la fase cálida de un ciclo océano-atmósfera conocido como ENSO. Ocurre cuando las aguas superficiales del Pacífico ecuatorial central y oriental se calientan por encima de lo normal de forma sostenida.</p>
-      <p>En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico y las alertas del servicio meteorológico nacional.</p>
-    </article>
-
-    <!-- GALERÍA INTEGRADA -->
-    <section class="card">
-      <h2>Galería de imágenes y monitoreo regional</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;">Registro visual de impacto hídrico y capturas satelitales en alta resolución.</p>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="Screenshot_20261024_193124_com_zhiliaoapp_musically_MainActivity_edit_319661834554619.jpg" alt="Impacto regional e inundaciones">
-          <p>Impacto regional y crecidas hídricas en la zona de influencia. Fotografía propia.</p>
-        </div>
-
-        <div class="gallery-item">
-          <img src="indsmoke_tmo_2023275_es.jpg" alt="Monitoreo satelital de humo e incendios">
-          <p>Monitoreo satelital de condiciones atmosféricas. Imagen: NASA EOSDIS Worldview.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAPA DE WINDS -->
-    <section class="card">
-      <h2>Mapa interactivo de datos satelitales</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
-      <div style="position: relative; width: 100%; height: 450px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-        <iframe title="Mapa interactivo de viento Windy" width="100%" height="100%" src="https://embed.windy.com/embed2.html?lat=-25.300&lon=-57.633&detailLat=-25.300&detailLon=-57.633&width=650&height=450&zoom=7&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
-      </div>
-      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 8px; text-align: center;"><a href="https://www.windy.com" target="_blank" rel="noopener" style="color: #38bdf8;">Abrir en mapa de viento a pantalla completa</a></p>
-    </section>
-
-    <!-- ESPACIO DE PUBLICIDAD 3 -->
-    <section class="card" style="text-align: center; padding: 12px;">
-      <div style="font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;">Publicidad</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9124670202405791"
-           data-ad-slot="auto"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
-
-    <!-- BOTÓN WHATSAPP -->
-    <section class="card" style="text-align: center;">
-      <h2>¿Te resultó útil esta información?</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Comparte este monitor climático con otros productores de la zona.</p>
-      <a href="https://api.whatsapp.com/send?text=Consulta%20el%20Monitor%20de%20El%20Niño%20y%20el%20clima%20en%20tiempo%20real:%20https://labhonor8-create.github.io/el-nino.html" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background-color: #25d366; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
-        Compartir en WhatsApp
-      </a>
-    </section>
-
-    <!-- FUENTES OFICIALES -->
-    <section class="card">
-      <h3 style="font-size: 1rem; margin-bottom: 10px;">Fuentes oficiales</h3>
-      <ul style="list-style: none; padding: 0; font-size: 0.85rem; color: #94a3b8; line-height: 1.6;">
-        <li><a href="https://www.cpc.ncep.noaa.gov" target="_blank" rel="noopener" style="color: #38bdf8;">NOAA Climate Prediction Center (CPC)</a></li>
-        <li><a href="https://www.weather.gov" target="_blank" rel="noopener" style="color: #38bdf8;">National Weather Service (NWS)</a></li>
-        <li><a href="https://wmo.int" target="_blank" rel="noopener" style="color: #38bdf8;">Organización Meteorológica Mundial (OMM)</a></li>
-      </ul>
+    <!-- FUENTES -->
+    <section class="card fuentes">
+      <h2>Fuentes oficiales</h2>
+      <a href="https://www.cpc.ncep.noaa.gov/" target="_blank" rel="noopener">NOAA Climate Prediction Center (ENSO)</a>
+      <a href="https://www.weather.gov/" target="_blank" rel="noopener">National Weather Service (NWS)</a>
+      <a href="https://wmo.int/" target="_blank" rel="noopener">Organización Meteorológica Mundial (OMM)</a>
     </section>
 
   </main>
 
-  <!-- PIE DE PÁGINA -->
-  <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
-    <p>Asociación de Productores Agropecuarios de Isla Ytororo · San Antonio, Paraguay</p>
-    <p style="margin-top: 10px;">
-      <a href="index.html" style="color: #38bdf8;">Asociación</a> ·
-      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a> ·
-      <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a>
+  <footer class="container">
+    <p>La información proviene de boletines científicos públicos de la NOAA, la NWS y la OMM, y se presenta con fines exclusivamente didácticos e informativos. No sustituye los avisos oficiales de tu servicio meteorológico nacional.</p>
+    <p>
+      <a href="index.html">Asociación</a> ·
+      <a href="privacidad.html">Privacidad</a> ·
+      <a href="acerca.html">Acerca de</a> ·
+      <a href="mailto:technologyinfoa@gmail.com">Contacto</a>
     </p>
-    <p style="margin-top: 8px;">© 2026 Asociación Isla Ytororó.</p>
+    <p>© 2026 RiskCalc, por Innovatech.</p>
   </footer>
 
-  <!-- SELLO CIRCULAR FLOTANTE EN LA ESQUINA INFERIOR DERECHA -->
-  <a href="index.html" class="floating-signature" title="APAIYSA">
-    <img src="logo.jpg" alt="Logo APAIYSA">
-  </a>
-
-  <!-- SCRIPT DE CLIMA (OPEN-METEO) -->
   <script>
-    async function cargarClima() {
-      try {
-        const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=-25.300&longitude=-57.633&hourly=temperature_2m,precipitation,wind_speed_10m');
-        const data = await res.json();
-        const tbody = document.getElementById('tabla-clima-body');
-        tbody.innerHTML = '';
-        
-        const nowIndex = new Date().getHours();
-        for (let i = nowIndex; i < nowIndex + 24; i++) {
-          if(!data.hourly.time[i]) break;
-          const horaStr = data.hourly.time[i].slice(11, 16);
-          const temp = data.hourly.temperature_2m[i];
-          const lluvia = data.hourly.precipitation[i];
-          const viento = data.hourly.wind_speed_10m[i];
+    // ===== IMÁGENES: pega aquí las direcciones de Unsplash (https://...) =====
+    const IMAGENES = {
+      cabecera: { url: "https://labhonor8-create.github.io/1000411606.jpg", alt: "Ciclones tropicales en el océano Pacífico vistos desde el espacio", credito: "Ciclones tropicales en el Pacífico. Imagen: NASA Earth Observatory" },
+      lluvia:   { url: "https://labhonor8-create.github.io/1000388242.jpg", alt: "Río de agua turbia bajo un cielo nublado", credito: "Río de la región" },
+      cultivos: { url: "https://labhonor8-create.github.io/1000411607.jpg", alt: "Humo de incendios sobre Indonesia visto desde el espacio", credito: "Humo de incendios en Indonesia, que se agravan en años secos de El Niño. Imagen: NASA Earth Observatory" }
+    };
 
-          const tr = document.createElement('tr');
-          tr.style.borderBottom = "1px solid rgba(255,255,255,0.05)";
-          tr.innerHTML = `
-            <td style="padding: 8px; color: #cbd5e1;">${horaStr}</td>
-            <td style="padding: 8px;">${temp} °C</td>
-            <td style="padding: 8px;">${lluvia} mm</td>
-            <td style="padding: 8px;">${viento} km/h</td>
-          `;
-          tbody.appendChild(tr);
-        }
-      } catch (e) {
-        document.getElementById('tabla-clima-body').innerHTML = `<tr><td colspan="4" style="padding:12px; text-align:center; color:#ef4444;">No se pudo actualizar el clima horario.</td></tr>`;
+    // ===== DATOS MANUALES: actualizar cada mes con el boletín oficial =====
+    // Deja null lo que no hayas verificado. La página lo muestra como "Pendiente".
+    const DATOS = {
+      fecha: "10 de septiembre de 2026", // boletín del CPC
+      estado: "Activo",             // "Activo", "En formación", "Neutral" o "Debilitándose"
+      nino34: 1.8,                  // anomalía de agosto de 2026 en °C, según el boletín
+      oni: null,                    // respaldo si no existe data/oni.json
+      pronostico: { trimestre: null, dos: null, seis: null }, // probabilidades en %
+      mapaUrl: ""                   // solo después de revisar los términos del proveedor
+    };
+
+    // ===== PUNTOS DEL CLIMA POR HORA =====
+    const PUNTOS = [
+      { id: "asu",    nombre: "Asunción, Paraguay",         lat: -25.26, lon: -57.58 },
+      { id: "poa",    nombre: "Porto Alegre, sur de Brasil", lat: -30.03, lon: -51.23 },
+      { id: "paita",  nombre: "Paita, costa norte de Perú",  lat: -5.09,  lon: -81.11 },
+      { id: "nino34", nombre: "Niño 3.4, Pacífico central",  lat: 0,      lon: -145 }
+    ];
+
+    // ===== ANUNCIOS =====
+    const ADSENSE_CLIENT = "ca-pub-9124670202405791";
+
+    // ===== UTILIDADES =====
+    const $ = id => document.getElementById(id);
+    const vacio = v => v === null || v === undefined || v === "" || Number.isNaN(v);
+    const pedir = async url => {
+      const r = await fetch(url, { signal: AbortSignal.timeout(12000) });
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    };
+    const num1 = v => (v == null || Number.isNaN(Number(v))) ? "—" : Number(v).toFixed(1).replace(".", ",");
+
+    function anomalia(v) {
+      if (vacio(v) || !Number.isFinite(Number(v))) return null;
+      const n = Number(v);
+      return `${n > 0 ? "+" : ""}${n.toFixed(1)} °C`;
+    }
+
+    function probabilidad(v) {
+      if (vacio(v) || !Number.isFinite(Number(v))) return null;
+      return `${Number(v)} %`;
+    }
+
+    function escribir(el, texto) {
+      el.textContent = texto ?? "Pendiente";
+      el.classList.toggle("pendiente", !texto);
+    }
+
+    function renderizarImagenes() {
+      Object.entries(IMAGENES).forEach(([clave, img]) => {
+        if (!img.url || !/^https:\/\//.test(img.url)) return;
+        $(`img-${clave}`).src = img.url;
+        $(`img-${clave}`).alt = img.alt;
+        $(`cred-${clave}`).textContent = img.credito || "";
+        $(`fig-${clave}`).hidden = false;
+      });
+    }
+
+    function renderizarDatos() {
+      escribir($("t-nino34"), anomalia(DATOS.nino34));
+      escribir($("t-oni"), anomalia(DATOS.oni));
+      escribir($("t-estado"), vacio(DATOS.estado) ? null : DATOS.estado);
+
+      $("t-fecha").textContent = vacio(DATOS.fecha)
+        ? "Fuente: NOAA Climate Prediction Center y OMM. Fecha de los datos: pendiente de actualizar."
+        : `Fuente: NOAA Climate Prediction Center y OMM. Datos del boletín de ${DATOS.fecha}.`;
+
+      escribir($("p-trimestre"), probabilidad(DATOS.pronostico.trimestre));
+      escribir($("p-dos"), probabilidad(DATOS.pronostico.dos));
+      escribir($("p-seis"), probabilidad(DATOS.pronostico.seis));
+
+      if (!vacio(DATOS.mapaUrl) && /^https:\/\//.test(DATOS.mapaUrl)) {
+        const mapa = $("interactive-map");
+        mapa.src = DATOS.mapaUrl;
+        mapa.hidden = false;
+        $("mapa-placeholder").hidden = true;
       }
     }
-    cargarClima();
-  </script>
 
+    // ===== ONI AUTOMÁTICO: lee data/oni.json, generado por update-enso.mjs =====
+    async function cargarOni() {
+      try {
+        const o = await pedir("data/oni.json");
+        const u = o.serie.at(-1);
+        $("t-oni").parentElement.querySelector("span").textContent = `ONI, ${u.temporada} ${u.anio}`;
+        escribir($("t-oni"), anomalia(u.oni));
+      } catch {
+        // Sin archivo: queda el valor manual de DATOS.oni
+      }
+    }
+
+    // ===== CLIMA POR HORA (Open-Meteo) =====
+    async function cargarPunto(p) {
+      const base = `latitude=${p.lat}&longitude=${p.lon}&timezone=auto&forecast_days=2`;
+      const [f, m] = await Promise.all([
+        pedir(`https://api.open-meteo.com/v1/forecast?${base}&current=temperature_2m&hourly=temperature_2m,precipitation,wind_speed_10m`),
+        pedir(`https://marine-api.open-meteo.com/v1/marine?${base}&hourly=sea_surface_temperature`).catch(() => null)
+      ]);
+      return { f, m };
+    }
+
+    function filasClima({ f, m }) {
+      const h = f.hourly, mar = m?.hourly?.sea_surface_temperature;
+      let i = 0;
+      h.time.forEach((t, k) => { if (t <= f.current.time) i = k; });
+      return h.time.slice(i, i + 24).map((t, j) => {
+        const k = i + j;
+        return `<tr><td>${t.slice(8, 10)}/${t.slice(5, 7)} ${t.slice(11, 16)}</td>` +
+          `<td>${num1(h.temperature_2m[k])}</td><td>${num1(h.precipitation[k])}</td>` +
+          `<td>${num1(h.wind_speed_10m[k])}</td><td>${mar ? num1(mar[k]) : "—"}</td></tr>`;
+      }).join("");
+    }
+
+    async function actualizarClima() {
+      const p = PUNTOS.find(x => x.id === $("punto").value);
+      $("clima-estado").textContent = "Actualizando…";
+      try {
+        $("clima-cuerpo").innerHTML = filasClima(await cargarPunto(p));
+        $("clima-estado").textContent = `Actualizado ${new Date().toLocaleTimeString("es", { hour: "2-digit", minute: "2-digit" })}`;
+      } catch {
+        $("clima-cuerpo").innerHTML = `<tr><td colspan="5">Sin conexión con Open-Meteo en este momento.</td></tr>`;
+        $("clima-estado").textContent = "No se pudo actualizar";
+      }
+    }
+
+    // ===== ANUNCIOS: un espacio solo se activa con IDs válidos =====
+    const anunciosActivos = /^ca-pub-\d{16}$/.test(ADSENSE_CLIENT);
+    document.querySelectorAll(".ad-slot").forEach(slot => {
+      const ins = slot.querySelector("ins.adsbygoogle");
+      if (!anunciosActivos || !/^\d{10}$/.test(ins.dataset.adSlot)) {
+        slot.hidden = true;
+        return;
+      }
+      ins.setAttribute("data-ad-client", ADSENSE_CLIENT);
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    });
+
+    // ===== ARRANQUE =====
+    PUNTOS.forEach(p => $("punto").add(new Option(p.nombre, p.id)));
+    $("punto").addEventListener("change", actualizarClima);
+    renderizarImagenes();
+    renderizarDatos();
+    actualizarClima();
+    cargarOni();
+    setInterval(actualizarClima, 3600e3);
+  </script>
 </body>
 </html>
