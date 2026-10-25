@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>APAIYSA | Asociación de Productores de la Isla Ytororo, San Antonio, Paraguay</title>
-<meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Matrícula jurídica N.° 12581, serie Civil. Actividades, actualidad y contacto.">
+<meta name="description" content="Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA), San Antonio, Paraguay. Matrícula jurídica N.° 12581, serie Civil. Actividades, galería y contacto.">
 <link rel="canonical" href="https://labhonor8-create.github.io/">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791" crossorigin="anonymous"></script>
 <style>
@@ -15,13 +15,12 @@
     --text: #e2e8f0; 
     --muted: #94a3b8; 
     --accent: #22c55e; 
-    --accent-glow: rgba(34, 197, 94, 0.4);
     --wa: #25d366; 
   }
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-top:90px; }
   body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
-    background:linear-gradient(rgba(7,17,14,.78),rgba(7,17,14,.90)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); }
+    background:linear-gradient(rgba(7,17,14,.78),rgba(7,17,14,.90)), url('IMG_20261024_192936.jpg') center/cover fixed no-repeat, var(--bg); }
   a { color:var(--accent); text-decoration:none; transition: color 0.2s; }
   a:hover { color: #4ade80; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
@@ -32,6 +31,7 @@
   h3 { font-size:1.05rem; color:var(--accent); margin:0 0 8px; }
   p { margin:0 0 12px; }
   .muted { color:var(--muted); }
+  
   header { position:sticky; top:0; z-index:50; background:rgba(7,17,14,.95); border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
   .bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; padding:12px 0; }
   .logo { font-weight:800; color:#fff; text-decoration:none; letter-spacing:.5px; font-size: 1.2rem; }
@@ -39,6 +39,7 @@
   nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.92rem; }
   nav a { color:var(--text); text-decoration:none; }
   nav a:hover, nav a[aria-current="page"] { color:var(--accent); }
+  
   .hero { text-align:center; padding:44px 0 20px; }
   .sub { color:var(--accent); font-weight:600; margin-bottom:14px; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
   .btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:22px; }
@@ -46,26 +47,107 @@
   .btn:hover { background: #15803d; transform: translateY(-1px); }
   .btn.wa { background:var(--wa); box-shadow:0 4px 14px rgba(37,211,102,.4); }
   .btn.wa:hover { background: #20ba5a; }
+  
   .tiles { display:grid; gap:12px; grid-template-columns:1fr; }
   @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid3 { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
   .tile { background:rgba(12,22,18,.8); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
   .tile span { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
   .tile strong { font-size:1.05rem; color:var(--accent); }
   .grid3, .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
+  
   .post { background:rgba(12,22,18,.8); border:1px solid var(--line); border-radius:12px; padding:18px; }
   .tag { font-size:.75rem; color:var(--accent); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight: 700; }
+  
+  /* ESTILOS DEL ÁLBUM DESPLEGABLE DE GALERÍA */
+  details.gallery-accordion {
+    border: none;
+    padding: 0;
+  }
+  details.gallery-accordion summary {
+    background: rgba(12,22,18,.9);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 20px;
+    color: var(--accent);
+    font-size: 1.05rem;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  details.gallery-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+  details.gallery-accordion summary:hover {
+    background: rgba(34,197,94,0.1);
+    border-color: var(--accent);
+  }
+  details.gallery-accordion summary::after {
+    content: "▼";
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+  }
+  details.gallery-accordion[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .gallery-item {
+    background: rgba(12,22,18,.85);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .gallery-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--line);
+  }
+  .gallery-caption {
+    padding: 12px;
+  }
+  .gallery-caption h3 {
+    margin: 0 0 4px 0;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+  .gallery-caption p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
   .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
   .steps li { counter-increment:paso; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
   .steps li::before { content:counter(paso); position:absolute; left:0; top:12px; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#07110e; font-weight:800; display:grid; place-items:center; }
-  details { border-bottom:1px solid var(--line); padding:12px 0; }
-  summary { cursor:pointer; font-weight:700; color:#fff; }
-  details p { margin:10px 0 0; color:var(--muted); }
+  
+  details.faq-item { border-bottom:1px solid var(--line); padding:12px 0; }
+  details.faq-item summary { cursor:pointer; font-weight:700; color:#fff; }
+  details.faq-item p { margin:10px 0 0; color:var(--muted); }
+  
   .ad { text-align:center; padding:12px; }
   .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
   .ad[hidden] { display:none; }
+  
   .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(34,197,94,0.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(13,26,20,.9); transition:transform .2s; }
   .sello:hover { transform:scale(1.08); }
   .sello img { width:100%; height:100%; object-fit:cover; }
+  
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
   footer nav { justify-content:center; margin-top:10px; }
   @media (prefers-reduced-motion:reduce) { *, *::before { transition:none !important; scroll-behavior:auto !important; } }
@@ -80,6 +162,7 @@
       <a href="#quienes">Quiénes somos</a>
       <a href="#legal">Datos legales</a>
       <a href="#actividades">Actividades</a>
+      <a href="#galeria" onclick="document.getElementById('desplegable-galeria').open = true;">Galería</a>
       <a href="#actualidad">Actualidad</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
@@ -151,6 +234,38 @@
     </div>
   </section>
 
+  <!-- APARTADO DE GALERÍA DESPLEGABLE -->
+  <section id="galeria">
+    <div class="card">
+      <h2>Galería de la Asociación</h2>
+      <p class="muted">Registro fotográfico de nuestras parcelas, labores comunitarias y desarrollo productivo en la zona insular de San Antonio.</p>
+      
+      <details class="gallery-accordion" id="desplegable-galeria">
+        <summary>📷 Toca aquí para desplegar las fotos del álbum</summary>
+        
+        <div class="gallery-grid">
+          <!-- FOTO 1 -->
+          <div class="gallery-item">
+            <img src="IMG_20261024_192936.jpg" alt="Cultivos de mandioca en Isla Ytororo">
+            <div class="gallery-caption">
+              <h3>Trabajos en Parcelas</h3>
+              <p>Cultivos de mandioca y desarrollo agrícola en la zona.</p>
+            </div>
+          </div>
+
+          <!-- FOTO 2 -->
+          <div class="gallery-item">
+            <img src="logo.jpg" alt="Sello Institucional APAIYSA">
+            <div class="gallery-caption">
+              <h3>Sello Oficial</h3>
+              <p>Identidad de la Asociación de Productores Agropecuarios.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
   <section id="actualidad">
     <div class="card">
       <h2>Actualidad</h2>
@@ -177,10 +292,10 @@
   <section id="preguntas">
     <div class="card">
       <h2>Preguntas frecuentes</h2>
-      <details><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
-      <details><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980. Te respondemos con la información disponible.</p></details>
-      <details><summary>¿La asociación está legalmente constituida?</summary><p>Sí. Está inscripta en la Dirección General de los Registros Públicos con matrícula jurídica N.° 12581, serie Civil. Su estatuto fue protocolizado por escritura pública N.° 19 del 10/10/2022. Su RUC es 80130689-2 y figura como activo.</p></details>
-      <details><summary>¿Qué hacen ante las crecidas del río?</summary><p>Impulsan proyectos para proteger la infraestructura de acopio y hacen seguimiento del caudal hídrico.</p></details>
+      <details class="faq-item"><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
+      <details class="faq-item"><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980. Te respondemos con la información disponible.</p></details>
+      <details class="faq-item"><summary>¿La asociación está legalmente constituida?</summary><p>Sí. Está inscripta en la Dirección General de los Registros Públicos con matrícula jurídica N.° 12581, serie Civil. Su estatuto fue protocolizado por escritura pública N.° 19 del 10/10/2022. Su RUC es 80130689-2 y figura como activo.</p></details>
+      <details class="faq-item"><summary>¿Qué hacen ante las crecidas del río?</summary><p>Impulsan proyectos para proteger la infraestructura de acopio y hacen seguimiento del caudal hídrico.</p></details>
     </div>
   </section>
 
