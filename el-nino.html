@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monitor El Niño | APAIYSA - San Antonio, Paraguay</title>
-<meta name="description" content="Monitoreo climático y del fenómeno El Niño para los productores agropecuarios de la Isla Ytororo, San Antonio, Paraguay.">
+<meta name="description" content="Monitoreo climático, mapa en vivo y del fenómeno El Niño para los productores agropecuarios de la Isla Ytororo, San Antonio, Paraguay.">
 <link rel="canonical" href="https://labhonor8-create.github.io/el-nino.html">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9124670202405791" crossorigin="anonymous"></script>
 <style>
@@ -41,6 +41,9 @@
   .meteo-card span { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 4px; }
   .meteo-card strong { font-size: 1.15rem; color: var(--accent); }
   .meteo-loading { text-align: center; color: var(--muted); font-style: italic; padding: 15px; font-size: 0.95rem; }
+
+  /* Contenedor del Mapa Windy */
+  .map-container { margin-top: 20px; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: rgba(11,18,32,.9); }
 
   .sello { position:fixed; bottom:18px; right:18px; z-index:60; width:56px; height:56px; border-radius:50%; overflow:hidden; border:2px solid rgba(56,189,248,.6); box-shadow:0 4px 14px rgba(0,0,0,.5); background:rgba(18,24,38,.9); }
   .sello img { width:100%; height:100%; object-fit:cover; }
@@ -81,6 +84,17 @@
       </div>
       <div id="meteo-datos">
         <div class="meteo-loading">Conectando con la estación meteorológica...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA INTERACTIVO DE WINDY -->
+  <section>
+    <div class="card">
+      <h2>Mapa Satelital y de Precipitaciones en Vivo</h2>
+      <p class="muted">Visualización interactiva del viento, nubosidad y avance de lluvias sobre la región.</p>
+      <div class="map-container">
+        <iframe width="100%" height="400" src="https://embed.windy.com/embed2.html?lat=-25.2865&lon=-57.6470&zoom=8&level=surface&overlay=rain&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
       </div>
     </div>
   </section>
