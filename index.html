@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asociación de Productores Agropecuarios de Isla Ytororo | San Antonio</title>
-  <meta name="description" content="Sitio oficial de la Asociación de Productores Agropecuarios de Isla Ytororo (San Antonio, Paraguay). Personería Jurídica N° 12.581/2022. RUC 80130689-2.">
+  <title>APAIYSA | Actualidad y Producción Agropecuaria en Isla Ytororo</title>
+  <meta name="description" content="Portal informativo y blog oficial de la Asociación de Productores Agropecuarios de Isla Ytororo (San Antonio, Paraguay). Actualidad, cultivos y monitoreo técnico.">
   <link rel="canonical" href="https://labhonor8-create.github.io/index.html">
   <link rel="stylesheet" href="styles.css">
 
@@ -34,6 +34,13 @@
     .tile span { display: block; font-size: .85rem; color: #94a3b8; margin-bottom: 4px; }
     .tile strong { display: block; font-size: 1.2rem; color: #38bdf8; }
 
+    /* ESTILO DE BLOG / ARTÍCULOS */
+    .blog-grid { display: grid; gap: 20px; grid-template-columns: 1fr; margin-top: 15px; }
+    @media (min-width: 768px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    .blog-post { background: rgba(15, 20, 30, 0.75); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
+    .blog-post h3 { font-size: 1.2rem; color: #38bdf8; margin-bottom: 8px; }
+    .blog-date { font-size: 0.78rem; color: #94a3b8; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+
     .cta-container { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; align-items: center; }
     @media(min-width: 640px) { .cta-container { flex-direction: row; justify-content: center; } }
     
@@ -55,7 +62,7 @@
     }
     .btn-whatsapp:hover { background-color: #20ba5a; transform: translateY(-2px); }
 
-    /* FIRMA FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
+    /* SELLO FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
     .floating-signature {
       position: fixed;
       bottom: 20px;
@@ -73,21 +80,16 @@
       justify-content: center;
       transition: transform 0.2s ease;
     }
-    .floating-signature:hover {
-      transform: scale(1.1);
-    }
-    .floating-signature img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .floating-signature:hover { transform: scale(1.1); }
+    .floating-signature img { width: 100%; height: 100%; object-fit: cover; }
   </style>
 </head>
 <body>
 
+  <!-- NAVEGACIÓN SUPERIOR -->
   <header class="site-header" style="margin-bottom: 24px; border-radius: 0 0 12px 12px; padding: 12px 0;">
     <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none;">APAIYSA</a>
+      <a class="logo" href="index.html" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">APAIYSA</a>
       <nav aria-label="Secciones" style="display:flex;gap:14px">
         <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Asociación</a>
         <a href="el-nino.html" style="color: #e2e8f0; text-decoration: none;">Monitor El Niño</a>
@@ -97,10 +99,11 @@
 
   <main class="container">
 
+    <!-- PORTADA E IDENTIDAD -->
     <section class="card" style="text-align: center;">
       <h1 style="font-size: 1.8rem; margin-bottom: 10px;">Asociación de Productores Agropecuarios de Isla Ytororo</h1>
       <p style="color: #38bdf8; font-weight: 600; margin-bottom: 15px;">Ciudad de San Antonio, Paraguay</p>
-      <p class="lead">Portal institucional enfocado en la producción agropecuaria sostenible, el trabajo de la tierra y la gestión estratégica frente a los factores climáticos.</p>
+      <p class="lead">Portal informativo y blog oficial de nuestra comunidad productiva. Un espacio dedicado a visibilizar el trabajo de la tierra, la defensa de la producción y la planificación ante los factores climáticos.</p>
 
       <div class="info-grid">
         <div class="tile">
@@ -123,41 +126,53 @@
       </div>
     </section>
 
-    <article class="card">
-      <h2>Nuestra Misión y Enfoque Productivo</h2>
-      <p>Establecidos formalmente en la zona de la Isla Ytororo en San Antonio, los 21 socios activos que conformamos esta asociación trabajamos de manera unida para potenciar los cultivos locales (como la mandioca y rubros de autoconsumo/renta), optimizar la logística de transporte y enfrentar coordinadamente los desafíos climáticos de la Cuenca del Plata.</p>
-      <p>Nuestra labor combina la experiencia tradicional en el trabajo rural con el uso de herramientas tecnológicas de monitoreo atmosférico para proteger las cosechas y asegurar la estabilidad de las familias productoras de la región.</p>
-    </article>
+    <!-- SECCIÓN DE BLOG / ACTUALIDAD (LO QUE ESTÁ PASANDO) -->
+    <section class="card">
+      <h2 style="font-size: 1.4rem; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 8px; margin-bottom: 15px;">Actualidad y Reportes de la Isla</h2>
+      
+      <div class="blog-grid">
+        <article class="blog-post">
+          <div>
+            <div class="blog-date">Gestión Productiva · Isla Ytororo</div>
+            <h3>Preparación de Suelos y Cultivos de Mandioca</h3>
+            <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas para asegurar el rendimiento de los rubros de autoconsumo y renta en la zona insular.</p>
+          </div>
+          <div style="margin-top: 15px;">
+            <span style="font-size: 0.8rem; color: #38bdf8; font-weight: bold;">Compromiso Rural</span>
+          </div>
+        </article>
 
-    <article class="card">
-      <h2>Proyectos de Desarrollo e Infraestructura para la Isla</h2>
-      <p>Con la firme convicción de que las condiciones climáticas y operativas de la región se optimizarán mediante una planificación adecuada, la asociación impulsa una visión de futuro con iniciativas de gran envergadura:</p>
-      <ul style="margin-top: 10px; padding-left: 20px; color: #cbd5e1; line-height: 1.6;">
-        <li><strong>Optimización de caminos y accesos rurales:</strong> Planificación de mejoras logísticas para garantizar el flujo constante de maquinaria e insumos hacia las zonas de cultivo.</li>
-        <li><strong>Infraestructura de acopio y resguardo:</strong> Proyectos orientados a mitigar el impacto de crecidas fluviales y proteger la producción frente a eventos climáticos extremos.</li>
-        <li><strong>Asistencia técnica y asociatividad:</strong> Capacitación continua para los miembros, fomentando prácticas agrícolas sostenibles y eficientes en la zona insular.</li>
-      </ul>
-    </article>
-
-    <section class="card" style="text-align: center;">
-      <h2>Herramientas y Monitoreo en Tiempo Real</h2>
-      <p>Consulta nuestro monitor especializado sobre el fenómeno de El Niño.</p>
-      <div class="cta-container" style="justify-content: center;">
-        <a href="el-nino.html" class="btn-primary">Ir al Monitor El Niño</a>
+        <article class="blog-post">
+          <div>
+            <div class="blog-date">Monitoreo Ambiental · Cuenca del Plata</div>
+            <h3>Estrategias Frente a Factores Climáticos</h3>
+            <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.5;">Ante las variaciones atmosféricas y la fluctuación del caudal hídrico, la asociación implementa herramientas tecnológicas de seguimiento para proteger las cosechas familiares.</p>
+          </div>
+          <div style="margin-top: 15px;">
+            <a href="el-nino.html" style="font-size: 0.8rem; color: #38bdf8; font-weight: bold; text-decoration: none;">Ver Monitor en Tiempo Real →</a>
+          </div>
+        </article>
       </div>
     </section>
 
+    <!-- MISIÓN Y ENFOQUE PROFESIONAL -->
+    <article class="card">
+      <h2>Nuestra Misión y Propósito Gremial</h2>
+      <p>Establecidos formalmente en la zona de la Isla Ytororo en San Antonio, defendemos el valor del trabajo rural organizado. Nuestra labor combina la experiencia tradicional en el campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
+      <p>Impulsamos proyectos orientados a mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros miembros.</p>
+    </article>
+
   </main>
 
+  <!-- PIE DE PÁGINA -->
   <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
-    <p>Asociación de Productores Agropecuarios de Isla Ytororo · San Antonio, Paraguay</p>
+    <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
     <p>Celular de contacto: 0982 879-980</p>
-    <p>
+    <p style="margin-top: 10px;">
       <a href="index.html" style="color: #38bdf8;">Asociación</a> ·
-      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a> ·
-      <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a>
+      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a>
     </p>
-    <p>© 2026 APAIYSA.</p>
+    <p style="margin-top: 6px;">© 2026 APAIYSA.</p>
   </footer>
 
   <!-- SELLO CIRCULAR FLOTANTE EN LA ESQUINA INFERIOR DERECHA -->
