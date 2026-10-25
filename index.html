@@ -54,6 +54,33 @@
       width: 100%; max-width: 280px;
     }
     .btn-whatsapp:hover { background-color: #20ba5a; transform: translateY(-2px); }
+
+    /* FIRMA FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
+    .floating-signature {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(56, 189, 248, 0.6);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+      background: rgba(18, 24, 38, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+    .floating-signature:hover {
+      transform: scale(1.1);
+    }
+    .floating-signature img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -64,7 +91,6 @@
       <nav aria-label="Secciones" style="display:flex;gap:14px">
         <a href="index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Asociación</a>
         <a href="el-nino.html" style="color: #e2e8f0; text-decoration: none;">Monitor El Niño</a>
-        <a href="galeria.html" style="color: #e2e8f0; text-decoration: none;">Galería</a>
       </nav>
     </div>
   </header>
@@ -115,10 +141,9 @@
 
     <section class="card" style="text-align: center;">
       <h2>Herramientas y Monitoreo en Tiempo Real</h2>
-      <p>Consulta nuestro monitor especializado sobre el fenómeno de El Niño y el registro fotográfico de impacto regional.</p>
+      <p>Consulta nuestro monitor especializado sobre el fenómeno de El Niño.</p>
       <div class="cta-container" style="justify-content: center;">
         <a href="el-nino.html" class="btn-primary">Ir al Monitor El Niño</a>
-        <a href="galeria.html" class="btn-primary" style="background-color: #0369a1;">Ver Galería Fotográfica</a>
       </div>
     </section>
 
@@ -129,12 +154,16 @@
     <p>Celular de contacto: 0982 879-980</p>
     <p>
       <a href="index.html" style="color: #38bdf8;">Asociación</a> ·
-      <a href="el-nino.html" style="color: #38bdf8;">El Niño</a> ·
-      <a href="galeria.html" style="color: #38bdf8;">Galería</a> ·
+      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a> ·
       <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a>
     </p>
-    <p>© 2026 Asociación Isla Ytororo / APAIYSA.</p>
+    <p>© 2026 APAIYSA.</p>
   </footer>
+
+  <!-- SELLO CIRCULAR FLOTANTE EN LA ESQUINA INFERIOR DERECHA -->
+  <a href="index.html" class="floating-signature" title="APAIYSA">
+    <img src="Screenshot_20261024_202622_com_hihonor_photos_GalleryMain.jpg" alt="Logo APAIYSA">
+  </a>
 
 </body>
 </html>
