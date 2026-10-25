@@ -56,6 +56,27 @@
       margin-top: 8px;
       text-align: center;
     }
+
+    /* SELLO FLOTANTE CIRCULAR EN LA ESQUINA INFERIOR DERECHA */
+    .floating-signature {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(56, 189, 248, 0.6);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+      background: rgba(18, 24, 38, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+    .floating-signature:hover { transform: scale(1.1); }
+    .floating-signature img { width: 100%; height: 100%; object-fit: cover; }
   </style>
 </head>
 <body>
@@ -225,6 +246,11 @@
     </p>
     <p style="margin-top: 8px;">© 2026 Asociación Isla Ytororó.</p>
   </footer>
+
+  <!-- SELLO CIRCULAR FLOTANTE EN LA ESQUINA INFERIOR DERECHA -->
+  <a href="index.html" class="floating-signature" title="APAIYSA">
+    <img src="logo.jpg" alt="Logo APAIYSA">
+  </a>
 
   <!-- SCRIPT DE CLIMA (OPEN-METEO) -->
   <script>
