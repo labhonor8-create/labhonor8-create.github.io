@@ -14,8 +14,8 @@
     --line: rgba(74, 222, 128, 0.22); 
     --text: #e2e8f0; 
     --muted: #94a3b8; 
-    --accent: #22c55e;        /* Verde hoja principal */
-    --accent-glow: #4ade80;   /* Verde fosforescente/lima brillante para resaltar */
+    --accent: #22c55e;        
+    --accent-glow: #4ade80;   
     --wa: #25d366; 
   }
   * { box-sizing:border-box; }
@@ -25,7 +25,7 @@
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; 
     line-height:1.6; 
     color:var(--text);
-    background:linear-gradient(rgba(6,16,10,.82),rgba(6,16,10,.94)), url('IMG_20261024_192936.jpg') center/cover fixed no-repeat, var(--bg); 
+    background:linear-gradient(rgba(6,16,10,.82),rgba(6,16,10,.94)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); 
   }
   a { color:var(--accent-glow); text-decoration:none; transition: color 0.2s; }
   a:hover { color: #86efac; }
@@ -105,7 +105,6 @@
   .post { background:rgba(12,26,17,.85); border:1px solid var(--line); border-radius:12px; padding:18px; }
   .tag { font-size:.75rem; color:var(--accent-glow); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight: 700; }
   
-  /* ESTILOS DEL ÁLBUM DESPLEGABLE DE GALERÍA */
   details.gallery-accordion { border: none; padding: 0; }
   details.gallery-accordion summary {
     background: rgba(12,26,17,.9); 
@@ -157,10 +156,6 @@
   details.faq-item { border-bottom:1px solid var(--line); padding:12px 0; }
   details.faq-item summary { cursor:pointer; font-weight:700; color:#fff; }
   details.faq-item p { margin:10px 0 0; color:var(--muted); }
-  
-  .ad { text-align:center; padding:12px; }
-  .ad small { display:block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
-  .ad[hidden] { display:none; }
   
   .sello { 
     position:fixed; 
@@ -251,9 +246,9 @@
         <summary>📷 Toca aquí para desplegar las fotos del álbum</summary>
         
         <div class="gallery-grid">
-          <!-- FOTO 1 -->
+          <!-- FOTO 1 (Ejemplo inicial usando la imagen de fondo actual mientras sumas más fotos) -->
           <div class="gallery-item">
-            <img src="IMG_20261024_192936.jpg" alt="Trabajos en Parcelas">
+            <img src="imagen-fondo.jpg" alt="Trabajos en Parcelas">
             <div class="gallery-caption">
               <h3>Trabajos en Parcelas</h3>
               <p>Cultivos de mandioca y desarrollo agrícola en la zona.</p>
