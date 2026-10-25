@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Niño hoy: monitor global y análisis climático | RiskCalc</title>
-  <meta name="description" content="Monitoreo en tiempo real del fenómeno de El Niño (ENSO), pronóstico del clima por hora y mapas satelitales para la producción agropecuaria.">
+  <title>El Niño hoy: monitor global y análisis climático | Asociación Isla Ytororó</title>
+  <meta name="description" content="Monitoreo en tiempo real del fenómeno de El Niño (ENSO), pronóstico del clima por hora, galería visual y mapas satelitales para la producción agropecuaria.">
   <link rel="canonical" href="https://labhonor8-create.github.io/el-nino.html">
   <link rel="stylesheet" href="styles.css">
 
@@ -26,6 +26,36 @@
       border: 1px solid rgba(255, 255, 255, 0.12) !important;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
+    .gallery-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+      margin-top: 15px;
+    }
+    @media (min-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .gallery-item {
+      background: rgba(15, 20, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 10px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    .gallery-item p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      margin-top: 8px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -37,16 +67,15 @@
       <nav aria-label="Secciones" style="display:flex;gap:14px">
         <a href="index.html" style="color: #e2e8f0; text-decoration: none;">Asociación</a>
         <a href="el-nino.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">Monitor El Niño</a>
-        <a href="galeria.html" style="color: #e2e8f0; text-decoration: none;">Galería</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- SECCIÓN DE ENCABEZADO Y ESTADO ENSO -->
+    <!-- ESTADO ENSO -->
     <section class="card">
-      <div class="ad-label">Publicidad</div>
+      <div class="ad-label" style="font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #94a3b8; text-align: center; margin-bottom: 6px;">Publicidad</div>
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-9124670202405791"
@@ -58,34 +87,30 @@
       </script>
 
       <h1 style="font-size: 1.6rem; margin-top: 15px; margin-bottom: 8px;">El Niño hoy: monitor global y análisis climático</h1>
-      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px;">Estado del fenónemo en el Pacífico ecuatorial, que significa para cada región y cómo leer los boletines oficiales.</p>
+      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px;">Estado del fenómeno en el Pacífico ecuatorial, significado para la región y lectura de boletines oficiales.</p>
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 15px;">
-        <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: border-box;">
+        <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
           <span style="font-size: 0.75rem; color: #94a3b8; display: block;">Anomalía Niño 3.4</span>
-          <strong id="val-oni" style="font-size: 1.1rem; color: #38bdf8;">+1.8 °C</strong>
+          <strong style="font-size: 1.1rem; color: #38bdf8;">+1.8 °C</strong>
         </div>
         <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
           <span style="font-size: 0.75rem; color: #94a3b8; display: block;">ONI del 3er trimestre</span>
-          <strong id="val-trim" style="font-size: 1.1rem; color: #38bdf8;">+2.2 °C</strong>
+          <strong style="font-size: 1.1rem; color: #38bdf8;">+2.2 °C</strong>
         </div>
         <div style="background: rgba(15,20,30,0.7); padding: 12px; border-radius: 8px; text-align: center;">
           <span style="font-size: 0.75rem; color: #94a3b8; display: block;">Estado del ENSO</span>
-          <strong id="val-estado" style="font-size: 1.1rem; color: #34d399;">Activo</strong>
+          <strong style="font-size: 1.1rem; color: #34d399;">Activo</strong>
         </div>
       </div>
-      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 10px;">Fuentes: NOAA Climate Prediction Center y OMM. Datos del 18 de septiembre de 2024.</p>
+      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 10px;">Fuentes: NOAA Climate Prediction Center y OMM.</p>
     </section>
 
     <!-- PRONÓSTICO CLIMÁTICO HORARIO -->
     <section class="card">
       <h2>Clima de las próximas 24 horas</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Pronóstico horario para el punto que elija. Se actualiza cada hora.</p>
+      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Pronóstico horario para Asunción y zona de influencia. Se actualiza cada hora.</p>
       
-      <div style="margin-bottom: 12px;">
-        <label for="ubicacion-select" style="font-size: 0.85rem; color: #cbd5e1; display: block; margin-bottom: 4px;">Asunción, Paraguay</label>
-      </div>
-
       <div style="overflow-x: auto;">
         <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
           <thead>
@@ -106,64 +131,29 @@
     <!-- ANÁLISIS E IMPACTO REGIONAL -->
     <article class="card">
       <h2>¿Qué está pasando con El Niño?</h2>
-      <p>El Niño es la fase cálida de un ciclo océano-atmósfera conocido como ENSO (El Niño-Oscilación del Sur). Ocurre cuando las aguas superficiales del Pacífico ecuatorial central y oriental se calientan por encima de lo normal de forma sostenida.</p>
-      <p>En condiciones normales, los vientos alisios empujan el agua cálida hacia el oeste, hacia Asia y Australia. Cuando los vientos se debilitan, el agua cálida regresa hacia el este y la atmósfera responde: la circulación de Walker se altera y cambian los patrones de lluvia en todo el planeta. Esa retroalimentación entre océano y atmósfera se convierte en un evento global.</p>
-      <p>Para medirlo se usa la anomalía de temperatura en la región Niño 3.4, en el Pacífico central. Según la NOAA, un episodio de El Niño se identifica cuando el ONI, el promedio de tres meses de esa anomalía, llega a +0.5 °C o más y se mantiene al menos cinco meses consecutivos. Con +1.5 °C o más se clasifica como fuerte.</p>
-      <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 10px;">No todos los episodios son iguales. Un fenómeno puede estar formándose, activo o debatiéndose. Por eso cada boletín indica su estado en la fecha de publicación.</p>
+      <p>El Niño es la fase cálida de un ciclo océano-atmósfera conocido como ENSO. Ocurre cuando las aguas superficiales del Pacífico ecuatorial central y oriental se calientan por encima de lo normal de forma sostenida.</p>
+      <p>En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico y las alertas del servicio meteorológico nacional.</p>
     </article>
 
+    <!-- GALERÍA INTEGRADA DIRECTAMENTE -->
     <section class="card">
-      <h2>Impacto regional</h2>
-      <div style="margin-top: 12px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-        <img src="Screenshot_20261024_193124_com_zhiliaoapp_musically_MainActivity_edit_319661834554619.jpg" alt="Impacto regional e inundaciones" style="width: 100%; display: block;">
+      <h2>Galería de imágenes y monitoreo regional</h2>
+      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;">Registro visual de impacto hídrico y capturas satelitales en alta resolución.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="Screenshot_20261024_193124_com_zhiliaoapp_musically_MainActivity_edit_319661834554619.jpg" alt="Impacto regional e inundaciones">
+          <p>Impacto regional y crecidas hídricas en la zona de influencia. Fotografía propia.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="indsmoke_tmo_2023275_es.jpg" alt="Monitoreo satelital de humo e incendios">
+          <p>Monitoreo satelital de condiciones atmosféricas. Imagen: NASA EOSDIS Worldview.</p>
+        </div>
       </div>
-      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 6px; text-align: center;">Fotografía y composición de autoría propia.</p>
-
-      <h3 style="font-size: 1.1rem; margin-top: 20px; color: #38bdf8;">América del Sur</h3>
-      <p style="font-size: 0.9rem; margin-top: 6px;">En el sur de Sudamérica, El Niño tiende a traer lluvias por encima de lo normal al sur de Brasil, Uruguay, el este de Argentina y la Cuenca del Plata, desde donde abarca Paraguay. Esas escasas de lluvia pueden causar inundaciones en zonas bajas y dificultar la cosecha.</p>
-      <p style="font-size: 0.9rem; margin-top: 6px;">En Paraguay, el efecto más frecuente es un aumento de lluvias, sobre todo en la región oriental, aunque su intensidad cambia de un episodio a otro. Conviene seguir el pronóstico del servicio meteorológico nacional.</p>
-      <p style="font-size: 0.9rem; margin-top: 6px;">En el norte de la región el patón cambia. En la costa norte de Perú y de Ecuador, el mar cálido suele traer lluvias intensas, mientras que en el sureste de Brasil y en parte de la Amazonía tiende a aparecer sequía.</p>
-
-      <h3 style="font-size: 1.1rem; margin-top: 20px; color: #38bdf8;">Centroamérica y Norteamérica</h3>
-      <p style="font-size: 0.9rem; margin-top: 6px;">En Centroamérica, El Niño suele reducir las lluvias durante la primera siembra, lo que agrava el estrés hídrico en el Corredor Seco. En el Atlántico, tiende a disminuir la actividad de huracanes, porque aumenta la cizalladura del viento, que dificulta su formación. En Norteamérica, el efecto típico en invierno es más frío en el sur de Estados Unidos y el norte de México.</p>
-
-      <h3 style="font-size: 1.1rem; margin-top: 20px; color: #38bdf8;">Agricultura y precios de materias primas</h3>
-      <div style="margin-top: 12px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-        <img src="indsmoke_tmo_2023275_es.jpg" alt="Monitoreo satelital de humo e incendios" style="width: 100%; display: block;">
-      </div>
-      <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 6px; text-align: center;">Imagen: NASA EOSDIS Worldview.</p>
-      <p style="font-size: 0.9rem; margin-top: 10px;">Los efectos sobre los precios dependen de la región productiva. En general, El Niño tiende a reducir la producción de trigo en Australia, de avena y de pastos en Australia y Indonesia, y de maíz en el norte de África, y yemas destripan el rendimiento de la cosecha. Cuando la seca, los cultivadores suelen presionar al alza.</p>
-      <p style="font-size: 0.9rem; margin-top: 6px;">En Argentina y Paraguay, las condiciones suelen ser favorables para cultivos de verano como la soja, aunque el exceso de agua puede retrasar siembras y cosechas. El café y el cacao también pueden verse afectados por cambios en las lluvias de sus regiones productivas.</p>
-      <p style="font-size: 0.9rem; margin-top: 6px;">Los mercados reaccionan a los pronósticos, no solo a los hechos. Por eso los precios pueden moverse semanas antes de que el efecto llegue al campo.</p>
-    </article>
-
-    <!-- PRONÓSTICO Y LÍNEAS DE TIEMPO -->
-    <section class="card">
-      <h2>Pronóstico y líneas de tiempo</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 12px;">Probabilidad de condiciones de El Niño según el pronóstico del Climate Prediction Center de la NOAA.</p>
-      <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
-        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between;">
-          <span>Horizonte</span><strong>Probabilidad de El Niño</strong><strong>Con vigilar</strong>
-        </li>
-        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between;">
-          <span>Próximo trimestre</span><span style="color: #cbd5e1;">Pendiente</span><span style="color: #cbd5e1;">Anomalía Niño 3.4 y lluvias en el mar de Sudamérica</span>
-        </li>
-        <li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between;">
-          <span>Dentro de dos trimestres</span><span style="color: #cbd5e1;">Pendiente</span><span style="color: #cbd5e1;">Cosecha de verano en Argentina y Paraguay</span>
-        </li>
-        <li style="padding: 8px 0; display: flex; justify-content: space-between;">
-          <span>Próximos seis meses</span><span style="color: #cbd5e1;">Pendiente</span><span style="color: #cbd5e1;">Precios de trigo, aceite de palma y café</span>
-        </li>
-      </ul>
     </section>
 
-    <!-- GALERÍA Y MAPA DE WINDS -->
-    <section class="card" style="text-align: center;">
-      <h2>Galería de imágenes y monitoreo</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Explora el registro fotográfico y las capturas satelitales en alta resolución.</p>
-      <a href="galeria.html" class="btn-primary" style="display:inline-block; background-color: #0284c7; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">Ver Galería de imágenes</a>
-    </section>
-
+    <!-- MAPA DE WINDS -->
     <section class="card">
       <h2>Mapa interactivo de datos satelitales</h2>
       <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Consulta temperatura del mar, lluvia y viento en tiempo casi real.</p>
@@ -176,7 +166,7 @@
     <!-- BOTÓN WHATSAPP -->
     <section class="card" style="text-align: center;">
       <h2>¿Te resultó útil esta información?</h2>
-      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Comparte este monitor climático y el pronóstico en tiempo real con otros productores en tus grupos de WhatsApp.</p>
+      <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px;">Comparte este monitor climático con otros productores de la zona.</p>
       <a href="https://api.whatsapp.com/send?text=Consulta%20el%20Monitor%20de%20El%20Niño%20y%20el%20clima%20en%20tiempo%20real:%20https://labhonor8-create.github.io/el-nino.html" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background-color: #25d366; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
         Compartir en WhatsApp
       </a>
@@ -194,16 +184,15 @@
 
   </main>
 
-  <!-- PIE DE PÁGINA UNIFICADO -->
+  <!-- PIE DE PÁGINA -->
   <footer class="container" style="color: #94a3b8; text-align: center; padding: 20px 0;">
-    <p>La información proviene de boletines científicos públicos de la NOAA, la OMM y la DNM, y se presenta con fines estrictamente didácticos e informativos. No sustituye los avisos oficiales de los servicios meteorológicos nacional.</p>
+    <p>Asociación de Productores Agropecuarios de Isla Ytororó · San Antonio, Paraguay</p>
     <p style="margin-top: 10px;">
       <a href="index.html" style="color: #38bdf8;">Asociación</a> ·
-      <a href="el-nino.html" style="color: #38bdf8;">El Niño</a> ·
-      <a href="galeria.html" style="color: #38bdf8;">Galería</a> ·
+      <a href="el-nino.html" style="color: #38bdf8;">Monitor El Niño</a> ·
       <a href="privacidad.html" style="color: #38bdf8;">Privacidad</a>
     </p>
-    <p style="margin-top: 8px;">© 2026 Asociación Isla Ytororó / RiskCalc.</p>
+    <p style="margin-top: 8px;">© 2026 Asociación Isla Ytororó.</p>
   </footer>
 
   <!-- SCRIPT DE CLIMA (OPEN-METEO) -->
