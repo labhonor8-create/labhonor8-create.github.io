@@ -12,7 +12,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; scroll-padding-top:90px; }
   body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; color:var(--text);
-    background:linear-gradient(rgba(10,15,25,.85),rgba(10,15,25,.93)), url('fondo.jpg') center/cover fixed no-repeat, var(--bg); }
+    background:linear-gradient(rgba(10,15,25,.55),rgba(10,15,25,.78)), url('imagen-fondo.jpg') center/cover fixed no-repeat, var(--bg); }
   a { color:var(--accent); }
   .wrap { max-width:1040px; margin:0 auto; padding:0 18px; }
   section { padding:24px 0; }
@@ -34,11 +34,11 @@
   .btn { display:inline-block; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:#fff; background:#0284c7; box-shadow:0 4px 14px rgba(2,132,199,.4); }
   .btn.wa { background:var(--wa); box-shadow:0 4px 14px rgba(37,211,102,.4); }
   .tiles { display:grid; gap:12px; grid-template-columns:1fr; }
-  @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid3 { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
+  @media (min-width:700px) { .tiles { grid-template-columns:repeat(4,1fr); } .grid2 { grid-template-columns:repeat(2,1fr); } }
   .tile { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:16px; text-align:center; }
   .tile span { display:block; font-size:.82rem; color:var(--muted); margin-bottom:4px; }
   .tile strong { font-size:1.05rem; color:var(--accent); }
-  .grid3, .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
+  .grid2 { display:grid; gap:16px; grid-template-columns:1fr; }
   .post { background:rgba(15,20,30,.75); border:1px solid var(--line); border-radius:12px; padding:18px; }
   .tag { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
   .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
@@ -111,14 +111,6 @@
       <h2>Quiénes somos</h2>
       <p>Estamos establecidos formalmente en la zona de la Isla Ytororo, en San Antonio. Defendemos el valor del trabajo rural organizado y combinamos la experiencia del campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
       <p>Impulsamos proyectos para mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros socios.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="grid3">
-      <div class="card"><h3>Defensa del trabajo rural</h3><p class="muted">Representamos a los productores de la isla y promovemos la organización del trabajo en el campo.</p></div>
-      <div class="card"><h3>Accesos e infraestructura</h3><p class="muted">Gestionamos proyectos para mejorar los accesos viales y proteger el acopio ante las crecidas.</p></div>
-      <div class="card"><h3>Capacitación técnica</h3><p class="muted">Fomentamos la formación continua de nuestros socios en técnicas de producción.</p></div>
     </div>
   </section>
 
