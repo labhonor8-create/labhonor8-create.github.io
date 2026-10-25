@@ -58,79 +58,22 @@
   .post { background:rgba(12,22,18,.8); border:1px solid var(--line); border-radius:12px; padding:18px; }
   .tag { font-size:.75rem; color:var(--accent); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight: 700; }
   
-  /* ESTILOS DEL ÁLBUM DESPLEGABLE DE GALERÍA */
-  details.gallery-accordion {
-    border: none;
-    padding: 0;
-  }
+  details.gallery-accordion { border: none; padding: 0; }
   details.gallery-accordion summary {
-    background: rgba(12,22,18,.9);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 14px 20px;
-    color: var(--accent);
-    font-size: 1.05rem;
-    font-weight: 700;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.2s, border-color 0.2s;
+    background: rgba(12,22,18,.9); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 20px; color: var(--accent); font-size: 1.05rem; font-weight: 700;
+    list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;
   }
-  details.gallery-accordion summary::-webkit-details-marker {
-    display: none;
-  }
-  details.gallery-accordion summary:hover {
-    background: rgba(34,197,94,0.1);
-    border-color: var(--accent);
-  }
-  details.gallery-accordion summary::after {
-    content: "▼";
-    font-size: 0.8rem;
-    transition: transform 0.2s;
-  }
-  details.gallery-accordion[open] summary::after {
-    transform: rotate(180deg);
-  }
+  details.gallery-accordion summary::-webkit-details-marker { display: none; }
+  details.gallery-accordion summary::after { content: "▼"; font-size: 0.8rem; transition: transform 0.2s; }
+  details.gallery-accordion[open] summary::after { transform: rotate(180deg); }
 
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 16px;
-    margin-top: 18px;
-  }
-  .gallery-item {
-    background: rgba(12,22,18,.85);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-    transition: transform 0.2s, border-color 0.2s;
-  }
-  .gallery-item:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-  }
-  .gallery-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    border-bottom: 1px solid var(--line);
-  }
-  .gallery-caption {
-    padding: 12px;
-  }
-  .gallery-caption h3 {
-    margin: 0 0 4px 0;
-    font-size: 0.95rem;
-    color: #fff;
-  }
-  .gallery-caption p {
-    margin: 0;
-    font-size: 0.82rem;
-    color: var(--muted);
-  }
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 18px; }
+  .gallery-item { background: rgba(12,22,18,.85); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.3); }
+  .gallery-item img { width: 100%; height: 180px; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
+  .gallery-caption { padding: 12px; }
+  .gallery-caption h3 { margin: 0 0 4px 0; font-size: 0.95rem; color: #fff; }
+  .gallery-caption p { margin: 0; font-size: 0.82rem; color: var(--muted); }
 
   .steps { list-style:none; counter-reset:paso; padding:0; margin:0; }
   .steps li { counter-increment:paso; position:relative; padding:10px 0 10px 44px; border-bottom:1px solid var(--line); }
@@ -150,7 +93,6 @@
   
   footer { border-top:1px solid var(--line); padding:24px 0 90px; color:var(--muted); text-align:center; font-size:.9rem; }
   footer nav { justify-content:center; margin-top:10px; }
-  @media (prefers-reduced-motion:reduce) { *, *::before { transition:none !important; scroll-behavior:auto !important; } }
 </style>
 </head>
 <body>
@@ -172,7 +114,6 @@
 </header>
 
 <main class="wrap">
-
   <section class="hero" id="inicio">
     <h1>Asociación de Productores Agropecuarios de la Isla Ytororo</h1>
     <p class="sub">San Antonio, Paraguay</p>
@@ -193,34 +134,10 @@
     </div>
   </section>
 
-  <section class="card ad" data-ad="sup" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </section>
-
   <section id="quienes">
     <div class="card">
       <h2>Quiénes somos</h2>
       <p>Estamos establecidos formalmente en la zona de la Isla Ytororo, en San Antonio. Defendemos el valor del trabajo rural organizado y combinamos la experiencia del campo con la cooperación institucional para superar barreras logísticas y climáticas.</p>
-      <p>Impulsamos proyectos para mejorar los accesos viales, proteger la infraestructura de acopio ante crecidas fluviales y fomentar la capacitación técnica continua de nuestros socios.</p>
-    </div>
-  </section>
-
-  <section id="estatuto">
-    <div class="card">
-      <h2>Estatuto y gobierno</h2>
-      <h3>Fines de la asociación</h3>
-      <p class="muted">Buscamos el mejoramiento social y económico de los productores mediante el trabajo colectivo: actividad agropecuaria, transformación y comercialización de productos, servicio marítimo y de cabotaje, defensa de los asociados ante las autoridades, promoción de la educación, la salud y el medio ambiente, y ejecución de proyectos productivos.</p>
-      <h3>Quiénes pueden asociarse</h3>
-      <p class="muted">Productores de la zona mayores de edad que decidan voluntariamente formar parte. La Comisión Directiva aprueba cada solicitud y fija la cuota de ingreso.</p>
-      <h3>Derechos de los socios</h3>
-      <p class="muted">Voz y voto en las asambleas, elegir y ser elegidos para cargos directivos, presentar proyectos de trabajo, participar de los beneficios de la asociación y apelar las sanciones.</p>
-      <h3>Órganos de gobierno</h3>
-      <ul class="muted">
-        <li><strong>Asamblea General:</strong> máxima autoridad. Se reúne una vez al año, dentro de los tres primeros meses posteriores al cierre del ejercicio.</li>
-        <li><strong>Comisión Directiva:</strong> dirige la asociación y se reúne al menos una vez al mes. Sus miembros son electos para un mandato de un año.</li>
-        <li><strong>Sindicatura:</strong> fiscaliza la administración y verifica el cumplimiento del estatuto. Su mandato también dura un año.</li>
-      </ul>
     </div>
   </section>
 
@@ -229,31 +146,25 @@
       <h2>Actividades</h2>
       <div class="grid2">
         <div class="post"><h3>Producción agropecuaria</h3><p class="muted">Mandioca y otros rubros de autoconsumo y renta en la zona insular.</p></div>
-        <div class="post"><h3>Seguimiento climático</h3><p class="muted">Seguimos las variaciones atmosféricas y el caudal del río para proteger las cosechas familiares. <a href="el-nino.html">Ver el monitor</a>.</p></div>
+        <div class="post"><h3>Seguimiento climático</h3><p class="muted">Seguimos las variaciones atmosféricas y el caudal del río. <a href="el-nino.html">Ver el monitor</a>.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- APARTADO DE GALERÍA DESPLEGABLE (SIN EL LOGOTIPO) -->
   <section id="galeria">
     <div class="card">
       <h2>Galería de la Asociación</h2>
-      <p class="muted">Registro fotográfico de nuestras parcelas, labores comunitarias y desarrollo productivo en la zona insular de San Antonio.</p>
-      
+      <p class="muted">Registro fotográfico de nuestras parcelas y labores comunitarias en la zona insular de San Antonio.</p>
       <details class="gallery-accordion" id="desplegable-galeria">
         <summary>📷 Toca aquí para desplegar las fotos del álbum</summary>
-        
         <div class="gallery-grid">
-          <!-- FOTO 1 -->
           <div class="gallery-item">
-            <img src="IMG_20261024_192936.jpg" alt="Cultivos de mandioca en Isla Ytororo">
+            <img src="IMG_20261024_192936.jpg" alt="Trabajos en Parcelas">
             <div class="gallery-caption">
               <h3>Trabajos en Parcelas</h3>
               <p>Cultivos de mandioca y desarrollo agrícola en la zona.</p>
             </div>
           </div>
-          
-          <!-- Aquí puedes agregar más fotos de tus actividades copiando otro bloque gallery-item -->
         </div>
       </details>
     </div>
@@ -266,29 +177,9 @@
         <article class="post">
           <div class="tag">Gestión productiva · Isla Ytororo</div>
           <h3>Preparación de suelos y cultivos de mandioca</h3>
-          <p class="muted">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas para asegurar el rendimiento de los rubros de autoconsumo y renta.</p>
-        </article>
-        <article class="post">
-          <div class="tag">Monitoreo ambiental · Cuenca del Plata</div>
-          <h3>Estrategias frente a factores climáticos</h3>
-          <p class="muted">Ante las variaciones atmosféricas y la fluctuación del caudal hídrico, la asociación implementa herramientas de seguimiento para proteger las cosechas familiares.</p>
+          <p class="muted">Los 21 socios activos avanzan de manera coordinada en las labores de cultivo y optimización de parcelas.</p>
         </article>
       </div>
-    </div>
-  </section>
-
-  <section class="card ad" data-ad="medio" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </section>
-
-  <section id="preguntas">
-    <div class="card">
-      <h2>Preguntas frecuentes</h2>
-      <details class="faq-item"><summary>¿Dónde está la asociación?</summary><p>En la zona de la Isla Ytororo, en la ciudad de San Antonio, Paraguay.</p></details>
-      <details class="faq-item"><summary>¿Cómo me contacto con la asociación?</summary><p>Escríbenos por WhatsApp al 0982 879-980. Te respondemos con la información disponible.</p></details>
-      <details class="faq-item"><summary>¿La asociación está legalmente constituida?</summary><p>Sí. Está inscripta en la Dirección General de los Registros Públicos con matrícula jurídica N.° 12581, serie Civil. Su estatuto fue protocolizado por escritura pública N.° 19 del 10/10/2022. Su RUC es 80130689-2 y figura como activo.</p></details>
-      <details class="faq-item"><summary>¿Qué hacen ante las crecidas del río?</summary><p>Impulsan proyectos para proteger la infraestructura de acopio y hacen seguimiento del caudal hídrico.</p></details>
     </div>
   </section>
 
@@ -298,45 +189,21 @@
       <ol class="steps">
         <li>Escribe por WhatsApp o presenta tu solicitud por escrito.</li>
         <li>La Comisión Directiva aprueba tu solicitud.</li>
-        <li>Pagas la cuota de ingreso que fija la comisión y participas en las asambleas.</li>
+        <li>Pagas la cuota de ingreso que fija la comisión.</li>
       </ol>
       <div class="btns" style="justify-content:flex-start;">
-        <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación%20de%20Productores%20de%20Isla%20Ytororo." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
+        <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
       </div>
     </div>
   </section>
-
-  <section class="card ad" data-ad="inf" hidden>
-    <small>Publicidad</small>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </section>
-
 </main>
 
 <footer>
   <p>Asociación de Productores Agropecuarios de Isla Ytororo (APAIYSA) · San Antonio, Paraguay</p>
-  <p>Matrícula jurídica N.° 12581, serie Civil · RUC 80130689-2</p>
-  <nav aria-label="Pie de página">
-    <a href="index.html">Asociación</a>
-    <a href="el-nino.html">Monitor El Niño</a>
-    <a href="privacidad.html">Privacidad</a>
-    <a href="acerca.html">Acerca de</a>
-  </nav>
-  <p style="margin-top:10px;">© <span id="anio"></span> APAIYSA</p>
+  <p>© <span id="anio"></span> APAIYSA</p>
 </footer>
 
 <a class="sello" href="#inicio" title="APAIYSA"><img src="logo.jpg" alt="Logo APAIYSA"></a>
-
-<script>
-  const ADS = { sup: "4077993060", medio: "8376330722", inf: "6057289145" };
-  document.querySelectorAll(".ad").forEach(a => {
-    const id = ADS[a.dataset.ad];
-    if (!/^\d{10}$/.test(id)) return;
-    a.hidden = false;
-    a.querySelector("ins").setAttribute("data-ad-slot", id);
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  });
-  document.getElementById("anio").textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
 </body>
 </html>
