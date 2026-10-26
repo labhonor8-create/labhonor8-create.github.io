@@ -250,7 +250,7 @@
     <h1>Asociación de Productores Agropecuarios de la Isla Ytororo</h1>
     <p class="sub">San Antonio, Paraguay</p>
     <p class="muted" style="max-width:720px; margin:0 auto;">Organización de productores que defiende el trabajo rural, mejora el acceso a la producción y se prepara ante los factores climáticos.</p>
-    <div class="btns">
+        <div class="btns">
       <a class="btn" href="el-nino.html" style="background:#22c55e; color:#fff;">Ver monitor climático</a>
     </div>
   </section>
@@ -288,6 +288,8 @@
     </div>
   </section>
 
+
+
   <section id="actualidad">
     <div class="card">
       <h2>Actualidad</h2>
@@ -300,7 +302,6 @@
       </div>
     </div>
   </section>
-
   <section id="galeria">
     <div class="card">
       <h2>Galería de fotos</h2>
@@ -444,7 +445,7 @@
       <ol class="steps">
         <li>Escribe por WhatsApp o presenta tu solicitud por escrito.</li>
         <li>La Comisión Directiva aprueba tu solicitud.</li>
-        <li>Pagas la cuota de ingreso que fija la comisión y participas en las asambleas.</li>
+        <li>Pagas la cuota de ingreso que fija la comisión.</li>
       </ol>
       <div class="btns" style="justify-content:flex-start;">
         <a class="btn wa" href="https://api.whatsapp.com/send?phone=595982879980&text=Hola,%20me%20gustaría%20contactar%20con%20la%20Asociación." target="_blank" rel="noopener">WhatsApp: 0982 879-980</a>
@@ -456,6 +457,7 @@
     <small>Publicidad</small>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9124670202405791" data-ad-slot="6057289145" data-ad-format="auto" data-full-width-responsive="true"></ins>
   </div>
+
 
 </main>
 
@@ -475,6 +477,12 @@
 <script>
   document.querySelectorAll(".ad ins").forEach(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
+  });
+  // Si una foto de la galería no carga, su tarjeta se oculta para que no aparezca un ícono roto.
+  document.querySelectorAll(".gallery-item img").forEach(img => {
+    const quitar = () => img.closest(".gallery-item")?.remove();
+    if (img.complete && img.naturalWidth === 0) quitar();
+    else img.addEventListener("error", quitar);
   });
   document.getElementById("anio").textContent = new Date().getFullYear();
 </script>
