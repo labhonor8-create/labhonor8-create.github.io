@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-03T07:29:44.948Z",
+ "actualizado": "2026-11-04T07:33:55.169Z",
  "fuente": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
  "serie": [
   {
@@ -4601,6 +4601,11 @@
    "temporada": "JAS",
    "anio": 2026,
    "oni": 2.16
+  },
+  {
+   "temporada": "ASO",
+   "anio": 2026,
+   "oni": 2.46
   }
  ]
 }
